@@ -28,6 +28,9 @@ export class AppComponent implements OnInit, OnDestroy {
   changedRows: any;
   typeMetrics: string;
   selected: {startDate: Moment, endDate: Moment};
+  dateRange: any = 'range';
+  customStartDate: any;
+  customEndDate: any;
 
   private alive = true;
 
@@ -166,6 +169,81 @@ export class AppComponent implements OnInit, OnDestroy {
     : this.showMetricsData('Dwell time');
   }
 
+  changeDateRange(ev: any) {
+    console.log(ev.target.value);
+    switch (ev.target.value) {
+      case 'lastMonth': this.showLastMonthdata();
+                        break;
+      case 'lastWeek' : this.showLastWeekdata();
+                        break;
+      case 'last30Days' : this.showLast30Daysdata();
+                        break;
+      case 'last7Days' : this.showLast7Daysdata();
+                        break;
+      default: return;
+    }
+  }
+
+  applyCustomDate() {
+    const date = this.results.map(result => {
+      return result.date;
+    });
+    const lastMonthStartIndex = date.indexOf(this.customStartDate);
+    const lastMonthEndIndex = date.indexOf(this.customEndDate);
+    this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+     this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
+  showLastMonthdata() {
+    const date = this.results.map(result => {
+      return result.date;
+    });
+    const lastMonthStartIndex = date.indexOf('2/1/2019');
+    const lastMonthEndIndex = date.indexOf('2/28/2019');
+    this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+     this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
+  showLastWeekdata() {
+  const date = this.results.map(result => {
+    return result.date;
+  });
+  const lastMonthStartIndex = date.indexOf('2/1/2019');
+  const lastMonthEndIndex = date.indexOf('2/8/2019');
+  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+   this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
+  showLast30Daysdata() {
+  const date = this.results.map(result => {
+    return result.date;
+  });
+  const lastMonthStartIndex = date.indexOf('2/19/2019');
+  const lastMonthEndIndex = date.indexOf('3/19/2019');
+  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+   this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
+  showLast7Daysdata() {
+  const date = this.results.map(result => {
+    return result.date;
+  });
+  const lastMonthStartIndex = date.indexOf('3/12/2019');
+  const lastMonthEndIndex = date.indexOf('3/19/2019');
+  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+   this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
+  showCustomDaysdata() {
+  const date = this.results.map(result => {
+    return result.date;
+  });
+  const lastMonthStartIndex = date.indexOf('3/12/2019');
+  const lastMonthEndIndex = date.indexOf('3/19/2019');
+  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
+   this.showMetricsData(this.typeMetrics, this.changedRows);
+  }
+
 
   showMetricsData(type, dateRangeArray?) {
     this.typeMetrics = type;
@@ -190,15 +268,11 @@ export class AppComponent implements OnInit, OnDestroy {
               data: this.data,
               fill: false,
               lineTension: 0.2,
-              borderColor: 'red',
+              borderColor: '#cc181f',
               borderWidth: 1,
           }]
         },
       options: {
-        title: {
-          text: `${type} daily data`,
-          display: true
-        },
           scales: {
               yAxes: [{
                   ticks: {

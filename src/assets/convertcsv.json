@@ -1,0 +1,447 @@
+[
+ {
+   "date": "2/1/2019",
+   "footfall": 11981,
+   "dwell_time": 78979097
+ },
+ {
+   "date": "2/2/2019",
+   "footfall": 16017,
+   "dwell_time": 102230887
+ },
+ {
+   "date": "2/3/2019",
+   "footfall": 17914,
+   "dwell_time": 117379228
+ },
+ {
+   "date": "2/4/2019",
+   "footfall": 10757,
+   "dwell_time": 75689052
+ },
+ {
+   "date": "2/5/2019",
+   "footfall": 10675,
+   "dwell_time": 75656069
+ },
+ {
+   "date": "2/6/2019",
+   "footfall": 11168,
+   "dwell_time": 76367981
+ },
+ {
+   "date": "2/7/2019",
+   "footfall": 11199,
+   "dwell_time": 79176655
+ },
+ {
+   "date": "2/8/2019",
+   "footfall": 11059,
+   "dwell_time": 78411525
+ },
+ {
+   "date": "2/9/2019",
+   "footfall": 16413,
+   "dwell_time": 105403674
+ },
+ {
+   "date": "2/10/2019",
+   "footfall": 19350,
+   "dwell_time": 124282643
+ },
+ {
+   "date": "2/11/2019",
+   "footfall": 9832,
+   "dwell_time": 70985896
+ },
+ {
+   "date": "2/12/2019",
+   "footfall": 10770,
+   "dwell_time": 72467838
+ },
+ {
+   "date": "2/13/2019",
+   "footfall": 11193,
+   "dwell_time": 76851164
+ },
+ {
+   "date": "2/14/2019",
+   "footfall": 13313,
+   "dwell_time": 86181038
+ },
+ {
+   "date": "2/15/2019",
+   "footfall": 10964,
+   "dwell_time": 77492999
+ },
+ {
+   "date": "2/16/2019",
+   "footfall": 15045,
+   "dwell_time": 98525375
+ },
+ {
+   "date": "2/17/2019",
+   "footfall": 15680,
+   "dwell_time": 106320562
+ },
+ {
+   "date": "2/18/2019",
+   "footfall": 10497,
+   "dwell_time": 75049096
+ },
+ {
+   "date": "2/19/2019",
+   "footfall": 11958,
+   "dwell_time": 84542272
+ },
+ {
+   "date": "2/20/2019",
+   "footfall": 9897,
+   "dwell_time": 72171223
+ },
+ {
+   "date": "2/21/2019",
+   "footfall": 10185,
+   "dwell_time": 73404908
+ },
+ {
+   "date": "2/22/2019",
+   "footfall": 10618,
+   "dwell_time": 77570381
+ },
+ {
+   "date": "2/23/2019",
+   "footfall": 16977,
+   "dwell_time": 110508879
+ },
+ {
+   "date": "2/24/2019",
+   "footfall": 15445,
+   "dwell_time": 103629202
+ },
+ {
+   "date": "2/25/2019",
+   "footfall": 9641,
+   "dwell_time": 72298434
+ },
+ {
+   "date": "2/26/2019",
+   "footfall": 10398,
+   "dwell_time": 74992304
+ },
+ {
+   "date": "2/27/2019",
+   "footfall": 10059,
+   "dwell_time": 72623641
+ },
+ {
+   "date": "2/28/2019",
+   "footfall": 10075,
+   "dwell_time": 73439786
+ },
+ {
+   "date": "3/1/2019",
+   "footfall": 9933,
+   "dwell_time": 75835754
+ },
+ {
+   "date": "3/2/2019",
+   "footfall": 16762,
+   "dwell_time": 108210728
+ },
+ {
+   "date": "3/3/2019",
+   "footfall": 17131,
+   "dwell_time": 112216506
+ },
+ {
+   "date": "3/4/2019",
+   "footfall": 12255,
+   "dwell_time": 86141410
+ },
+ {
+   "date": "3/5/2019",
+   "footfall": 9856,
+   "dwell_time": 71165342
+ },
+ {
+   "date": "3/6/2019",
+   "footfall": 10655,
+   "dwell_time": 74935128
+ },
+ {
+   "date": "3/7/2019",
+   "footfall": 10298,
+   "dwell_time": 76601360
+ },
+ {
+   "date": "3/8/2019",
+   "footfall": 15051,
+   "dwell_time": 98026519
+ },
+ {
+   "date": "3/9/2019",
+   "footfall": 17112,
+   "dwell_time": 111561898
+ },
+ {
+   "date": "3/10/2019",
+   "footfall": 16119,
+   "dwell_time": 109985389
+ },
+ {
+   "date": "3/11/2019",
+   "footfall": 10909,
+   "dwell_time": 76515769
+ },
+ {
+   "date": "3/12/2019",
+   "footfall": 11323,
+   "dwell_time": 80835354
+ },
+ {
+   "date": "3/13/2019",
+   "footfall": 12103,
+   "dwell_time": 85178584
+ },
+ {
+   "date": "3/14/2019",
+   "footfall": 10853,
+   "dwell_time": 75831225
+ },
+ {
+   "date": "3/15/2019",
+   "footfall": 13792,
+   "dwell_time": 89737727
+ },
+ {
+   "date": "3/16/2019",
+   "footfall": 17361,
+   "dwell_time": 111456133
+ },
+ {
+   "date": "3/17/2019",
+   "footfall": 17568,
+   "dwell_time": 113997587
+ },
+ {
+   "date": "3/18/2019",
+   "footfall": 11519,
+   "dwell_time": 77165533
+ },
+ {
+   "date": "3/19/2019",
+   "footfall": 10962,
+   "dwell_time": 74600921
+ },
+ {
+   "date": "3/20/2019",
+   "footfall": 11318,
+   "dwell_time": 77286427
+ },
+ {
+   "date": "3/21/2019",
+   "footfall": 11322,
+   "dwell_time": 67072314
+ },
+ {
+   "date": "3/22/2019",
+   "footfall": 12499,
+   "dwell_time": 85135534
+ },
+ {
+   "date": "3/23/2019",
+   "footfall": 17746,
+   "dwell_time": 116203017
+ },
+ {
+   "date": "3/24/2019",
+   "footfall": 17085,
+   "dwell_time": 112194030
+ },
+ {
+   "date": "3/25/2019",
+   "footfall": 10910,
+   "dwell_time": 77875394
+ },
+ {
+   "date": "3/26/2019",
+   "footfall": 9997,
+   "dwell_time": 73700318
+ },
+ {
+   "date": "3/27/2019",
+   "footfall": 10592,
+   "dwell_time": 77001087
+ },
+ {
+   "date": "3/28/2019",
+   "footfall": 11411,
+   "dwell_time": 78732088
+ },
+ {
+   "date": "3/29/2019",
+   "footfall": 12735,
+   "dwell_time": 88203418
+ },
+ {
+   "date": "3/30/2019",
+   "footfall": 17518,
+   "dwell_time": 116006966
+ },
+ {
+   "date": "3/31/2019",
+   "footfall": 20213,
+   "dwell_time": 129725370
+ },
+ {
+   "date": "4/1/2019",
+   "footfall": 10551,
+   "dwell_time": 77680725
+ },
+ {
+   "date": "4/2/2019",
+   "footfall": 11034,
+   "dwell_time": 79659873
+ },
+ {
+   "date": "4/3/2019",
+   "footfall": 10942,
+   "dwell_time": 77944553
+ },
+ {
+   "date": "4/4/2019",
+   "footfall": 11119,
+   "dwell_time": 79472564
+ },
+ {
+   "date": "4/5/2019",
+   "footfall": 12860,
+   "dwell_time": 89902277
+ },
+ {
+   "date": "4/6/2019",
+   "footfall": 18400,
+   "dwell_time": 122856400
+ },
+ {
+   "date": "4/7/2019",
+   "footfall": 19952,
+   "dwell_time": 129813141
+ },
+ {
+   "date": "4/8/2019",
+   "footfall": 10871,
+   "dwell_time": 79232057
+ },
+ {
+   "date": "4/9/2019",
+   "footfall": 10658,
+   "dwell_time": 75898835
+ },
+ {
+   "date": "4/10/2019",
+   "footfall": 11409,
+   "dwell_time": 79513845
+ },
+ {
+   "date": "4/11/2019",
+   "footfall": 12952,
+   "dwell_time": 84399780
+ },
+ {
+   "date": "4/12/2019",
+   "footfall": 14832,
+   "dwell_time": 90890300
+ },
+ {
+   "date": "4/13/2019",
+   "footfall": 26744,
+   "dwell_time": 161404042
+ },
+ {
+   "date": "4/14/2019",
+   "footfall": 24533,
+   "dwell_time": 146520350
+ },
+ {
+   "date": "4/15/2019",
+   "footfall": 12351,
+   "dwell_time": 84853599
+ },
+ {
+   "date": "4/16/2019",
+   "footfall": 11221,
+   "dwell_time": 79007523
+ },
+ {
+   "date": "4/17/2019",
+   "footfall": 14978,
+   "dwell_time": 99320783
+ },
+ {
+   "date": "4/18/2019",
+   "footfall": 11276,
+   "dwell_time": 81247874
+ },
+ {
+   "date": "4/19/2019",
+   "footfall": 16671,
+   "dwell_time": 110960169
+ },
+ {
+   "date": "4/20/2019",
+   "footfall": 18349,
+   "dwell_time": 123426245
+ },
+ {
+   "date": "4/21/2019",
+   "footfall": 22990,
+   "dwell_time": 145736450
+ },
+ {
+   "date": "4/22/2019",
+   "footfall": 12324,
+   "dwell_time": 84267750
+ },
+ {
+   "date": "4/23/2019",
+   "footfall": 11563,
+   "dwell_time": 81954217
+ },
+ {
+   "date": "4/24/2019",
+   "footfall": 11320,
+   "dwell_time": 80094509
+ },
+ {
+   "date": "4/25/2019",
+   "footfall": 10881,
+   "dwell_time": 80065158
+ },
+ {
+   "date": "4/26/2019",
+   "footfall": 12015,
+   "dwell_time": 86300096
+ },
+ {
+   "date": "4/27/2019",
+   "footfall": 16668,
+   "dwell_time": 112813850
+ },
+ {
+   "date": "4/28/2019",
+   "footfall": 15045,
+   "dwell_time": 93458767
+ },
+ {
+   "date": "4/29/2019",
+   "footfall": 11893,
+   "dwell_time": 63557661
+ },
+ {
+   "date": "4/30/2019",
+   "footfall": 12635,
+   "dwell_time": 86799875
+ }
+]

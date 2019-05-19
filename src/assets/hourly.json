@@ -1,0 +1,18 @@
+[
+  {
+    "month_start_date": "1/1/2019",
+    "footfall": 210987
+  },
+  {
+    "month_start_date": "2/1/2019",
+    "footfall": 178108
+  },
+  {
+    "month_start_date": "3/1/2019",
+    "footfall": 208511
+  },
+  {
+    "month_start_date": "4/1/2019",
+    "footfall": 221209
+  }
+ ]

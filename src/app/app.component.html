@@ -14,8 +14,26 @@
             <input type="text" class="date-container"
             [showDropdowns]="true"
             ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose date" (ngModelChange)="change($event, selectedDateObject)"/> 
-       </div>
-      <div class="col-xs-12">
+          </div>
+        <div class="select-range-container">
+          <label>Select range</label>
+            <select class="browser-default custom-select custom-select-range-container" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+              <option disabled value="range">Select range</option>
+              <option value="lastMonth">Last month</option>
+              <option value="lastWeek">Last week</option>
+              <option value="last30Days">Last 30 days</option>
+              <option value="last7Days">Last 7 days</option>
+              <option value="Custom">Custom</option>
+        </select>
+      </div>
+        <div class="select-range-container" *ngIf="dateRange === 'Custom'">
+        <input type="text"
+             [(ngModel)]="customStartDate" placeholder="Start date (MM/DD/YYYY)" (ngModelChange)="change($event, selectedDateObject)"/> 
+        <input type="text"
+            [(ngModel)]="customEndDate" placeholder="End date (MM/DD/YYYY)" (ngModelChange)="change($event, selectedDateObject)"/> 
+        <button type="button" class="btn btn-primary button-margin" (click)="applyCustomDate()">Apply</button>
+      </div>
+      <div class="col-xs-12 container-padding">
           <div id="tab" class="btn-group btn-group-justified button-group-margin" data-toggle="buttons">
             <a href="#prices" class="btn btn-default active button-background" data-toggle="tab">
               <input type="radio" />Daily
@@ -33,7 +51,7 @@
               <div class="row">
                   <table>
                     <tr>
-                      <td style="width: 10000px; height: 40%"><canvas id="lineChart"></canvas></td>
+                      <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
                       <td></td>
                     </tr>
                   </table>

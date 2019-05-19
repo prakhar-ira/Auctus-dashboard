@@ -1,0 +1,8490 @@
+[
+  {
+    "timestamp_hour": "02/01/2019 00:00:00",
+    "footfall": 150
+  },
+  {
+    "timestamp_hour": "02/01/2019 01:00:00",
+    "footfall": 135
+  },
+  {
+    "timestamp_hour": "02/01/2019 02:00:00",
+    "footfall": 244
+  },
+  {
+    "timestamp_hour": "02/01/2019 03:00:00",
+    "footfall": 477
+  },
+  {
+    "timestamp_hour": "02/01/2019 04:00:00",
+    "footfall": 765
+  },
+  {
+    "timestamp_hour": "02/01/2019 05:00:00",
+    "footfall": 1022
+  },
+  {
+    "timestamp_hour": "02/01/2019 06:00:00",
+    "footfall": 894
+  },
+  {
+    "timestamp_hour": "02/01/2019 07:00:00",
+    "footfall": 1067
+  },
+  {
+    "timestamp_hour": "02/01/2019 08:00:00",
+    "footfall": 1043
+  },
+  {
+    "timestamp_hour": "02/01/2019 09:00:00",
+    "footfall": 1014
+  },
+  {
+    "timestamp_hour": "02/01/2019 10:00:00",
+    "footfall": 966
+  },
+  {
+    "timestamp_hour": "02/01/2019 11:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "02/01/2019 12:00:00",
+    "footfall": 805
+  },
+  {
+    "timestamp_hour": "02/01/2019 13:00:00",
+    "footfall": 870
+  },
+  {
+    "timestamp_hour": "02/01/2019 14:00:00",
+    "footfall": 909
+  },
+  {
+    "timestamp_hour": "02/01/2019 15:00:00",
+    "footfall": 488
+  },
+  {
+    "timestamp_hour": "02/01/2019 16:00:00",
+    "footfall": 269
+  },
+  {
+    "timestamp_hour": "02/01/2019 17:00:00",
+    "footfall": 109
+  },
+  {
+    "timestamp_hour": "02/01/2019 18:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "02/01/2019 23:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "02/02/2019 00:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "02/02/2019 01:00:00",
+    "footfall": 115
+  },
+  {
+    "timestamp_hour": "02/02/2019 02:00:00",
+    "footfall": 253
+  },
+  {
+    "timestamp_hour": "02/02/2019 03:00:00",
+    "footfall": 374
+  },
+  {
+    "timestamp_hour": "02/02/2019 04:00:00",
+    "footfall": 725
+  },
+  {
+    "timestamp_hour": "02/02/2019 05:00:00",
+    "footfall": 1032
+  },
+  {
+    "timestamp_hour": "02/02/2019 06:00:00",
+    "footfall": 1148
+  },
+  {
+    "timestamp_hour": "02/02/2019 07:00:00",
+    "footfall": 1499
+  },
+  {
+    "timestamp_hour": "02/02/2019 08:00:00",
+    "footfall": 1341
+  },
+  {
+    "timestamp_hour": "02/02/2019 09:00:00",
+    "footfall": 1281
+  },
+  {
+    "timestamp_hour": "02/02/2019 10:00:00",
+    "footfall": 1207
+  },
+  {
+    "timestamp_hour": "02/02/2019 11:00:00",
+    "footfall": 1174
+  },
+  {
+    "timestamp_hour": "02/02/2019 12:00:00",
+    "footfall": 1280
+  },
+  {
+    "timestamp_hour": "02/02/2019 13:00:00",
+    "footfall": 1394
+  },
+  {
+    "timestamp_hour": "02/02/2019 14:00:00",
+    "footfall": 1516
+  },
+  {
+    "timestamp_hour": "02/02/2019 15:00:00",
+    "footfall": 764
+  },
+  {
+    "timestamp_hour": "02/02/2019 16:00:00",
+    "footfall": 310
+  },
+  {
+    "timestamp_hour": "02/02/2019 17:00:00",
+    "footfall": 122
+  },
+  {
+    "timestamp_hour": "02/02/2019 18:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "02/02/2019 19:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "02/02/2019 20:00:00",
+    "footfall": 32
+  },
+  {
+    "timestamp_hour": "02/02/2019 21:00:00",
+    "footfall": 35
+  },
+  {
+    "timestamp_hour": "02/02/2019 22:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "02/02/2019 23:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "02/03/2019 00:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "02/03/2019 01:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "02/03/2019 02:00:00",
+    "footfall": 127
+  },
+  {
+    "timestamp_hour": "02/03/2019 03:00:00",
+    "footfall": 250
+  },
+  {
+    "timestamp_hour": "02/03/2019 04:00:00",
+    "footfall": 528
+  },
+  {
+    "timestamp_hour": "02/03/2019 05:00:00",
+    "footfall": 1046
+  },
+  {
+    "timestamp_hour": "02/03/2019 06:00:00",
+    "footfall": 920
+  },
+  {
+    "timestamp_hour": "02/03/2019 07:00:00",
+    "footfall": 1451
+  },
+  {
+    "timestamp_hour": "02/03/2019 08:00:00",
+    "footfall": 1316
+  },
+  {
+    "timestamp_hour": "02/03/2019 09:00:00",
+    "footfall": 1217
+  },
+  {
+    "timestamp_hour": "02/03/2019 10:00:00",
+    "footfall": 1346
+  },
+  {
+    "timestamp_hour": "02/03/2019 11:00:00",
+    "footfall": 1643
+  },
+  {
+    "timestamp_hour": "02/03/2019 12:00:00",
+    "footfall": 1996
+  },
+  {
+    "timestamp_hour": "02/03/2019 13:00:00",
+    "footfall": 2292
+  },
+  {
+    "timestamp_hour": "02/03/2019 14:00:00",
+    "footfall": 1847
+  },
+  {
+    "timestamp_hour": "02/03/2019 15:00:00",
+    "footfall": 994
+  },
+  {
+    "timestamp_hour": "02/03/2019 16:00:00",
+    "footfall": 333
+  },
+  {
+    "timestamp_hour": "02/03/2019 17:00:00",
+    "footfall": 92
+  },
+  {
+    "timestamp_hour": "02/03/2019 18:00:00",
+    "footfall": 214
+  },
+  {
+    "timestamp_hour": "02/03/2019 19:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "02/03/2019 20:00:00",
+    "footfall": 41
+  },
+  {
+    "timestamp_hour": "02/03/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "02/03/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/03/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/04/2019 00:00:00",
+    "footfall": 69
+  },
+  {
+    "timestamp_hour": "02/04/2019 01:00:00",
+    "footfall": 166
+  },
+  {
+    "timestamp_hour": "02/04/2019 02:00:00",
+    "footfall": 279
+  },
+  {
+    "timestamp_hour": "02/04/2019 03:00:00",
+    "footfall": 554
+  },
+  {
+    "timestamp_hour": "02/04/2019 04:00:00",
+    "footfall": 784
+  },
+  {
+    "timestamp_hour": "02/04/2019 05:00:00",
+    "footfall": 936
+  },
+  {
+    "timestamp_hour": "02/04/2019 06:00:00",
+    "footfall": 941
+  },
+  {
+    "timestamp_hour": "02/04/2019 07:00:00",
+    "footfall": 945
+  },
+  {
+    "timestamp_hour": "02/04/2019 08:00:00",
+    "footfall": 876
+  },
+  {
+    "timestamp_hour": "02/04/2019 09:00:00",
+    "footfall": 712
+  },
+  {
+    "timestamp_hour": "02/04/2019 10:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "02/04/2019 11:00:00",
+    "footfall": 698
+  },
+  {
+    "timestamp_hour": "02/04/2019 12:00:00",
+    "footfall": 600
+  },
+  {
+    "timestamp_hour": "02/04/2019 13:00:00",
+    "footfall": 736
+  },
+  {
+    "timestamp_hour": "02/04/2019 14:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "02/04/2019 15:00:00",
+    "footfall": 448
+  },
+  {
+    "timestamp_hour": "02/04/2019 16:00:00",
+    "footfall": 166
+  },
+  {
+    "timestamp_hour": "02/04/2019 17:00:00",
+    "footfall": 90
+  },
+  {
+    "timestamp_hour": "02/04/2019 18:00:00",
+    "footfall": 206
+  },
+  {
+    "timestamp_hour": "02/04/2019 19:00:00",
+    "footfall": 93
+  },
+  {
+    "timestamp_hour": "02/04/2019 20:00:00",
+    "footfall": 30
+  },
+  {
+    "timestamp_hour": "02/04/2019 21:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "02/04/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "02/04/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/05/2019 00:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "02/05/2019 01:00:00",
+    "footfall": 154
+  },
+  {
+    "timestamp_hour": "02/05/2019 02:00:00",
+    "footfall": 281
+  },
+  {
+    "timestamp_hour": "02/05/2019 03:00:00",
+    "footfall": 461
+  },
+  {
+    "timestamp_hour": "02/05/2019 04:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "02/05/2019 05:00:00",
+    "footfall": 921
+  },
+  {
+    "timestamp_hour": "02/05/2019 06:00:00",
+    "footfall": 890
+  },
+  {
+    "timestamp_hour": "02/05/2019 07:00:00",
+    "footfall": 1039
+  },
+  {
+    "timestamp_hour": "02/05/2019 08:00:00",
+    "footfall": 882
+  },
+  {
+    "timestamp_hour": "02/05/2019 09:00:00",
+    "footfall": 878
+  },
+  {
+    "timestamp_hour": "02/05/2019 10:00:00",
+    "footfall": 622
+  },
+  {
+    "timestamp_hour": "02/05/2019 11:00:00",
+    "footfall": 579
+  },
+  {
+    "timestamp_hour": "02/05/2019 12:00:00",
+    "footfall": 643
+  },
+  {
+    "timestamp_hour": "02/05/2019 13:00:00",
+    "footfall": 741
+  },
+  {
+    "timestamp_hour": "02/05/2019 14:00:00",
+    "footfall": 716
+  },
+  {
+    "timestamp_hour": "02/05/2019 15:00:00",
+    "footfall": 506
+  },
+  {
+    "timestamp_hour": "02/05/2019 16:00:00",
+    "footfall": 199
+  },
+  {
+    "timestamp_hour": "02/05/2019 17:00:00",
+    "footfall": 63
+  },
+  {
+    "timestamp_hour": "02/05/2019 18:00:00",
+    "footfall": 212
+  },
+  {
+    "timestamp_hour": "02/05/2019 19:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "02/05/2019 20:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/05/2019 21:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/05/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "02/05/2019 23:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "02/06/2019 00:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "02/06/2019 01:00:00",
+    "footfall": 132
+  },
+  {
+    "timestamp_hour": "02/06/2019 02:00:00",
+    "footfall": 280
+  },
+  {
+    "timestamp_hour": "02/06/2019 03:00:00",
+    "footfall": 439
+  },
+  {
+    "timestamp_hour": "02/06/2019 04:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "02/06/2019 05:00:00",
+    "footfall": 927
+  },
+  {
+    "timestamp_hour": "02/06/2019 06:00:00",
+    "footfall": 844
+  },
+  {
+    "timestamp_hour": "02/06/2019 07:00:00",
+    "footfall": 938
+  },
+  {
+    "timestamp_hour": "02/06/2019 08:00:00",
+    "footfall": 794
+  },
+  {
+    "timestamp_hour": "02/06/2019 09:00:00",
+    "footfall": 685
+  },
+  {
+    "timestamp_hour": "02/06/2019 10:00:00",
+    "footfall": 803
+  },
+  {
+    "timestamp_hour": "02/06/2019 11:00:00",
+    "footfall": 768
+  },
+  {
+    "timestamp_hour": "02/06/2019 12:00:00",
+    "footfall": 834
+  },
+  {
+    "timestamp_hour": "02/06/2019 13:00:00",
+    "footfall": 906
+  },
+  {
+    "timestamp_hour": "02/06/2019 14:00:00",
+    "footfall": 767
+  },
+  {
+    "timestamp_hour": "02/06/2019 15:00:00",
+    "footfall": 585
+  },
+  {
+    "timestamp_hour": "02/06/2019 16:00:00",
+    "footfall": 264
+  },
+  {
+    "timestamp_hour": "02/06/2019 17:00:00",
+    "footfall": 126
+  },
+  {
+    "timestamp_hour": "02/06/2019 18:00:00",
+    "footfall": 216
+  },
+  {
+    "timestamp_hour": "02/06/2019 19:00:00",
+    "footfall": 43
+  },
+  {
+    "timestamp_hour": "02/06/2019 20:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/06/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/06/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/06/2019 23:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "02/07/2019 00:00:00",
+    "footfall": 51
+  },
+  {
+    "timestamp_hour": "02/07/2019 01:00:00",
+    "footfall": 163
+  },
+  {
+    "timestamp_hour": "02/07/2019 02:00:00",
+    "footfall": 292
+  },
+  {
+    "timestamp_hour": "02/07/2019 03:00:00",
+    "footfall": 490
+  },
+  {
+    "timestamp_hour": "02/07/2019 04:00:00",
+    "footfall": 770
+  },
+  {
+    "timestamp_hour": "02/07/2019 05:00:00",
+    "footfall": 949
+  },
+  {
+    "timestamp_hour": "02/07/2019 06:00:00",
+    "footfall": 734
+  },
+  {
+    "timestamp_hour": "02/07/2019 07:00:00",
+    "footfall": 944
+  },
+  {
+    "timestamp_hour": "02/07/2019 08:00:00",
+    "footfall": 923
+  },
+  {
+    "timestamp_hour": "02/07/2019 09:00:00",
+    "footfall": 843
+  },
+  {
+    "timestamp_hour": "02/07/2019 10:00:00",
+    "footfall": 725
+  },
+  {
+    "timestamp_hour": "02/07/2019 11:00:00",
+    "footfall": 651
+  },
+  {
+    "timestamp_hour": "02/07/2019 12:00:00",
+    "footfall": 795
+  },
+  {
+    "timestamp_hour": "02/07/2019 13:00:00",
+    "footfall": 759
+  },
+  {
+    "timestamp_hour": "02/07/2019 14:00:00",
+    "footfall": 790
+  },
+  {
+    "timestamp_hour": "02/07/2019 15:00:00",
+    "footfall": 591
+  },
+  {
+    "timestamp_hour": "02/07/2019 16:00:00",
+    "footfall": 219
+  },
+  {
+    "timestamp_hour": "02/07/2019 17:00:00",
+    "footfall": 82
+  },
+  {
+    "timestamp_hour": "02/07/2019 18:00:00",
+    "footfall": 226
+  },
+  {
+    "timestamp_hour": "02/07/2019 19:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "02/07/2019 20:00:00",
+    "footfall": 33
+  },
+  {
+    "timestamp_hour": "02/07/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "02/07/2019 22:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "02/07/2019 23:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "02/08/2019 00:00:00",
+    "footfall": 47
+  },
+  {
+    "timestamp_hour": "02/08/2019 01:00:00",
+    "footfall": 147
+  },
+  {
+    "timestamp_hour": "02/08/2019 02:00:00",
+    "footfall": 308
+  },
+  {
+    "timestamp_hour": "02/08/2019 03:00:00",
+    "footfall": 456
+  },
+  {
+    "timestamp_hour": "02/08/2019 04:00:00",
+    "footfall": 743
+  },
+  {
+    "timestamp_hour": "02/08/2019 05:00:00",
+    "footfall": 931
+  },
+  {
+    "timestamp_hour": "02/08/2019 06:00:00",
+    "footfall": 779
+  },
+  {
+    "timestamp_hour": "02/08/2019 07:00:00",
+    "footfall": 935
+  },
+  {
+    "timestamp_hour": "02/08/2019 08:00:00",
+    "footfall": 816
+  },
+  {
+    "timestamp_hour": "02/08/2019 09:00:00",
+    "footfall": 778
+  },
+  {
+    "timestamp_hour": "02/08/2019 10:00:00",
+    "footfall": 759
+  },
+  {
+    "timestamp_hour": "02/08/2019 11:00:00",
+    "footfall": 744
+  },
+  {
+    "timestamp_hour": "02/08/2019 12:00:00",
+    "footfall": 742
+  },
+  {
+    "timestamp_hour": "02/08/2019 13:00:00",
+    "footfall": 809
+  },
+  {
+    "timestamp_hour": "02/08/2019 14:00:00",
+    "footfall": 843
+  },
+  {
+    "timestamp_hour": "02/08/2019 15:00:00",
+    "footfall": 499
+  },
+  {
+    "timestamp_hour": "02/08/2019 16:00:00",
+    "footfall": 252
+  },
+  {
+    "timestamp_hour": "02/08/2019 17:00:00",
+    "footfall": 107
+  },
+  {
+    "timestamp_hour": "02/08/2019 18:00:00",
+    "footfall": 237
+  },
+  {
+    "timestamp_hour": "02/08/2019 19:00:00",
+    "footfall": 68
+  },
+  {
+    "timestamp_hour": "02/08/2019 20:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "02/08/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/08/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "02/08/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/09/2019 00:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "02/09/2019 01:00:00",
+    "footfall": 94
+  },
+  {
+    "timestamp_hour": "02/09/2019 02:00:00",
+    "footfall": 207
+  },
+  {
+    "timestamp_hour": "02/09/2019 03:00:00",
+    "footfall": 348
+  },
+  {
+    "timestamp_hour": "02/09/2019 04:00:00",
+    "footfall": 664
+  },
+  {
+    "timestamp_hour": "02/09/2019 05:00:00",
+    "footfall": 1029
+  },
+  {
+    "timestamp_hour": "02/09/2019 06:00:00",
+    "footfall": 1018
+  },
+  {
+    "timestamp_hour": "02/09/2019 07:00:00",
+    "footfall": 1721
+  },
+  {
+    "timestamp_hour": "02/09/2019 08:00:00",
+    "footfall": 1598
+  },
+  {
+    "timestamp_hour": "02/09/2019 09:00:00",
+    "footfall": 1442
+  },
+  {
+    "timestamp_hour": "02/09/2019 10:00:00",
+    "footfall": 1223
+  },
+  {
+    "timestamp_hour": "02/09/2019 11:00:00",
+    "footfall": 1266
+  },
+  {
+    "timestamp_hour": "02/09/2019 12:00:00",
+    "footfall": 1269
+  },
+  {
+    "timestamp_hour": "02/09/2019 13:00:00",
+    "footfall": 1397
+  },
+  {
+    "timestamp_hour": "02/09/2019 14:00:00",
+    "footfall": 1399
+  },
+  {
+    "timestamp_hour": "02/09/2019 15:00:00",
+    "footfall": 885
+  },
+  {
+    "timestamp_hour": "02/09/2019 16:00:00",
+    "footfall": 332
+  },
+  {
+    "timestamp_hour": "02/09/2019 17:00:00",
+    "footfall": 120
+  },
+  {
+    "timestamp_hour": "02/09/2019 18:00:00",
+    "footfall": 222
+  },
+  {
+    "timestamp_hour": "02/09/2019 19:00:00",
+    "footfall": 76
+  },
+  {
+    "timestamp_hour": "02/09/2019 20:00:00",
+    "footfall": 27
+  },
+  {
+    "timestamp_hour": "02/09/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/09/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "02/09/2019 23:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "02/10/2019 00:00:00",
+    "footfall": 36
+  },
+  {
+    "timestamp_hour": "02/10/2019 01:00:00",
+    "footfall": 61
+  },
+  {
+    "timestamp_hour": "02/10/2019 02:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "02/10/2019 03:00:00",
+    "footfall": 218
+  },
+  {
+    "timestamp_hour": "02/10/2019 04:00:00",
+    "footfall": 529
+  },
+  {
+    "timestamp_hour": "02/10/2019 05:00:00",
+    "footfall": 1014
+  },
+  {
+    "timestamp_hour": "02/10/2019 06:00:00",
+    "footfall": 1449
+  },
+  {
+    "timestamp_hour": "02/10/2019 07:00:00",
+    "footfall": 1770
+  },
+  {
+    "timestamp_hour": "02/10/2019 08:00:00",
+    "footfall": 1657
+  },
+  {
+    "timestamp_hour": "02/10/2019 09:00:00",
+    "footfall": 2068
+  },
+  {
+    "timestamp_hour": "02/10/2019 10:00:00",
+    "footfall": 1855
+  },
+  {
+    "timestamp_hour": "02/10/2019 11:00:00",
+    "footfall": 1754
+  },
+  {
+    "timestamp_hour": "02/10/2019 12:00:00",
+    "footfall": 1822
+  },
+  {
+    "timestamp_hour": "02/10/2019 13:00:00",
+    "footfall": 1909
+  },
+  {
+    "timestamp_hour": "02/10/2019 14:00:00",
+    "footfall": 1503
+  },
+  {
+    "timestamp_hour": "02/10/2019 15:00:00",
+    "footfall": 804
+  },
+  {
+    "timestamp_hour": "02/10/2019 16:00:00",
+    "footfall": 263
+  },
+  {
+    "timestamp_hour": "02/10/2019 17:00:00",
+    "footfall": 94
+  },
+  {
+    "timestamp_hour": "02/10/2019 18:00:00",
+    "footfall": 246
+  },
+  {
+    "timestamp_hour": "02/10/2019 19:00:00",
+    "footfall": 89
+  },
+  {
+    "timestamp_hour": "02/10/2019 20:00:00",
+    "footfall": 38
+  },
+  {
+    "timestamp_hour": "02/10/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/10/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/10/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/11/2019 00:00:00",
+    "footfall": 45
+  },
+  {
+    "timestamp_hour": "02/11/2019 01:00:00",
+    "footfall": 125
+  },
+  {
+    "timestamp_hour": "02/11/2019 02:00:00",
+    "footfall": 257
+  },
+  {
+    "timestamp_hour": "02/11/2019 03:00:00",
+    "footfall": 421
+  },
+  {
+    "timestamp_hour": "02/11/2019 04:00:00",
+    "footfall": 613
+  },
+  {
+    "timestamp_hour": "02/11/2019 05:00:00",
+    "footfall": 914
+  },
+  {
+    "timestamp_hour": "02/11/2019 06:00:00",
+    "footfall": 799
+  },
+  {
+    "timestamp_hour": "02/11/2019 07:00:00",
+    "footfall": 884
+  },
+  {
+    "timestamp_hour": "02/11/2019 08:00:00",
+    "footfall": 778
+  },
+  {
+    "timestamp_hour": "02/11/2019 09:00:00",
+    "footfall": 704
+  },
+  {
+    "timestamp_hour": "02/11/2019 10:00:00",
+    "footfall": 651
+  },
+  {
+    "timestamp_hour": "02/11/2019 11:00:00",
+    "footfall": 568
+  },
+  {
+    "timestamp_hour": "02/11/2019 12:00:00",
+    "footfall": 596
+  },
+  {
+    "timestamp_hour": "02/11/2019 13:00:00",
+    "footfall": 758
+  },
+  {
+    "timestamp_hour": "02/11/2019 14:00:00",
+    "footfall": 684
+  },
+  {
+    "timestamp_hour": "02/11/2019 15:00:00",
+    "footfall": 430
+  },
+  {
+    "timestamp_hour": "02/11/2019 16:00:00",
+    "footfall": 161
+  },
+  {
+    "timestamp_hour": "02/11/2019 17:00:00",
+    "footfall": 70
+  },
+  {
+    "timestamp_hour": "02/11/2019 18:00:00",
+    "footfall": 221
+  },
+  {
+    "timestamp_hour": "02/11/2019 19:00:00",
+    "footfall": 62
+  },
+  {
+    "timestamp_hour": "02/11/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "02/11/2019 21:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "02/11/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "02/11/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/12/2019 00:00:00",
+    "footfall": 54
+  },
+  {
+    "timestamp_hour": "02/12/2019 01:00:00",
+    "footfall": 151
+  },
+  {
+    "timestamp_hour": "02/12/2019 02:00:00",
+    "footfall": 265
+  },
+  {
+    "timestamp_hour": "02/12/2019 03:00:00",
+    "footfall": 394
+  },
+  {
+    "timestamp_hour": "02/12/2019 04:00:00",
+    "footfall": 715
+  },
+  {
+    "timestamp_hour": "02/12/2019 05:00:00",
+    "footfall": 853
+  },
+  {
+    "timestamp_hour": "02/12/2019 06:00:00",
+    "footfall": 712
+  },
+  {
+    "timestamp_hour": "02/12/2019 07:00:00",
+    "footfall": 991
+  },
+  {
+    "timestamp_hour": "02/12/2019 08:00:00",
+    "footfall": 796
+  },
+  {
+    "timestamp_hour": "02/12/2019 09:00:00",
+    "footfall": 751
+  },
+  {
+    "timestamp_hour": "02/12/2019 10:00:00",
+    "footfall": 677
+  },
+  {
+    "timestamp_hour": "02/12/2019 11:00:00",
+    "footfall": 625
+  },
+  {
+    "timestamp_hour": "02/12/2019 12:00:00",
+    "footfall": 902
+  },
+  {
+    "timestamp_hour": "02/12/2019 13:00:00",
+    "footfall": 777
+  },
+  {
+    "timestamp_hour": "02/12/2019 14:00:00",
+    "footfall": 836
+  },
+  {
+    "timestamp_hour": "02/12/2019 15:00:00",
+    "footfall": 576
+  },
+  {
+    "timestamp_hour": "02/12/2019 16:00:00",
+    "footfall": 265
+  },
+  {
+    "timestamp_hour": "02/12/2019 17:00:00",
+    "footfall": 64
+  },
+  {
+    "timestamp_hour": "02/12/2019 18:00:00",
+    "footfall": 194
+  },
+  {
+    "timestamp_hour": "02/12/2019 19:00:00",
+    "footfall": 98
+  },
+  {
+    "timestamp_hour": "02/12/2019 20:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "02/12/2019 21:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/12/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/12/2019 23:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "02/13/2019 00:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "02/13/2019 01:00:00",
+    "footfall": 122
+  },
+  {
+    "timestamp_hour": "02/13/2019 02:00:00",
+    "footfall": 270
+  },
+  {
+    "timestamp_hour": "02/13/2019 03:00:00",
+    "footfall": 443
+  },
+  {
+    "timestamp_hour": "02/13/2019 04:00:00",
+    "footfall": 617
+  },
+  {
+    "timestamp_hour": "02/13/2019 05:00:00",
+    "footfall": 1086
+  },
+  {
+    "timestamp_hour": "02/13/2019 06:00:00",
+    "footfall": 765
+  },
+  {
+    "timestamp_hour": "02/13/2019 07:00:00",
+    "footfall": 1020
+  },
+  {
+    "timestamp_hour": "02/13/2019 08:00:00",
+    "footfall": 833
+  },
+  {
+    "timestamp_hour": "02/13/2019 09:00:00",
+    "footfall": 685
+  },
+  {
+    "timestamp_hour": "02/13/2019 10:00:00",
+    "footfall": 660
+  },
+  {
+    "timestamp_hour": "02/13/2019 11:00:00",
+    "footfall": 662
+  },
+  {
+    "timestamp_hour": "02/13/2019 12:00:00",
+    "footfall": 708
+  },
+  {
+    "timestamp_hour": "02/13/2019 13:00:00",
+    "footfall": 978
+  },
+  {
+    "timestamp_hour": "02/13/2019 14:00:00",
+    "footfall": 965
+  },
+  {
+    "timestamp_hour": "02/13/2019 15:00:00",
+    "footfall": 599
+  },
+  {
+    "timestamp_hour": "02/13/2019 16:00:00",
+    "footfall": 306
+  },
+  {
+    "timestamp_hour": "02/13/2019 17:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "02/13/2019 18:00:00",
+    "footfall": 196
+  },
+  {
+    "timestamp_hour": "02/13/2019 19:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "02/13/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "02/13/2019 21:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/13/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/13/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/14/2019 00:00:00",
+    "footfall": 48
+  },
+  {
+    "timestamp_hour": "02/14/2019 01:00:00",
+    "footfall": 152
+  },
+  {
+    "timestamp_hour": "02/14/2019 02:00:00",
+    "footfall": 248
+  },
+  {
+    "timestamp_hour": "02/14/2019 03:00:00",
+    "footfall": 442
+  },
+  {
+    "timestamp_hour": "02/14/2019 04:00:00",
+    "footfall": 686
+  },
+  {
+    "timestamp_hour": "02/14/2019 05:00:00",
+    "footfall": 951
+  },
+  {
+    "timestamp_hour": "02/14/2019 06:00:00",
+    "footfall": 749
+  },
+  {
+    "timestamp_hour": "02/14/2019 07:00:00",
+    "footfall": 1094
+  },
+  {
+    "timestamp_hour": "02/14/2019 08:00:00",
+    "footfall": 880
+  },
+  {
+    "timestamp_hour": "02/14/2019 09:00:00",
+    "footfall": 911
+  },
+  {
+    "timestamp_hour": "02/14/2019 10:00:00",
+    "footfall": 881
+  },
+  {
+    "timestamp_hour": "02/14/2019 11:00:00",
+    "footfall": 865
+  },
+  {
+    "timestamp_hour": "02/14/2019 12:00:00",
+    "footfall": 898
+  },
+  {
+    "timestamp_hour": "02/14/2019 13:00:00",
+    "footfall": 1374
+  },
+  {
+    "timestamp_hour": "02/14/2019 14:00:00",
+    "footfall": 1297
+  },
+  {
+    "timestamp_hour": "02/14/2019 15:00:00",
+    "footfall": 888
+  },
+  {
+    "timestamp_hour": "02/14/2019 16:00:00",
+    "footfall": 413
+  },
+  {
+    "timestamp_hour": "02/14/2019 17:00:00",
+    "footfall": 104
+  },
+  {
+    "timestamp_hour": "02/14/2019 18:00:00",
+    "footfall": 251
+  },
+  {
+    "timestamp_hour": "02/14/2019 19:00:00",
+    "footfall": 103
+  },
+  {
+    "timestamp_hour": "02/14/2019 20:00:00",
+    "footfall": 30
+  },
+  {
+    "timestamp_hour": "02/14/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "02/14/2019 22:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "02/14/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/15/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "02/15/2019 01:00:00",
+    "footfall": 132
+  },
+  {
+    "timestamp_hour": "02/15/2019 02:00:00",
+    "footfall": 227
+  },
+  {
+    "timestamp_hour": "02/15/2019 03:00:00",
+    "footfall": 419
+  },
+  {
+    "timestamp_hour": "02/15/2019 04:00:00",
+    "footfall": 621
+  },
+  {
+    "timestamp_hour": "02/15/2019 05:00:00",
+    "footfall": 899
+  },
+  {
+    "timestamp_hour": "02/15/2019 06:00:00",
+    "footfall": 760
+  },
+  {
+    "timestamp_hour": "02/15/2019 07:00:00",
+    "footfall": 1054
+  },
+  {
+    "timestamp_hour": "02/15/2019 08:00:00",
+    "footfall": 792
+  },
+  {
+    "timestamp_hour": "02/15/2019 09:00:00",
+    "footfall": 656
+  },
+  {
+    "timestamp_hour": "02/15/2019 10:00:00",
+    "footfall": 690
+  },
+  {
+    "timestamp_hour": "02/15/2019 11:00:00",
+    "footfall": 842
+  },
+  {
+    "timestamp_hour": "02/15/2019 12:00:00",
+    "footfall": 877
+  },
+  {
+    "timestamp_hour": "02/15/2019 13:00:00",
+    "footfall": 855
+  },
+  {
+    "timestamp_hour": "02/15/2019 14:00:00",
+    "footfall": 799
+  },
+  {
+    "timestamp_hour": "02/15/2019 15:00:00",
+    "footfall": 535
+  },
+  {
+    "timestamp_hour": "02/15/2019 16:00:00",
+    "footfall": 265
+  },
+  {
+    "timestamp_hour": "02/15/2019 17:00:00",
+    "footfall": 89
+  },
+  {
+    "timestamp_hour": "02/15/2019 18:00:00",
+    "footfall": 252
+  },
+  {
+    "timestamp_hour": "02/15/2019 19:00:00",
+    "footfall": 94
+  },
+  {
+    "timestamp_hour": "02/15/2019 20:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "02/15/2019 21:00:00",
+    "footfall": 5
+  },
+  {
+    "timestamp_hour": "02/15/2019 22:00:00",
+    "footfall": 6
+  },
+  {
+    "timestamp_hour": "02/15/2019 23:00:00",
+    "footfall": 9
+  },
+  {
+    "timestamp_hour": "02/16/2019 00:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "02/16/2019 01:00:00",
+    "footfall": 103
+  },
+  {
+    "timestamp_hour": "02/16/2019 02:00:00",
+    "footfall": 255
+  },
+  {
+    "timestamp_hour": "02/16/2019 03:00:00",
+    "footfall": 380
+  },
+  {
+    "timestamp_hour": "02/16/2019 04:00:00",
+    "footfall": 577
+  },
+  {
+    "timestamp_hour": "02/16/2019 05:00:00",
+    "footfall": 1036
+  },
+  {
+    "timestamp_hour": "02/16/2019 06:00:00",
+    "footfall": 1123
+  },
+  {
+    "timestamp_hour": "02/16/2019 07:00:00",
+    "footfall": 1283
+  },
+  {
+    "timestamp_hour": "02/16/2019 08:00:00",
+    "footfall": 1339
+  },
+  {
+    "timestamp_hour": "02/16/2019 09:00:00",
+    "footfall": 1205
+  },
+  {
+    "timestamp_hour": "02/16/2019 10:00:00",
+    "footfall": 1075
+  },
+  {
+    "timestamp_hour": "02/16/2019 11:00:00",
+    "footfall": 1129
+  },
+  {
+    "timestamp_hour": "02/16/2019 12:00:00",
+    "footfall": 1269
+  },
+  {
+    "timestamp_hour": "02/16/2019 13:00:00",
+    "footfall": 1354
+  },
+  {
+    "timestamp_hour": "02/16/2019 14:00:00",
+    "footfall": 1229
+  },
+  {
+    "timestamp_hour": "02/16/2019 15:00:00",
+    "footfall": 808
+  },
+  {
+    "timestamp_hour": "02/16/2019 16:00:00",
+    "footfall": 335
+  },
+  {
+    "timestamp_hour": "02/16/2019 17:00:00",
+    "footfall": 125
+  },
+  {
+    "timestamp_hour": "02/16/2019 18:00:00",
+    "footfall": 230
+  },
+  {
+    "timestamp_hour": "02/16/2019 19:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "02/16/2019 20:00:00",
+    "footfall": 28
+  },
+  {
+    "timestamp_hour": "02/16/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/16/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "02/16/2019 23:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/17/2019 00:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "02/17/2019 01:00:00",
+    "footfall": 78
+  },
+  {
+    "timestamp_hour": "02/17/2019 02:00:00",
+    "footfall": 142
+  },
+  {
+    "timestamp_hour": "02/17/2019 03:00:00",
+    "footfall": 250
+  },
+  {
+    "timestamp_hour": "02/17/2019 04:00:00",
+    "footfall": 486
+  },
+  {
+    "timestamp_hour": "02/17/2019 05:00:00",
+    "footfall": 761
+  },
+  {
+    "timestamp_hour": "02/17/2019 06:00:00",
+    "footfall": 702
+  },
+  {
+    "timestamp_hour": "02/17/2019 07:00:00",
+    "footfall": 1131
+  },
+  {
+    "timestamp_hour": "02/17/2019 08:00:00",
+    "footfall": 1330
+  },
+  {
+    "timestamp_hour": "02/17/2019 09:00:00",
+    "footfall": 1103
+  },
+  {
+    "timestamp_hour": "02/17/2019 10:00:00",
+    "footfall": 1166
+  },
+  {
+    "timestamp_hour": "02/17/2019 11:00:00",
+    "footfall": 1547
+  },
+  {
+    "timestamp_hour": "02/17/2019 12:00:00",
+    "footfall": 1910
+  },
+  {
+    "timestamp_hour": "02/17/2019 13:00:00",
+    "footfall": 1812
+  },
+  {
+    "timestamp_hour": "02/17/2019 14:00:00",
+    "footfall": 1571
+  },
+  {
+    "timestamp_hour": "02/17/2019 15:00:00",
+    "footfall": 850
+  },
+  {
+    "timestamp_hour": "02/17/2019 16:00:00",
+    "footfall": 329
+  },
+  {
+    "timestamp_hour": "02/17/2019 17:00:00",
+    "footfall": 96
+  },
+  {
+    "timestamp_hour": "02/17/2019 18:00:00",
+    "footfall": 233
+  },
+  {
+    "timestamp_hour": "02/17/2019 19:00:00",
+    "footfall": 92
+  },
+  {
+    "timestamp_hour": "02/17/2019 20:00:00",
+    "footfall": 34
+  },
+  {
+    "timestamp_hour": "02/17/2019 21:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/17/2019 22:00:00",
+    "footfall": 9
+  },
+  {
+    "timestamp_hour": "02/17/2019 23:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "02/18/2019 00:00:00",
+    "footfall": 39
+  },
+  {
+    "timestamp_hour": "02/18/2019 01:00:00",
+    "footfall": 124
+  },
+  {
+    "timestamp_hour": "02/18/2019 02:00:00",
+    "footfall": 251
+  },
+  {
+    "timestamp_hour": "02/18/2019 03:00:00",
+    "footfall": 418
+  },
+  {
+    "timestamp_hour": "02/18/2019 04:00:00",
+    "footfall": 612
+  },
+  {
+    "timestamp_hour": "02/18/2019 05:00:00",
+    "footfall": 947
+  },
+  {
+    "timestamp_hour": "02/18/2019 06:00:00",
+    "footfall": 777
+  },
+  {
+    "timestamp_hour": "02/18/2019 07:00:00",
+    "footfall": 1061
+  },
+  {
+    "timestamp_hour": "02/18/2019 08:00:00",
+    "footfall": 916
+  },
+  {
+    "timestamp_hour": "02/18/2019 09:00:00",
+    "footfall": 754
+  },
+  {
+    "timestamp_hour": "02/18/2019 10:00:00",
+    "footfall": 653
+  },
+  {
+    "timestamp_hour": "02/18/2019 11:00:00",
+    "footfall": 580
+  },
+  {
+    "timestamp_hour": "02/18/2019 12:00:00",
+    "footfall": 657
+  },
+  {
+    "timestamp_hour": "02/18/2019 13:00:00",
+    "footfall": 770
+  },
+  {
+    "timestamp_hour": "02/18/2019 14:00:00",
+    "footfall": 720
+  },
+  {
+    "timestamp_hour": "02/18/2019 15:00:00",
+    "footfall": 550
+  },
+  {
+    "timestamp_hour": "02/18/2019 16:00:00",
+    "footfall": 238
+  },
+  {
+    "timestamp_hour": "02/18/2019 17:00:00",
+    "footfall": 75
+  },
+  {
+    "timestamp_hour": "02/18/2019 18:00:00",
+    "footfall": 223
+  },
+  {
+    "timestamp_hour": "02/18/2019 19:00:00",
+    "footfall": 72
+  },
+  {
+    "timestamp_hour": "02/18/2019 20:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/18/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/18/2019 22:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/18/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/19/2019 00:00:00",
+    "footfall": 43
+  },
+  {
+    "timestamp_hour": "02/19/2019 01:00:00",
+    "footfall": 85
+  },
+  {
+    "timestamp_hour": "02/19/2019 02:00:00",
+    "footfall": 173
+  },
+  {
+    "timestamp_hour": "02/19/2019 03:00:00",
+    "footfall": 349
+  },
+  {
+    "timestamp_hour": "02/19/2019 04:00:00",
+    "footfall": 630
+  },
+  {
+    "timestamp_hour": "02/19/2019 05:00:00",
+    "footfall": 862
+  },
+  {
+    "timestamp_hour": "02/19/2019 06:00:00",
+    "footfall": 1128
+  },
+  {
+    "timestamp_hour": "02/19/2019 07:00:00",
+    "footfall": 1314
+  },
+  {
+    "timestamp_hour": "02/19/2019 08:00:00",
+    "footfall": 1012
+  },
+  {
+    "timestamp_hour": "02/19/2019 09:00:00",
+    "footfall": 939
+  },
+  {
+    "timestamp_hour": "02/19/2019 10:00:00",
+    "footfall": 818
+  },
+  {
+    "timestamp_hour": "02/19/2019 11:00:00",
+    "footfall": 862
+  },
+  {
+    "timestamp_hour": "02/19/2019 12:00:00",
+    "footfall": 838
+  },
+  {
+    "timestamp_hour": "02/19/2019 13:00:00",
+    "footfall": 976
+  },
+  {
+    "timestamp_hour": "02/19/2019 14:00:00",
+    "footfall": 792
+  },
+  {
+    "timestamp_hour": "02/19/2019 15:00:00",
+    "footfall": 523
+  },
+  {
+    "timestamp_hour": "02/19/2019 16:00:00",
+    "footfall": 232
+  },
+  {
+    "timestamp_hour": "02/19/2019 17:00:00",
+    "footfall": 64
+  },
+  {
+    "timestamp_hour": "02/19/2019 18:00:00",
+    "footfall": 206
+  },
+  {
+    "timestamp_hour": "02/19/2019 19:00:00",
+    "footfall": 50
+  },
+  {
+    "timestamp_hour": "02/19/2019 20:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/19/2019 21:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/19/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/19/2019 23:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "02/20/2019 00:00:00",
+    "footfall": 45
+  },
+  {
+    "timestamp_hour": "02/20/2019 01:00:00",
+    "footfall": 143
+  },
+  {
+    "timestamp_hour": "02/20/2019 02:00:00",
+    "footfall": 253
+  },
+  {
+    "timestamp_hour": "02/20/2019 03:00:00",
+    "footfall": 445
+  },
+  {
+    "timestamp_hour": "02/20/2019 04:00:00",
+    "footfall": 626
+  },
+  {
+    "timestamp_hour": "02/20/2019 05:00:00",
+    "footfall": 917
+  },
+  {
+    "timestamp_hour": "02/20/2019 06:00:00",
+    "footfall": 790
+  },
+  {
+    "timestamp_hour": "02/20/2019 07:00:00",
+    "footfall": 865
+  },
+  {
+    "timestamp_hour": "02/20/2019 08:00:00",
+    "footfall": 731
+  },
+  {
+    "timestamp_hour": "02/20/2019 09:00:00",
+    "footfall": 715
+  },
+  {
+    "timestamp_hour": "02/20/2019 10:00:00",
+    "footfall": 651
+  },
+  {
+    "timestamp_hour": "02/20/2019 11:00:00",
+    "footfall": 637
+  },
+  {
+    "timestamp_hour": "02/20/2019 12:00:00",
+    "footfall": 564
+  },
+  {
+    "timestamp_hour": "02/20/2019 13:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "02/20/2019 14:00:00",
+    "footfall": 697
+  },
+  {
+    "timestamp_hour": "02/20/2019 15:00:00",
+    "footfall": 478
+  },
+  {
+    "timestamp_hour": "02/20/2019 16:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "02/20/2019 17:00:00",
+    "footfall": 88
+  },
+  {
+    "timestamp_hour": "02/20/2019 18:00:00",
+    "footfall": 226
+  },
+  {
+    "timestamp_hour": "02/20/2019 19:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "02/20/2019 20:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/20/2019 21:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/20/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "02/20/2019 23:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "02/21/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "02/21/2019 01:00:00",
+    "footfall": 113
+  },
+  {
+    "timestamp_hour": "02/21/2019 02:00:00",
+    "footfall": 246
+  },
+  {
+    "timestamp_hour": "02/21/2019 03:00:00",
+    "footfall": 471
+  },
+  {
+    "timestamp_hour": "02/21/2019 04:00:00",
+    "footfall": 696
+  },
+  {
+    "timestamp_hour": "02/21/2019 05:00:00",
+    "footfall": 978
+  },
+  {
+    "timestamp_hour": "02/21/2019 06:00:00",
+    "footfall": 836
+  },
+  {
+    "timestamp_hour": "02/21/2019 07:00:00",
+    "footfall": 871
+  },
+  {
+    "timestamp_hour": "02/21/2019 08:00:00",
+    "footfall": 819
+  },
+  {
+    "timestamp_hour": "02/21/2019 09:00:00",
+    "footfall": 713
+  },
+  {
+    "timestamp_hour": "02/21/2019 10:00:00",
+    "footfall": 560
+  },
+  {
+    "timestamp_hour": "02/21/2019 11:00:00",
+    "footfall": 573
+  },
+  {
+    "timestamp_hour": "02/21/2019 12:00:00",
+    "footfall": 603
+  },
+  {
+    "timestamp_hour": "02/21/2019 13:00:00",
+    "footfall": 677
+  },
+  {
+    "timestamp_hour": "02/21/2019 14:00:00",
+    "footfall": 706
+  },
+  {
+    "timestamp_hour": "02/21/2019 15:00:00",
+    "footfall": 467
+  },
+  {
+    "timestamp_hour": "02/21/2019 16:00:00",
+    "footfall": 280
+  },
+  {
+    "timestamp_hour": "02/21/2019 17:00:00",
+    "footfall": 139
+  },
+  {
+    "timestamp_hour": "02/21/2019 18:00:00",
+    "footfall": 248
+  },
+  {
+    "timestamp_hour": "02/21/2019 19:00:00",
+    "footfall": 70
+  },
+  {
+    "timestamp_hour": "02/21/2019 20:00:00",
+    "footfall": 27
+  },
+  {
+    "timestamp_hour": "02/21/2019 21:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/21/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/21/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "02/22/2019 00:00:00",
+    "footfall": 56
+  },
+  {
+    "timestamp_hour": "02/22/2019 01:00:00",
+    "footfall": 143
+  },
+  {
+    "timestamp_hour": "02/22/2019 02:00:00",
+    "footfall": 247
+  },
+  {
+    "timestamp_hour": "02/22/2019 03:00:00",
+    "footfall": 413
+  },
+  {
+    "timestamp_hour": "02/22/2019 04:00:00",
+    "footfall": 687
+  },
+  {
+    "timestamp_hour": "02/22/2019 05:00:00",
+    "footfall": 890
+  },
+  {
+    "timestamp_hour": "02/22/2019 06:00:00",
+    "footfall": 758
+  },
+  {
+    "timestamp_hour": "02/22/2019 07:00:00",
+    "footfall": 924
+  },
+  {
+    "timestamp_hour": "02/22/2019 08:00:00",
+    "footfall": 811
+  },
+  {
+    "timestamp_hour": "02/22/2019 09:00:00",
+    "footfall": 783
+  },
+  {
+    "timestamp_hour": "02/22/2019 10:00:00",
+    "footfall": 691
+  },
+  {
+    "timestamp_hour": "02/22/2019 11:00:00",
+    "footfall": 597
+  },
+  {
+    "timestamp_hour": "02/22/2019 12:00:00",
+    "footfall": 809
+  },
+  {
+    "timestamp_hour": "02/22/2019 13:00:00",
+    "footfall": 867
+  },
+  {
+    "timestamp_hour": "02/22/2019 14:00:00",
+    "footfall": 765
+  },
+  {
+    "timestamp_hour": "02/22/2019 15:00:00",
+    "footfall": 468
+  },
+  {
+    "timestamp_hour": "02/22/2019 16:00:00",
+    "footfall": 241
+  },
+  {
+    "timestamp_hour": "02/22/2019 17:00:00",
+    "footfall": 106
+  },
+  {
+    "timestamp_hour": "02/22/2019 18:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "02/22/2019 19:00:00",
+    "footfall": 54
+  },
+  {
+    "timestamp_hour": "02/22/2019 20:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/22/2019 21:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "02/22/2019 22:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "02/22/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/23/2019 00:00:00",
+    "footfall": 50
+  },
+  {
+    "timestamp_hour": "02/23/2019 01:00:00",
+    "footfall": 128
+  },
+  {
+    "timestamp_hour": "02/23/2019 02:00:00",
+    "footfall": 172
+  },
+  {
+    "timestamp_hour": "02/23/2019 03:00:00",
+    "footfall": 319
+  },
+  {
+    "timestamp_hour": "02/23/2019 04:00:00",
+    "footfall": 667
+  },
+  {
+    "timestamp_hour": "02/23/2019 05:00:00",
+    "footfall": 1059
+  },
+  {
+    "timestamp_hour": "02/23/2019 06:00:00",
+    "footfall": 1031
+  },
+  {
+    "timestamp_hour": "02/23/2019 07:00:00",
+    "footfall": 1324
+  },
+  {
+    "timestamp_hour": "02/23/2019 08:00:00",
+    "footfall": 1397
+  },
+  {
+    "timestamp_hour": "02/23/2019 09:00:00",
+    "footfall": 1202
+  },
+  {
+    "timestamp_hour": "02/23/2019 10:00:00",
+    "footfall": 1472
+  },
+  {
+    "timestamp_hour": "02/23/2019 11:00:00",
+    "footfall": 1339
+  },
+  {
+    "timestamp_hour": "02/23/2019 12:00:00",
+    "footfall": 1502
+  },
+  {
+    "timestamp_hour": "02/23/2019 13:00:00",
+    "footfall": 1979
+  },
+  {
+    "timestamp_hour": "02/23/2019 14:00:00",
+    "footfall": 1478
+  },
+  {
+    "timestamp_hour": "02/23/2019 15:00:00",
+    "footfall": 867
+  },
+  {
+    "timestamp_hour": "02/23/2019 16:00:00",
+    "footfall": 401
+  },
+  {
+    "timestamp_hour": "02/23/2019 17:00:00",
+    "footfall": 189
+  },
+  {
+    "timestamp_hour": "02/23/2019 18:00:00",
+    "footfall": 246
+  },
+  {
+    "timestamp_hour": "02/23/2019 19:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "02/23/2019 20:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "02/23/2019 21:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "02/23/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "02/23/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "02/24/2019 00:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "02/24/2019 01:00:00",
+    "footfall": 84
+  },
+  {
+    "timestamp_hour": "02/24/2019 02:00:00",
+    "footfall": 112
+  },
+  {
+    "timestamp_hour": "02/24/2019 03:00:00",
+    "footfall": 221
+  },
+  {
+    "timestamp_hour": "02/24/2019 04:00:00",
+    "footfall": 451
+  },
+  {
+    "timestamp_hour": "02/24/2019 05:00:00",
+    "footfall": 892
+  },
+  {
+    "timestamp_hour": "02/24/2019 06:00:00",
+    "footfall": 854
+  },
+  {
+    "timestamp_hour": "02/24/2019 07:00:00",
+    "footfall": 1109
+  },
+  {
+    "timestamp_hour": "02/24/2019 08:00:00",
+    "footfall": 986
+  },
+  {
+    "timestamp_hour": "02/24/2019 09:00:00",
+    "footfall": 1026
+  },
+  {
+    "timestamp_hour": "02/24/2019 10:00:00",
+    "footfall": 1037
+  },
+  {
+    "timestamp_hour": "02/24/2019 11:00:00",
+    "footfall": 1127
+  },
+  {
+    "timestamp_hour": "02/24/2019 12:00:00",
+    "footfall": 1447
+  },
+  {
+    "timestamp_hour": "02/24/2019 13:00:00",
+    "footfall": 1906
+  },
+  {
+    "timestamp_hour": "02/24/2019 14:00:00",
+    "footfall": 1457
+  },
+  {
+    "timestamp_hour": "02/24/2019 15:00:00",
+    "footfall": 1068
+  },
+  {
+    "timestamp_hour": "02/24/2019 16:00:00",
+    "footfall": 314
+  },
+  {
+    "timestamp_hour": "02/24/2019 17:00:00",
+    "footfall": 98
+  },
+  {
+    "timestamp_hour": "02/24/2019 18:00:00",
+    "footfall": 460
+  },
+  {
+    "timestamp_hour": "02/24/2019 19:00:00",
+    "footfall": 389
+  },
+  {
+    "timestamp_hour": "02/24/2019 20:00:00",
+    "footfall": 189
+  },
+  {
+    "timestamp_hour": "02/24/2019 21:00:00",
+    "footfall": 121
+  },
+  {
+    "timestamp_hour": "02/24/2019 22:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "02/24/2019 23:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "02/25/2019 00:00:00",
+    "footfall": 36
+  },
+  {
+    "timestamp_hour": "02/25/2019 01:00:00",
+    "footfall": 117
+  },
+  {
+    "timestamp_hour": "02/25/2019 02:00:00",
+    "footfall": 218
+  },
+  {
+    "timestamp_hour": "02/25/2019 03:00:00",
+    "footfall": 399
+  },
+  {
+    "timestamp_hour": "02/25/2019 04:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "02/25/2019 05:00:00",
+    "footfall": 883
+  },
+  {
+    "timestamp_hour": "02/25/2019 06:00:00",
+    "footfall": 691
+  },
+  {
+    "timestamp_hour": "02/25/2019 07:00:00",
+    "footfall": 1026
+  },
+  {
+    "timestamp_hour": "02/25/2019 08:00:00",
+    "footfall": 776
+  },
+  {
+    "timestamp_hour": "02/25/2019 09:00:00",
+    "footfall": 692
+  },
+  {
+    "timestamp_hour": "02/25/2019 10:00:00",
+    "footfall": 593
+  },
+  {
+    "timestamp_hour": "02/25/2019 11:00:00",
+    "footfall": 570
+  },
+  {
+    "timestamp_hour": "02/25/2019 12:00:00",
+    "footfall": 624
+  },
+  {
+    "timestamp_hour": "02/25/2019 13:00:00",
+    "footfall": 662
+  },
+  {
+    "timestamp_hour": "02/25/2019 14:00:00",
+    "footfall": 672
+  },
+  {
+    "timestamp_hour": "02/25/2019 15:00:00",
+    "footfall": 384
+  },
+  {
+    "timestamp_hour": "02/25/2019 16:00:00",
+    "footfall": 194
+  },
+  {
+    "timestamp_hour": "02/25/2019 17:00:00",
+    "footfall": 62
+  },
+  {
+    "timestamp_hour": "02/25/2019 18:00:00",
+    "footfall": 241
+  },
+  {
+    "timestamp_hour": "02/25/2019 19:00:00",
+    "footfall": 60
+  },
+  {
+    "timestamp_hour": "02/25/2019 20:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "02/25/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/25/2019 22:00:00",
+    "footfall": 6
+  },
+  {
+    "timestamp_hour": "02/25/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "02/26/2019 00:00:00",
+    "footfall": 50
+  },
+  {
+    "timestamp_hour": "02/26/2019 01:00:00",
+    "footfall": 134
+  },
+  {
+    "timestamp_hour": "02/26/2019 02:00:00",
+    "footfall": 229
+  },
+  {
+    "timestamp_hour": "02/26/2019 03:00:00",
+    "footfall": 407
+  },
+  {
+    "timestamp_hour": "02/26/2019 04:00:00",
+    "footfall": 596
+  },
+  {
+    "timestamp_hour": "02/26/2019 05:00:00",
+    "footfall": 943
+  },
+  {
+    "timestamp_hour": "02/26/2019 06:00:00",
+    "footfall": 760
+  },
+  {
+    "timestamp_hour": "02/26/2019 07:00:00",
+    "footfall": 879
+  },
+  {
+    "timestamp_hour": "02/26/2019 08:00:00",
+    "footfall": 828
+  },
+  {
+    "timestamp_hour": "02/26/2019 09:00:00",
+    "footfall": 641
+  },
+  {
+    "timestamp_hour": "02/26/2019 10:00:00",
+    "footfall": 648
+  },
+  {
+    "timestamp_hour": "02/26/2019 11:00:00",
+    "footfall": 1225
+  },
+  {
+    "timestamp_hour": "02/26/2019 12:00:00",
+    "footfall": 715
+  },
+  {
+    "timestamp_hour": "02/26/2019 13:00:00",
+    "footfall": 684
+  },
+  {
+    "timestamp_hour": "02/26/2019 14:00:00",
+    "footfall": 619
+  },
+  {
+    "timestamp_hour": "02/26/2019 15:00:00",
+    "footfall": 446
+  },
+  {
+    "timestamp_hour": "02/26/2019 16:00:00",
+    "footfall": 182
+  },
+  {
+    "timestamp_hour": "02/26/2019 17:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "02/26/2019 18:00:00",
+    "footfall": 206
+  },
+  {
+    "timestamp_hour": "02/26/2019 19:00:00",
+    "footfall": 52
+  },
+  {
+    "timestamp_hour": "02/26/2019 20:00:00",
+    "footfall": 27
+  },
+  {
+    "timestamp_hour": "02/26/2019 21:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/26/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "02/26/2019 23:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "02/27/2019 00:00:00",
+    "footfall": 43
+  },
+  {
+    "timestamp_hour": "02/27/2019 01:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "02/27/2019 02:00:00",
+    "footfall": 225
+  },
+  {
+    "timestamp_hour": "02/27/2019 03:00:00",
+    "footfall": 391
+  },
+  {
+    "timestamp_hour": "02/27/2019 04:00:00",
+    "footfall": 688
+  },
+  {
+    "timestamp_hour": "02/27/2019 05:00:00",
+    "footfall": 901
+  },
+  {
+    "timestamp_hour": "02/27/2019 06:00:00",
+    "footfall": 723
+  },
+  {
+    "timestamp_hour": "02/27/2019 07:00:00",
+    "footfall": 923
+  },
+  {
+    "timestamp_hour": "02/27/2019 08:00:00",
+    "footfall": 773
+  },
+  {
+    "timestamp_hour": "02/27/2019 09:00:00",
+    "footfall": 671
+  },
+  {
+    "timestamp_hour": "02/27/2019 10:00:00",
+    "footfall": 635
+  },
+  {
+    "timestamp_hour": "02/27/2019 11:00:00",
+    "footfall": 614
+  },
+  {
+    "timestamp_hour": "02/27/2019 12:00:00",
+    "footfall": 698
+  },
+  {
+    "timestamp_hour": "02/27/2019 13:00:00",
+    "footfall": 826
+  },
+  {
+    "timestamp_hour": "02/27/2019 14:00:00",
+    "footfall": 732
+  },
+  {
+    "timestamp_hour": "02/27/2019 15:00:00",
+    "footfall": 464
+  },
+  {
+    "timestamp_hour": "02/27/2019 16:00:00",
+    "footfall": 195
+  },
+  {
+    "timestamp_hour": "02/27/2019 17:00:00",
+    "footfall": 74
+  },
+  {
+    "timestamp_hour": "02/27/2019 18:00:00",
+    "footfall": 212
+  },
+  {
+    "timestamp_hour": "02/27/2019 19:00:00",
+    "footfall": 77
+  },
+  {
+    "timestamp_hour": "02/27/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "02/27/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "02/27/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/27/2019 23:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "02/28/2019 00:00:00",
+    "footfall": 38
+  },
+  {
+    "timestamp_hour": "02/28/2019 01:00:00",
+    "footfall": 142
+  },
+  {
+    "timestamp_hour": "02/28/2019 02:00:00",
+    "footfall": 263
+  },
+  {
+    "timestamp_hour": "02/28/2019 03:00:00",
+    "footfall": 429
+  },
+  {
+    "timestamp_hour": "02/28/2019 04:00:00",
+    "footfall": 643
+  },
+  {
+    "timestamp_hour": "02/28/2019 05:00:00",
+    "footfall": 960
+  },
+  {
+    "timestamp_hour": "02/28/2019 06:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "02/28/2019 07:00:00",
+    "footfall": 873
+  },
+  {
+    "timestamp_hour": "02/28/2019 08:00:00",
+    "footfall": 731
+  },
+  {
+    "timestamp_hour": "02/28/2019 09:00:00",
+    "footfall": 750
+  },
+  {
+    "timestamp_hour": "02/28/2019 10:00:00",
+    "footfall": 570
+  },
+  {
+    "timestamp_hour": "02/28/2019 11:00:00",
+    "footfall": 665
+  },
+  {
+    "timestamp_hour": "02/28/2019 12:00:00",
+    "footfall": 596
+  },
+  {
+    "timestamp_hour": "02/28/2019 13:00:00",
+    "footfall": 685
+  },
+  {
+    "timestamp_hour": "02/28/2019 14:00:00",
+    "footfall": 781
+  },
+  {
+    "timestamp_hour": "02/28/2019 15:00:00",
+    "footfall": 549
+  },
+  {
+    "timestamp_hour": "02/28/2019 16:00:00",
+    "footfall": 230
+  },
+  {
+    "timestamp_hour": "02/28/2019 17:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "02/28/2019 18:00:00",
+    "footfall": 214
+  },
+  {
+    "timestamp_hour": "02/28/2019 19:00:00",
+    "footfall": 98
+  },
+  {
+    "timestamp_hour": "02/28/2019 20:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "02/28/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "02/28/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "02/28/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/01/2019 00:00:00",
+    "footfall": 45
+  },
+  {
+    "timestamp_hour": "03/01/2019 01:00:00",
+    "footfall": 128
+  },
+  {
+    "timestamp_hour": "03/01/2019 02:00:00",
+    "footfall": 226
+  },
+  {
+    "timestamp_hour": "03/01/2019 03:00:00",
+    "footfall": 434
+  },
+  {
+    "timestamp_hour": "03/01/2019 04:00:00",
+    "footfall": 683
+  },
+  {
+    "timestamp_hour": "03/01/2019 05:00:00",
+    "footfall": 922
+  },
+  {
+    "timestamp_hour": "03/01/2019 06:00:00",
+    "footfall": 763
+  },
+  {
+    "timestamp_hour": "03/01/2019 07:00:00",
+    "footfall": 846
+  },
+  {
+    "timestamp_hour": "03/01/2019 08:00:00",
+    "footfall": 671
+  },
+  {
+    "timestamp_hour": "03/01/2019 09:00:00",
+    "footfall": 593
+  },
+  {
+    "timestamp_hour": "03/01/2019 10:00:00",
+    "footfall": 602
+  },
+  {
+    "timestamp_hour": "03/01/2019 11:00:00",
+    "footfall": 547
+  },
+  {
+    "timestamp_hour": "03/01/2019 12:00:00",
+    "footfall": 640
+  },
+  {
+    "timestamp_hour": "03/01/2019 13:00:00",
+    "footfall": 836
+  },
+  {
+    "timestamp_hour": "03/01/2019 14:00:00",
+    "footfall": 821
+  },
+  {
+    "timestamp_hour": "03/01/2019 15:00:00",
+    "footfall": 489
+  },
+  {
+    "timestamp_hour": "03/01/2019 16:00:00",
+    "footfall": 251
+  },
+  {
+    "timestamp_hour": "03/01/2019 17:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "03/01/2019 18:00:00",
+    "footfall": 220
+  },
+  {
+    "timestamp_hour": "03/01/2019 19:00:00",
+    "footfall": 68
+  },
+  {
+    "timestamp_hour": "03/01/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "03/01/2019 21:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "03/01/2019 22:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/01/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/02/2019 00:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "03/02/2019 01:00:00",
+    "footfall": 101
+  },
+  {
+    "timestamp_hour": "03/02/2019 02:00:00",
+    "footfall": 219
+  },
+  {
+    "timestamp_hour": "03/02/2019 03:00:00",
+    "footfall": 386
+  },
+  {
+    "timestamp_hour": "03/02/2019 04:00:00",
+    "footfall": 745
+  },
+  {
+    "timestamp_hour": "03/02/2019 05:00:00",
+    "footfall": 1365
+  },
+  {
+    "timestamp_hour": "03/02/2019 06:00:00",
+    "footfall": 1394
+  },
+  {
+    "timestamp_hour": "03/02/2019 07:00:00",
+    "footfall": 1448
+  },
+  {
+    "timestamp_hour": "03/02/2019 08:00:00",
+    "footfall": 1280
+  },
+  {
+    "timestamp_hour": "03/02/2019 09:00:00",
+    "footfall": 1441
+  },
+  {
+    "timestamp_hour": "03/02/2019 10:00:00",
+    "footfall": 1365
+  },
+  {
+    "timestamp_hour": "03/02/2019 11:00:00",
+    "footfall": 1185
+  },
+  {
+    "timestamp_hour": "03/02/2019 12:00:00",
+    "footfall": 1129
+  },
+  {
+    "timestamp_hour": "03/02/2019 13:00:00",
+    "footfall": 1380
+  },
+  {
+    "timestamp_hour": "03/02/2019 14:00:00",
+    "footfall": 1463
+  },
+  {
+    "timestamp_hour": "03/02/2019 15:00:00",
+    "footfall": 839
+  },
+  {
+    "timestamp_hour": "03/02/2019 16:00:00",
+    "footfall": 426
+  },
+  {
+    "timestamp_hour": "03/02/2019 17:00:00",
+    "footfall": 132
+  },
+  {
+    "timestamp_hour": "03/02/2019 18:00:00",
+    "footfall": 216
+  },
+  {
+    "timestamp_hour": "03/02/2019 19:00:00",
+    "footfall": 63
+  },
+  {
+    "timestamp_hour": "03/02/2019 20:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "03/02/2019 21:00:00",
+    "footfall": 82
+  },
+  {
+    "timestamp_hour": "03/02/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "03/02/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/03/2019 00:00:00",
+    "footfall": 48
+  },
+  {
+    "timestamp_hour": "03/03/2019 01:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "03/03/2019 02:00:00",
+    "footfall": 125
+  },
+  {
+    "timestamp_hour": "03/03/2019 03:00:00",
+    "footfall": 222
+  },
+  {
+    "timestamp_hour": "03/03/2019 04:00:00",
+    "footfall": 536
+  },
+  {
+    "timestamp_hour": "03/03/2019 05:00:00",
+    "footfall": 1028
+  },
+  {
+    "timestamp_hour": "03/03/2019 06:00:00",
+    "footfall": 1086
+  },
+  {
+    "timestamp_hour": "03/03/2019 07:00:00",
+    "footfall": 1237
+  },
+  {
+    "timestamp_hour": "03/03/2019 08:00:00",
+    "footfall": 1460
+  },
+  {
+    "timestamp_hour": "03/03/2019 09:00:00",
+    "footfall": 1092
+  },
+  {
+    "timestamp_hour": "03/03/2019 10:00:00",
+    "footfall": 1183
+  },
+  {
+    "timestamp_hour": "03/03/2019 11:00:00",
+    "footfall": 1547
+  },
+  {
+    "timestamp_hour": "03/03/2019 12:00:00",
+    "footfall": 1891
+  },
+  {
+    "timestamp_hour": "03/03/2019 13:00:00",
+    "footfall": 1944
+  },
+  {
+    "timestamp_hour": "03/03/2019 14:00:00",
+    "footfall": 1716
+  },
+  {
+    "timestamp_hour": "03/03/2019 15:00:00",
+    "footfall": 1040
+  },
+  {
+    "timestamp_hour": "03/03/2019 16:00:00",
+    "footfall": 348
+  },
+  {
+    "timestamp_hour": "03/03/2019 17:00:00",
+    "footfall": 83
+  },
+  {
+    "timestamp_hour": "03/03/2019 18:00:00",
+    "footfall": 227
+  },
+  {
+    "timestamp_hour": "03/03/2019 19:00:00",
+    "footfall": 122
+  },
+  {
+    "timestamp_hour": "03/03/2019 20:00:00",
+    "footfall": 49
+  },
+  {
+    "timestamp_hour": "03/03/2019 21:00:00",
+    "footfall": 38
+  },
+  {
+    "timestamp_hour": "03/03/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/03/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/04/2019 00:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "03/04/2019 01:00:00",
+    "footfall": 106
+  },
+  {
+    "timestamp_hour": "03/04/2019 02:00:00",
+    "footfall": 198
+  },
+  {
+    "timestamp_hour": "03/04/2019 03:00:00",
+    "footfall": 317
+  },
+  {
+    "timestamp_hour": "03/04/2019 04:00:00",
+    "footfall": 589
+  },
+  {
+    "timestamp_hour": "03/04/2019 05:00:00",
+    "footfall": 869
+  },
+  {
+    "timestamp_hour": "03/04/2019 06:00:00",
+    "footfall": 808
+  },
+  {
+    "timestamp_hour": "03/04/2019 07:00:00",
+    "footfall": 1037
+  },
+  {
+    "timestamp_hour": "03/04/2019 08:00:00",
+    "footfall": 848
+  },
+  {
+    "timestamp_hour": "03/04/2019 09:00:00",
+    "footfall": 1132
+  },
+  {
+    "timestamp_hour": "03/04/2019 10:00:00",
+    "footfall": 1039
+  },
+  {
+    "timestamp_hour": "03/04/2019 11:00:00",
+    "footfall": 915
+  },
+  {
+    "timestamp_hour": "03/04/2019 12:00:00",
+    "footfall": 875
+  },
+  {
+    "timestamp_hour": "03/04/2019 13:00:00",
+    "footfall": 1111
+  },
+  {
+    "timestamp_hour": "03/04/2019 14:00:00",
+    "footfall": 1090
+  },
+  {
+    "timestamp_hour": "03/04/2019 15:00:00",
+    "footfall": 634
+  },
+  {
+    "timestamp_hour": "03/04/2019 16:00:00",
+    "footfall": 222
+  },
+  {
+    "timestamp_hour": "03/04/2019 17:00:00",
+    "footfall": 95
+  },
+  {
+    "timestamp_hour": "03/04/2019 18:00:00",
+    "footfall": 221
+  },
+  {
+    "timestamp_hour": "03/04/2019 19:00:00",
+    "footfall": 71
+  },
+  {
+    "timestamp_hour": "03/04/2019 20:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/04/2019 21:00:00",
+    "footfall": 9
+  },
+  {
+    "timestamp_hour": "03/04/2019 22:00:00",
+    "footfall": 3
+  },
+  {
+    "timestamp_hour": "03/04/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/05/2019 00:00:00",
+    "footfall": 67
+  },
+  {
+    "timestamp_hour": "03/05/2019 01:00:00",
+    "footfall": 150
+  },
+  {
+    "timestamp_hour": "03/05/2019 02:00:00",
+    "footfall": 305
+  },
+  {
+    "timestamp_hour": "03/05/2019 03:00:00",
+    "footfall": 488
+  },
+  {
+    "timestamp_hour": "03/05/2019 04:00:00",
+    "footfall": 753
+  },
+  {
+    "timestamp_hour": "03/05/2019 05:00:00",
+    "footfall": 941
+  },
+  {
+    "timestamp_hour": "03/05/2019 06:00:00",
+    "footfall": 766
+  },
+  {
+    "timestamp_hour": "03/05/2019 07:00:00",
+    "footfall": 792
+  },
+  {
+    "timestamp_hour": "03/05/2019 08:00:00",
+    "footfall": 741
+  },
+  {
+    "timestamp_hour": "03/05/2019 09:00:00",
+    "footfall": 639
+  },
+  {
+    "timestamp_hour": "03/05/2019 10:00:00",
+    "footfall": 656
+  },
+  {
+    "timestamp_hour": "03/05/2019 11:00:00",
+    "footfall": 580
+  },
+  {
+    "timestamp_hour": "03/05/2019 12:00:00",
+    "footfall": 578
+  },
+  {
+    "timestamp_hour": "03/05/2019 13:00:00",
+    "footfall": 629
+  },
+  {
+    "timestamp_hour": "03/05/2019 14:00:00",
+    "footfall": 641
+  },
+  {
+    "timestamp_hour": "03/05/2019 15:00:00",
+    "footfall": 452
+  },
+  {
+    "timestamp_hour": "03/05/2019 16:00:00",
+    "footfall": 154
+  },
+  {
+    "timestamp_hour": "03/05/2019 17:00:00",
+    "footfall": 69
+  },
+  {
+    "timestamp_hour": "03/05/2019 18:00:00",
+    "footfall": 294
+  },
+  {
+    "timestamp_hour": "03/05/2019 19:00:00",
+    "footfall": 69
+  },
+  {
+    "timestamp_hour": "03/05/2019 20:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "03/05/2019 21:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "03/05/2019 22:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/05/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/06/2019 00:00:00",
+    "footfall": 50
+  },
+  {
+    "timestamp_hour": "03/06/2019 01:00:00",
+    "footfall": 119
+  },
+  {
+    "timestamp_hour": "03/06/2019 02:00:00",
+    "footfall": 275
+  },
+  {
+    "timestamp_hour": "03/06/2019 03:00:00",
+    "footfall": 433
+  },
+  {
+    "timestamp_hour": "03/06/2019 04:00:00",
+    "footfall": 668
+  },
+  {
+    "timestamp_hour": "03/06/2019 05:00:00",
+    "footfall": 969
+  },
+  {
+    "timestamp_hour": "03/06/2019 06:00:00",
+    "footfall": 858
+  },
+  {
+    "timestamp_hour": "03/06/2019 07:00:00",
+    "footfall": 946
+  },
+  {
+    "timestamp_hour": "03/06/2019 08:00:00",
+    "footfall": 808
+  },
+  {
+    "timestamp_hour": "03/06/2019 09:00:00",
+    "footfall": 697
+  },
+  {
+    "timestamp_hour": "03/06/2019 10:00:00",
+    "footfall": 715
+  },
+  {
+    "timestamp_hour": "03/06/2019 11:00:00",
+    "footfall": 686
+  },
+  {
+    "timestamp_hour": "03/06/2019 12:00:00",
+    "footfall": 719
+  },
+  {
+    "timestamp_hour": "03/06/2019 13:00:00",
+    "footfall": 785
+  },
+  {
+    "timestamp_hour": "03/06/2019 14:00:00",
+    "footfall": 766
+  },
+  {
+    "timestamp_hour": "03/06/2019 15:00:00",
+    "footfall": 524
+  },
+  {
+    "timestamp_hour": "03/06/2019 16:00:00",
+    "footfall": 219
+  },
+  {
+    "timestamp_hour": "03/06/2019 17:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "03/06/2019 18:00:00",
+    "footfall": 207
+  },
+  {
+    "timestamp_hour": "03/06/2019 19:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "03/06/2019 20:00:00",
+    "footfall": 35
+  },
+  {
+    "timestamp_hour": "03/06/2019 21:00:00",
+    "footfall": 9
+  },
+  {
+    "timestamp_hour": "03/06/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "03/06/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/07/2019 00:00:00",
+    "footfall": 36
+  },
+  {
+    "timestamp_hour": "03/07/2019 01:00:00",
+    "footfall": 163
+  },
+  {
+    "timestamp_hour": "03/07/2019 02:00:00",
+    "footfall": 350
+  },
+  {
+    "timestamp_hour": "03/07/2019 03:00:00",
+    "footfall": 471
+  },
+  {
+    "timestamp_hour": "03/07/2019 04:00:00",
+    "footfall": 780
+  },
+  {
+    "timestamp_hour": "03/07/2019 05:00:00",
+    "footfall": 955
+  },
+  {
+    "timestamp_hour": "03/07/2019 06:00:00",
+    "footfall": 726
+  },
+  {
+    "timestamp_hour": "03/07/2019 07:00:00",
+    "footfall": 916
+  },
+  {
+    "timestamp_hour": "03/07/2019 08:00:00",
+    "footfall": 869
+  },
+  {
+    "timestamp_hour": "03/07/2019 09:00:00",
+    "footfall": 738
+  },
+  {
+    "timestamp_hour": "03/07/2019 10:00:00",
+    "footfall": 649
+  },
+  {
+    "timestamp_hour": "03/07/2019 11:00:00",
+    "footfall": 588
+  },
+  {
+    "timestamp_hour": "03/07/2019 12:00:00",
+    "footfall": 614
+  },
+  {
+    "timestamp_hour": "03/07/2019 13:00:00",
+    "footfall": 694
+  },
+  {
+    "timestamp_hour": "03/07/2019 14:00:00",
+    "footfall": 679
+  },
+  {
+    "timestamp_hour": "03/07/2019 15:00:00",
+    "footfall": 469
+  },
+  {
+    "timestamp_hour": "03/07/2019 16:00:00",
+    "footfall": 190
+  },
+  {
+    "timestamp_hour": "03/07/2019 17:00:00",
+    "footfall": 84
+  },
+  {
+    "timestamp_hour": "03/07/2019 18:00:00",
+    "footfall": 214
+  },
+  {
+    "timestamp_hour": "03/07/2019 19:00:00",
+    "footfall": 41
+  },
+  {
+    "timestamp_hour": "03/07/2019 20:00:00",
+    "footfall": 33
+  },
+  {
+    "timestamp_hour": "03/07/2019 21:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/07/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/07/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/08/2019 00:00:00",
+    "footfall": 61
+  },
+  {
+    "timestamp_hour": "03/08/2019 01:00:00",
+    "footfall": 197
+  },
+  {
+    "timestamp_hour": "03/08/2019 02:00:00",
+    "footfall": 309
+  },
+  {
+    "timestamp_hour": "03/08/2019 03:00:00",
+    "footfall": 501
+  },
+  {
+    "timestamp_hour": "03/08/2019 04:00:00",
+    "footfall": 783
+  },
+  {
+    "timestamp_hour": "03/08/2019 05:00:00",
+    "footfall": 1112
+  },
+  {
+    "timestamp_hour": "03/08/2019 06:00:00",
+    "footfall": 1022
+  },
+  {
+    "timestamp_hour": "03/08/2019 07:00:00",
+    "footfall": 1636
+  },
+  {
+    "timestamp_hour": "03/08/2019 08:00:00",
+    "footfall": 1511
+  },
+  {
+    "timestamp_hour": "03/08/2019 09:00:00",
+    "footfall": 1205
+  },
+  {
+    "timestamp_hour": "03/08/2019 10:00:00",
+    "footfall": 1138
+  },
+  {
+    "timestamp_hour": "03/08/2019 11:00:00",
+    "footfall": 936
+  },
+  {
+    "timestamp_hour": "03/08/2019 12:00:00",
+    "footfall": 910
+  },
+  {
+    "timestamp_hour": "03/08/2019 13:00:00",
+    "footfall": 1120
+  },
+  {
+    "timestamp_hour": "03/08/2019 14:00:00",
+    "footfall": 1050
+  },
+  {
+    "timestamp_hour": "03/08/2019 15:00:00",
+    "footfall": 729
+  },
+  {
+    "timestamp_hour": "03/08/2019 16:00:00",
+    "footfall": 344
+  },
+  {
+    "timestamp_hour": "03/08/2019 17:00:00",
+    "footfall": 108
+  },
+  {
+    "timestamp_hour": "03/08/2019 18:00:00",
+    "footfall": 240
+  },
+  {
+    "timestamp_hour": "03/08/2019 19:00:00",
+    "footfall": 59
+  },
+  {
+    "timestamp_hour": "03/08/2019 20:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "03/08/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/08/2019 22:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "03/08/2019 23:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "03/09/2019 00:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "03/09/2019 01:00:00",
+    "footfall": 121
+  },
+  {
+    "timestamp_hour": "03/09/2019 02:00:00",
+    "footfall": 243
+  },
+  {
+    "timestamp_hour": "03/09/2019 03:00:00",
+    "footfall": 376
+  },
+  {
+    "timestamp_hour": "03/09/2019 04:00:00",
+    "footfall": 734
+  },
+  {
+    "timestamp_hour": "03/09/2019 05:00:00",
+    "footfall": 1137
+  },
+  {
+    "timestamp_hour": "03/09/2019 06:00:00",
+    "footfall": 1383
+  },
+  {
+    "timestamp_hour": "03/09/2019 07:00:00",
+    "footfall": 1600
+  },
+  {
+    "timestamp_hour": "03/09/2019 08:00:00",
+    "footfall": 1278
+  },
+  {
+    "timestamp_hour": "03/09/2019 09:00:00",
+    "footfall": 1260
+  },
+  {
+    "timestamp_hour": "03/09/2019 10:00:00",
+    "footfall": 1315
+  },
+  {
+    "timestamp_hour": "03/09/2019 11:00:00",
+    "footfall": 1234
+  },
+  {
+    "timestamp_hour": "03/09/2019 12:00:00",
+    "footfall": 1407
+  },
+  {
+    "timestamp_hour": "03/09/2019 13:00:00",
+    "footfall": 1596
+  },
+  {
+    "timestamp_hour": "03/09/2019 14:00:00",
+    "footfall": 1482
+  },
+  {
+    "timestamp_hour": "03/09/2019 15:00:00",
+    "footfall": 837
+  },
+  {
+    "timestamp_hour": "03/09/2019 16:00:00",
+    "footfall": 452
+  },
+  {
+    "timestamp_hour": "03/09/2019 17:00:00",
+    "footfall": 166
+  },
+  {
+    "timestamp_hour": "03/09/2019 18:00:00",
+    "footfall": 271
+  },
+  {
+    "timestamp_hour": "03/09/2019 19:00:00",
+    "footfall": 107
+  },
+  {
+    "timestamp_hour": "03/09/2019 20:00:00",
+    "footfall": 32
+  },
+  {
+    "timestamp_hour": "03/09/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/09/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "03/09/2019 23:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "03/10/2019 00:00:00",
+    "footfall": 49
+  },
+  {
+    "timestamp_hour": "03/10/2019 01:00:00",
+    "footfall": 100
+  },
+  {
+    "timestamp_hour": "03/10/2019 02:00:00",
+    "footfall": 131
+  },
+  {
+    "timestamp_hour": "03/10/2019 03:00:00",
+    "footfall": 216
+  },
+  {
+    "timestamp_hour": "03/10/2019 04:00:00",
+    "footfall": 514
+  },
+  {
+    "timestamp_hour": "03/10/2019 05:00:00",
+    "footfall": 914
+  },
+  {
+    "timestamp_hour": "03/10/2019 06:00:00",
+    "footfall": 926
+  },
+  {
+    "timestamp_hour": "03/10/2019 07:00:00",
+    "footfall": 1242
+  },
+  {
+    "timestamp_hour": "03/10/2019 08:00:00",
+    "footfall": 1149
+  },
+  {
+    "timestamp_hour": "03/10/2019 09:00:00",
+    "footfall": 1095
+  },
+  {
+    "timestamp_hour": "03/10/2019 10:00:00",
+    "footfall": 1425
+  },
+  {
+    "timestamp_hour": "03/10/2019 11:00:00",
+    "footfall": 1621
+  },
+  {
+    "timestamp_hour": "03/10/2019 12:00:00",
+    "footfall": 1645
+  },
+  {
+    "timestamp_hour": "03/10/2019 13:00:00",
+    "footfall": 1803
+  },
+  {
+    "timestamp_hour": "03/10/2019 14:00:00",
+    "footfall": 1483
+  },
+  {
+    "timestamp_hour": "03/10/2019 15:00:00",
+    "footfall": 982
+  },
+  {
+    "timestamp_hour": "03/10/2019 16:00:00",
+    "footfall": 300
+  },
+  {
+    "timestamp_hour": "03/10/2019 17:00:00",
+    "footfall": 90
+  },
+  {
+    "timestamp_hour": "03/10/2019 18:00:00",
+    "footfall": 235
+  },
+  {
+    "timestamp_hour": "03/10/2019 19:00:00",
+    "footfall": 91
+  },
+  {
+    "timestamp_hour": "03/10/2019 20:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "03/10/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/10/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/10/2019 23:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "03/11/2019 00:00:00",
+    "footfall": 45
+  },
+  {
+    "timestamp_hour": "03/11/2019 01:00:00",
+    "footfall": 174
+  },
+  {
+    "timestamp_hour": "03/11/2019 02:00:00",
+    "footfall": 299
+  },
+  {
+    "timestamp_hour": "03/11/2019 03:00:00",
+    "footfall": 477
+  },
+  {
+    "timestamp_hour": "03/11/2019 04:00:00",
+    "footfall": 739
+  },
+  {
+    "timestamp_hour": "03/11/2019 05:00:00",
+    "footfall": 877
+  },
+  {
+    "timestamp_hour": "03/11/2019 06:00:00",
+    "footfall": 717
+  },
+  {
+    "timestamp_hour": "03/11/2019 07:00:00",
+    "footfall": 970
+  },
+  {
+    "timestamp_hour": "03/11/2019 08:00:00",
+    "footfall": 866
+  },
+  {
+    "timestamp_hour": "03/11/2019 09:00:00",
+    "footfall": 670
+  },
+  {
+    "timestamp_hour": "03/11/2019 10:00:00",
+    "footfall": 721
+  },
+  {
+    "timestamp_hour": "03/11/2019 11:00:00",
+    "footfall": 646
+  },
+  {
+    "timestamp_hour": "03/11/2019 12:00:00",
+    "footfall": 603
+  },
+  {
+    "timestamp_hour": "03/11/2019 13:00:00",
+    "footfall": 841
+  },
+  {
+    "timestamp_hour": "03/11/2019 14:00:00",
+    "footfall": 851
+  },
+  {
+    "timestamp_hour": "03/11/2019 15:00:00",
+    "footfall": 527
+  },
+  {
+    "timestamp_hour": "03/11/2019 16:00:00",
+    "footfall": 326
+  },
+  {
+    "timestamp_hour": "03/11/2019 17:00:00",
+    "footfall": 177
+  },
+  {
+    "timestamp_hour": "03/11/2019 18:00:00",
+    "footfall": 267
+  },
+  {
+    "timestamp_hour": "03/11/2019 19:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "03/11/2019 20:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/11/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/11/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/11/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/12/2019 00:00:00",
+    "footfall": 153
+  },
+  {
+    "timestamp_hour": "03/12/2019 01:00:00",
+    "footfall": 222
+  },
+  {
+    "timestamp_hour": "03/12/2019 02:00:00",
+    "footfall": 395
+  },
+  {
+    "timestamp_hour": "03/12/2019 03:00:00",
+    "footfall": 529
+  },
+  {
+    "timestamp_hour": "03/12/2019 04:00:00",
+    "footfall": 678
+  },
+  {
+    "timestamp_hour": "03/12/2019 05:00:00",
+    "footfall": 1065
+  },
+  {
+    "timestamp_hour": "03/12/2019 06:00:00",
+    "footfall": 826
+  },
+  {
+    "timestamp_hour": "03/12/2019 07:00:00",
+    "footfall": 933
+  },
+  {
+    "timestamp_hour": "03/12/2019 08:00:00",
+    "footfall": 763
+  },
+  {
+    "timestamp_hour": "03/12/2019 09:00:00",
+    "footfall": 694
+  },
+  {
+    "timestamp_hour": "03/12/2019 10:00:00",
+    "footfall": 696
+  },
+  {
+    "timestamp_hour": "03/12/2019 11:00:00",
+    "footfall": 681
+  },
+  {
+    "timestamp_hour": "03/12/2019 12:00:00",
+    "footfall": 575
+  },
+  {
+    "timestamp_hour": "03/12/2019 13:00:00",
+    "footfall": 721
+  },
+  {
+    "timestamp_hour": "03/12/2019 14:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "03/12/2019 15:00:00",
+    "footfall": 460
+  },
+  {
+    "timestamp_hour": "03/12/2019 16:00:00",
+    "footfall": 193
+  },
+  {
+    "timestamp_hour": "03/12/2019 17:00:00",
+    "footfall": 96
+  },
+  {
+    "timestamp_hour": "03/12/2019 18:00:00",
+    "footfall": 314
+  },
+  {
+    "timestamp_hour": "03/12/2019 19:00:00",
+    "footfall": 224
+  },
+  {
+    "timestamp_hour": "03/12/2019 20:00:00",
+    "footfall": 148
+  },
+  {
+    "timestamp_hour": "03/12/2019 21:00:00",
+    "footfall": 94
+  },
+  {
+    "timestamp_hour": "03/12/2019 22:00:00",
+    "footfall": 91
+  },
+  {
+    "timestamp_hour": "03/12/2019 23:00:00",
+    "footfall": 83
+  },
+  {
+    "timestamp_hour": "03/13/2019 00:00:00",
+    "footfall": 50
+  },
+  {
+    "timestamp_hour": "03/13/2019 01:00:00",
+    "footfall": 194
+  },
+  {
+    "timestamp_hour": "03/13/2019 02:00:00",
+    "footfall": 290
+  },
+  {
+    "timestamp_hour": "03/13/2019 03:00:00",
+    "footfall": 526
+  },
+  {
+    "timestamp_hour": "03/13/2019 04:00:00",
+    "footfall": 768
+  },
+  {
+    "timestamp_hour": "03/13/2019 05:00:00",
+    "footfall": 982
+  },
+  {
+    "timestamp_hour": "03/13/2019 06:00:00",
+    "footfall": 1333
+  },
+  {
+    "timestamp_hour": "03/13/2019 07:00:00",
+    "footfall": 1277
+  },
+  {
+    "timestamp_hour": "03/13/2019 08:00:00",
+    "footfall": 1052
+  },
+  {
+    "timestamp_hour": "03/13/2019 09:00:00",
+    "footfall": 913
+  },
+  {
+    "timestamp_hour": "03/13/2019 10:00:00",
+    "footfall": 787
+  },
+  {
+    "timestamp_hour": "03/13/2019 11:00:00",
+    "footfall": 709
+  },
+  {
+    "timestamp_hour": "03/13/2019 12:00:00",
+    "footfall": 627
+  },
+  {
+    "timestamp_hour": "03/13/2019 13:00:00",
+    "footfall": 776
+  },
+  {
+    "timestamp_hour": "03/13/2019 14:00:00",
+    "footfall": 673
+  },
+  {
+    "timestamp_hour": "03/13/2019 15:00:00",
+    "footfall": 427
+  },
+  {
+    "timestamp_hour": "03/13/2019 16:00:00",
+    "footfall": 220
+  },
+  {
+    "timestamp_hour": "03/13/2019 17:00:00",
+    "footfall": 95
+  },
+  {
+    "timestamp_hour": "03/13/2019 18:00:00",
+    "footfall": 281
+  },
+  {
+    "timestamp_hour": "03/13/2019 19:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "03/13/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/13/2019 21:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/13/2019 22:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "03/13/2019 23:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "03/14/2019 00:00:00",
+    "footfall": 51
+  },
+  {
+    "timestamp_hour": "03/14/2019 01:00:00",
+    "footfall": 166
+  },
+  {
+    "timestamp_hour": "03/14/2019 02:00:00",
+    "footfall": 283
+  },
+  {
+    "timestamp_hour": "03/14/2019 03:00:00",
+    "footfall": 502
+  },
+  {
+    "timestamp_hour": "03/14/2019 04:00:00",
+    "footfall": 768
+  },
+  {
+    "timestamp_hour": "03/14/2019 05:00:00",
+    "footfall": 957
+  },
+  {
+    "timestamp_hour": "03/14/2019 06:00:00",
+    "footfall": 736
+  },
+  {
+    "timestamp_hour": "03/14/2019 07:00:00",
+    "footfall": 958
+  },
+  {
+    "timestamp_hour": "03/14/2019 08:00:00",
+    "footfall": 740
+  },
+  {
+    "timestamp_hour": "03/14/2019 09:00:00",
+    "footfall": 579
+  },
+  {
+    "timestamp_hour": "03/14/2019 10:00:00",
+    "footfall": 640
+  },
+  {
+    "timestamp_hour": "03/14/2019 11:00:00",
+    "footfall": 766
+  },
+  {
+    "timestamp_hour": "03/14/2019 12:00:00",
+    "footfall": 887
+  },
+  {
+    "timestamp_hour": "03/14/2019 13:00:00",
+    "footfall": 834
+  },
+  {
+    "timestamp_hour": "03/14/2019 14:00:00",
+    "footfall": 768
+  },
+  {
+    "timestamp_hour": "03/14/2019 15:00:00",
+    "footfall": 507
+  },
+  {
+    "timestamp_hour": "03/14/2019 16:00:00",
+    "footfall": 219
+  },
+  {
+    "timestamp_hour": "03/14/2019 17:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "03/14/2019 18:00:00",
+    "footfall": 251
+  },
+  {
+    "timestamp_hour": "03/14/2019 19:00:00",
+    "footfall": 82
+  },
+  {
+    "timestamp_hour": "03/14/2019 20:00:00",
+    "footfall": 29
+  },
+  {
+    "timestamp_hour": "03/14/2019 21:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/14/2019 22:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/14/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/15/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "03/15/2019 01:00:00",
+    "footfall": 147
+  },
+  {
+    "timestamp_hour": "03/15/2019 02:00:00",
+    "footfall": 289
+  },
+  {
+    "timestamp_hour": "03/15/2019 03:00:00",
+    "footfall": 479
+  },
+  {
+    "timestamp_hour": "03/15/2019 04:00:00",
+    "footfall": 731
+  },
+  {
+    "timestamp_hour": "03/15/2019 05:00:00",
+    "footfall": 1095
+  },
+  {
+    "timestamp_hour": "03/15/2019 06:00:00",
+    "footfall": 884
+  },
+  {
+    "timestamp_hour": "03/15/2019 07:00:00",
+    "footfall": 1279
+  },
+  {
+    "timestamp_hour": "03/15/2019 08:00:00",
+    "footfall": 1464
+  },
+  {
+    "timestamp_hour": "03/15/2019 09:00:00",
+    "footfall": 1114
+  },
+  {
+    "timestamp_hour": "03/15/2019 10:00:00",
+    "footfall": 968
+  },
+  {
+    "timestamp_hour": "03/15/2019 11:00:00",
+    "footfall": 837
+  },
+  {
+    "timestamp_hour": "03/15/2019 12:00:00",
+    "footfall": 882
+  },
+  {
+    "timestamp_hour": "03/15/2019 13:00:00",
+    "footfall": 1291
+  },
+  {
+    "timestamp_hour": "03/15/2019 14:00:00",
+    "footfall": 923
+  },
+  {
+    "timestamp_hour": "03/15/2019 15:00:00",
+    "footfall": 609
+  },
+  {
+    "timestamp_hour": "03/15/2019 16:00:00",
+    "footfall": 275
+  },
+  {
+    "timestamp_hour": "03/15/2019 17:00:00",
+    "footfall": 97
+  },
+  {
+    "timestamp_hour": "03/15/2019 18:00:00",
+    "footfall": 249
+  },
+  {
+    "timestamp_hour": "03/15/2019 19:00:00",
+    "footfall": 69
+  },
+  {
+    "timestamp_hour": "03/15/2019 20:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/15/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/15/2019 22:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/15/2019 23:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "03/16/2019 00:00:00",
+    "footfall": 49
+  },
+  {
+    "timestamp_hour": "03/16/2019 01:00:00",
+    "footfall": 113
+  },
+  {
+    "timestamp_hour": "03/16/2019 02:00:00",
+    "footfall": 230
+  },
+  {
+    "timestamp_hour": "03/16/2019 03:00:00",
+    "footfall": 441
+  },
+  {
+    "timestamp_hour": "03/16/2019 04:00:00",
+    "footfall": 716
+  },
+  {
+    "timestamp_hour": "03/16/2019 05:00:00",
+    "footfall": 1038
+  },
+  {
+    "timestamp_hour": "03/16/2019 06:00:00",
+    "footfall": 1267
+  },
+  {
+    "timestamp_hour": "03/16/2019 07:00:00",
+    "footfall": 1676
+  },
+  {
+    "timestamp_hour": "03/16/2019 08:00:00",
+    "footfall": 1458
+  },
+  {
+    "timestamp_hour": "03/16/2019 09:00:00",
+    "footfall": 1189
+  },
+  {
+    "timestamp_hour": "03/16/2019 10:00:00",
+    "footfall": 1137
+  },
+  {
+    "timestamp_hour": "03/16/2019 11:00:00",
+    "footfall": 1319
+  },
+  {
+    "timestamp_hour": "03/16/2019 12:00:00",
+    "footfall": 1557
+  },
+  {
+    "timestamp_hour": "03/16/2019 13:00:00",
+    "footfall": 1667
+  },
+  {
+    "timestamp_hour": "03/16/2019 14:00:00",
+    "footfall": 1428
+  },
+  {
+    "timestamp_hour": "03/16/2019 15:00:00",
+    "footfall": 921
+  },
+  {
+    "timestamp_hour": "03/16/2019 16:00:00",
+    "footfall": 386
+  },
+  {
+    "timestamp_hour": "03/16/2019 17:00:00",
+    "footfall": 121
+  },
+  {
+    "timestamp_hour": "03/16/2019 18:00:00",
+    "footfall": 281
+  },
+  {
+    "timestamp_hour": "03/16/2019 19:00:00",
+    "footfall": 182
+  },
+  {
+    "timestamp_hour": "03/16/2019 20:00:00",
+    "footfall": 85
+  },
+  {
+    "timestamp_hour": "03/16/2019 21:00:00",
+    "footfall": 48
+  },
+  {
+    "timestamp_hour": "03/16/2019 22:00:00",
+    "footfall": 35
+  },
+  {
+    "timestamp_hour": "03/16/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/17/2019 00:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "03/17/2019 01:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "03/17/2019 02:00:00",
+    "footfall": 146
+  },
+  {
+    "timestamp_hour": "03/17/2019 03:00:00",
+    "footfall": 252
+  },
+  {
+    "timestamp_hour": "03/17/2019 04:00:00",
+    "footfall": 529
+  },
+  {
+    "timestamp_hour": "03/17/2019 05:00:00",
+    "footfall": 981
+  },
+  {
+    "timestamp_hour": "03/17/2019 06:00:00",
+    "footfall": 883
+  },
+  {
+    "timestamp_hour": "03/17/2019 07:00:00",
+    "footfall": 1521
+  },
+  {
+    "timestamp_hour": "03/17/2019 08:00:00",
+    "footfall": 1361
+  },
+  {
+    "timestamp_hour": "03/17/2019 09:00:00",
+    "footfall": 1230
+  },
+  {
+    "timestamp_hour": "03/17/2019 10:00:00",
+    "footfall": 1303
+  },
+  {
+    "timestamp_hour": "03/17/2019 11:00:00",
+    "footfall": 1450
+  },
+  {
+    "timestamp_hour": "03/17/2019 12:00:00",
+    "footfall": 1525
+  },
+  {
+    "timestamp_hour": "03/17/2019 13:00:00",
+    "footfall": 2017
+  },
+  {
+    "timestamp_hour": "03/17/2019 14:00:00",
+    "footfall": 1993
+  },
+  {
+    "timestamp_hour": "03/17/2019 15:00:00",
+    "footfall": 1123
+  },
+  {
+    "timestamp_hour": "03/17/2019 16:00:00",
+    "footfall": 323
+  },
+  {
+    "timestamp_hour": "03/17/2019 17:00:00",
+    "footfall": 90
+  },
+  {
+    "timestamp_hour": "03/17/2019 18:00:00",
+    "footfall": 263
+  },
+  {
+    "timestamp_hour": "03/17/2019 19:00:00",
+    "footfall": 130
+  },
+  {
+    "timestamp_hour": "03/17/2019 20:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "03/17/2019 21:00:00",
+    "footfall": 193
+  },
+  {
+    "timestamp_hour": "03/17/2019 22:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "03/17/2019 23:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "03/18/2019 00:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "03/18/2019 01:00:00",
+    "footfall": 154
+  },
+  {
+    "timestamp_hour": "03/18/2019 02:00:00",
+    "footfall": 310
+  },
+  {
+    "timestamp_hour": "03/18/2019 03:00:00",
+    "footfall": 450
+  },
+  {
+    "timestamp_hour": "03/18/2019 04:00:00",
+    "footfall": 673
+  },
+  {
+    "timestamp_hour": "03/18/2019 05:00:00",
+    "footfall": 916
+  },
+  {
+    "timestamp_hour": "03/18/2019 06:00:00",
+    "footfall": 889
+  },
+  {
+    "timestamp_hour": "03/18/2019 07:00:00",
+    "footfall": 1120
+  },
+  {
+    "timestamp_hour": "03/18/2019 08:00:00",
+    "footfall": 1021
+  },
+  {
+    "timestamp_hour": "03/18/2019 09:00:00",
+    "footfall": 827
+  },
+  {
+    "timestamp_hour": "03/18/2019 10:00:00",
+    "footfall": 733
+  },
+  {
+    "timestamp_hour": "03/18/2019 11:00:00",
+    "footfall": 804
+  },
+  {
+    "timestamp_hour": "03/18/2019 12:00:00",
+    "footfall": 792
+  },
+  {
+    "timestamp_hour": "03/18/2019 13:00:00",
+    "footfall": 845
+  },
+  {
+    "timestamp_hour": "03/18/2019 14:00:00",
+    "footfall": 824
+  },
+  {
+    "timestamp_hour": "03/18/2019 15:00:00",
+    "footfall": 507
+  },
+  {
+    "timestamp_hour": "03/18/2019 16:00:00",
+    "footfall": 194
+  },
+  {
+    "timestamp_hour": "03/18/2019 17:00:00",
+    "footfall": 83
+  },
+  {
+    "timestamp_hour": "03/18/2019 18:00:00",
+    "footfall": 194
+  },
+  {
+    "timestamp_hour": "03/18/2019 19:00:00",
+    "footfall": 71
+  },
+  {
+    "timestamp_hour": "03/18/2019 20:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/18/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/18/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/18/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "03/19/2019 00:00:00",
+    "footfall": 46
+  },
+  {
+    "timestamp_hour": "03/19/2019 01:00:00",
+    "footfall": 161
+  },
+  {
+    "timestamp_hour": "03/19/2019 02:00:00",
+    "footfall": 263
+  },
+  {
+    "timestamp_hour": "03/19/2019 03:00:00",
+    "footfall": 457
+  },
+  {
+    "timestamp_hour": "03/19/2019 04:00:00",
+    "footfall": 690
+  },
+  {
+    "timestamp_hour": "03/19/2019 05:00:00",
+    "footfall": 968
+  },
+  {
+    "timestamp_hour": "03/19/2019 06:00:00",
+    "footfall": 752
+  },
+  {
+    "timestamp_hour": "03/19/2019 07:00:00",
+    "footfall": 1012
+  },
+  {
+    "timestamp_hour": "03/19/2019 08:00:00",
+    "footfall": 984
+  },
+  {
+    "timestamp_hour": "03/19/2019 09:00:00",
+    "footfall": 802
+  },
+  {
+    "timestamp_hour": "03/19/2019 10:00:00",
+    "footfall": 687
+  },
+  {
+    "timestamp_hour": "03/19/2019 11:00:00",
+    "footfall": 608
+  },
+  {
+    "timestamp_hour": "03/19/2019 12:00:00",
+    "footfall": 698
+  },
+  {
+    "timestamp_hour": "03/19/2019 13:00:00",
+    "footfall": 846
+  },
+  {
+    "timestamp_hour": "03/19/2019 14:00:00",
+    "footfall": 837
+  },
+  {
+    "timestamp_hour": "03/19/2019 15:00:00",
+    "footfall": 519
+  },
+  {
+    "timestamp_hour": "03/19/2019 16:00:00",
+    "footfall": 220
+  },
+  {
+    "timestamp_hour": "03/19/2019 17:00:00",
+    "footfall": 58
+  },
+  {
+    "timestamp_hour": "03/19/2019 18:00:00",
+    "footfall": 211
+  },
+  {
+    "timestamp_hour": "03/19/2019 19:00:00",
+    "footfall": 58
+  },
+  {
+    "timestamp_hour": "03/19/2019 20:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/19/2019 21:00:00",
+    "footfall": 31
+  },
+  {
+    "timestamp_hour": "03/19/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/19/2019 23:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "03/20/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "03/20/2019 01:00:00",
+    "footfall": 175
+  },
+  {
+    "timestamp_hour": "03/20/2019 02:00:00",
+    "footfall": 284
+  },
+  {
+    "timestamp_hour": "03/20/2019 03:00:00",
+    "footfall": 520
+  },
+  {
+    "timestamp_hour": "03/20/2019 04:00:00",
+    "footfall": 745
+  },
+  {
+    "timestamp_hour": "03/20/2019 05:00:00",
+    "footfall": 1048
+  },
+  {
+    "timestamp_hour": "03/20/2019 06:00:00",
+    "footfall": 974
+  },
+  {
+    "timestamp_hour": "03/20/2019 07:00:00",
+    "footfall": 1017
+  },
+  {
+    "timestamp_hour": "03/20/2019 08:00:00",
+    "footfall": 848
+  },
+  {
+    "timestamp_hour": "03/20/2019 09:00:00",
+    "footfall": 785
+  },
+  {
+    "timestamp_hour": "03/20/2019 10:00:00",
+    "footfall": 751
+  },
+  {
+    "timestamp_hour": "03/20/2019 11:00:00",
+    "footfall": 666
+  },
+  {
+    "timestamp_hour": "03/20/2019 12:00:00",
+    "footfall": 679
+  },
+  {
+    "timestamp_hour": "03/20/2019 13:00:00",
+    "footfall": 819
+  },
+  {
+    "timestamp_hour": "03/20/2019 14:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "03/20/2019 15:00:00",
+    "footfall": 547
+  },
+  {
+    "timestamp_hour": "03/20/2019 16:00:00",
+    "footfall": 264
+  },
+  {
+    "timestamp_hour": "03/20/2019 17:00:00",
+    "footfall": 111
+  },
+  {
+    "timestamp_hour": "03/20/2019 18:00:00",
+    "footfall": 211
+  },
+  {
+    "timestamp_hour": "03/20/2019 19:00:00",
+    "footfall": 46
+  },
+  {
+    "timestamp_hour": "03/20/2019 20:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "03/20/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/20/2019 22:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "03/20/2019 23:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "03/21/2019 00:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "03/21/2019 01:00:00",
+    "footfall": 72
+  },
+  {
+    "timestamp_hour": "03/21/2019 02:00:00",
+    "footfall": 140
+  },
+  {
+    "timestamp_hour": "03/21/2019 03:00:00",
+    "footfall": 115
+  },
+  {
+    "timestamp_hour": "03/21/2019 04:00:00",
+    "footfall": 123
+  },
+  {
+    "timestamp_hour": "03/21/2019 05:00:00",
+    "footfall": 154
+  },
+  {
+    "timestamp_hour": "03/21/2019 06:00:00",
+    "footfall": 185
+  },
+  {
+    "timestamp_hour": "03/21/2019 07:00:00",
+    "footfall": 147
+  },
+  {
+    "timestamp_hour": "03/21/2019 08:00:00",
+    "footfall": 164
+  },
+  {
+    "timestamp_hour": "03/21/2019 09:00:00",
+    "footfall": 325
+  },
+  {
+    "timestamp_hour": "03/21/2019 10:00:00",
+    "footfall": 595
+  },
+  {
+    "timestamp_hour": "03/21/2019 11:00:00",
+    "footfall": 1374
+  },
+  {
+    "timestamp_hour": "03/21/2019 12:00:00",
+    "footfall": 1511
+  },
+  {
+    "timestamp_hour": "03/21/2019 13:00:00",
+    "footfall": 2080
+  },
+  {
+    "timestamp_hour": "03/21/2019 14:00:00",
+    "footfall": 2088
+  },
+  {
+    "timestamp_hour": "03/21/2019 15:00:00",
+    "footfall": 1257
+  },
+  {
+    "timestamp_hour": "03/21/2019 16:00:00",
+    "footfall": 469
+  },
+  {
+    "timestamp_hour": "03/21/2019 17:00:00",
+    "footfall": 111
+  },
+  {
+    "timestamp_hour": "03/21/2019 18:00:00",
+    "footfall": 220
+  },
+  {
+    "timestamp_hour": "03/21/2019 19:00:00",
+    "footfall": 103
+  },
+  {
+    "timestamp_hour": "03/21/2019 20:00:00",
+    "footfall": 35
+  },
+  {
+    "timestamp_hour": "03/21/2019 21:00:00",
+    "footfall": 5
+  },
+  {
+    "timestamp_hour": "03/21/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/21/2019 23:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "03/22/2019 00:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "03/22/2019 01:00:00",
+    "footfall": 167
+  },
+  {
+    "timestamp_hour": "03/22/2019 02:00:00",
+    "footfall": 256
+  },
+  {
+    "timestamp_hour": "03/22/2019 03:00:00",
+    "footfall": 423
+  },
+  {
+    "timestamp_hour": "03/22/2019 04:00:00",
+    "footfall": 734
+  },
+  {
+    "timestamp_hour": "03/22/2019 05:00:00",
+    "footfall": 990
+  },
+  {
+    "timestamp_hour": "03/22/2019 06:00:00",
+    "footfall": 802
+  },
+  {
+    "timestamp_hour": "03/22/2019 07:00:00",
+    "footfall": 1135
+  },
+  {
+    "timestamp_hour": "03/22/2019 08:00:00",
+    "footfall": 1027
+  },
+  {
+    "timestamp_hour": "03/22/2019 09:00:00",
+    "footfall": 896
+  },
+  {
+    "timestamp_hour": "03/22/2019 10:00:00",
+    "footfall": 837
+  },
+  {
+    "timestamp_hour": "03/22/2019 11:00:00",
+    "footfall": 827
+  },
+  {
+    "timestamp_hour": "03/22/2019 12:00:00",
+    "footfall": 830
+  },
+  {
+    "timestamp_hour": "03/22/2019 13:00:00",
+    "footfall": 1083
+  },
+  {
+    "timestamp_hour": "03/22/2019 14:00:00",
+    "footfall": 1065
+  },
+  {
+    "timestamp_hour": "03/22/2019 15:00:00",
+    "footfall": 619
+  },
+  {
+    "timestamp_hour": "03/22/2019 16:00:00",
+    "footfall": 349
+  },
+  {
+    "timestamp_hour": "03/22/2019 17:00:00",
+    "footfall": 107
+  },
+  {
+    "timestamp_hour": "03/22/2019 18:00:00",
+    "footfall": 214
+  },
+  {
+    "timestamp_hour": "03/22/2019 19:00:00",
+    "footfall": 48
+  },
+  {
+    "timestamp_hour": "03/22/2019 20:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "03/22/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/22/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/22/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/23/2019 00:00:00",
+    "footfall": 55
+  },
+  {
+    "timestamp_hour": "03/23/2019 01:00:00",
+    "footfall": 114
+  },
+  {
+    "timestamp_hour": "03/23/2019 02:00:00",
+    "footfall": 230
+  },
+  {
+    "timestamp_hour": "03/23/2019 03:00:00",
+    "footfall": 328
+  },
+  {
+    "timestamp_hour": "03/23/2019 04:00:00",
+    "footfall": 688
+  },
+  {
+    "timestamp_hour": "03/23/2019 05:00:00",
+    "footfall": 1062
+  },
+  {
+    "timestamp_hour": "03/23/2019 06:00:00",
+    "footfall": 1218
+  },
+  {
+    "timestamp_hour": "03/23/2019 07:00:00",
+    "footfall": 1442
+  },
+  {
+    "timestamp_hour": "03/23/2019 08:00:00",
+    "footfall": 1626
+  },
+  {
+    "timestamp_hour": "03/23/2019 09:00:00",
+    "footfall": 1217
+  },
+  {
+    "timestamp_hour": "03/23/2019 10:00:00",
+    "footfall": 1170
+  },
+  {
+    "timestamp_hour": "03/23/2019 11:00:00",
+    "footfall": 1299
+  },
+  {
+    "timestamp_hour": "03/23/2019 12:00:00",
+    "footfall": 1642
+  },
+  {
+    "timestamp_hour": "03/23/2019 13:00:00",
+    "footfall": 2164
+  },
+  {
+    "timestamp_hour": "03/23/2019 14:00:00",
+    "footfall": 1779
+  },
+  {
+    "timestamp_hour": "03/23/2019 15:00:00",
+    "footfall": 842
+  },
+  {
+    "timestamp_hour": "03/23/2019 16:00:00",
+    "footfall": 332
+  },
+  {
+    "timestamp_hour": "03/23/2019 17:00:00",
+    "footfall": 139
+  },
+  {
+    "timestamp_hour": "03/23/2019 18:00:00",
+    "footfall": 234
+  },
+  {
+    "timestamp_hour": "03/23/2019 19:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "03/23/2019 20:00:00",
+    "footfall": 28
+  },
+  {
+    "timestamp_hour": "03/23/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/23/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/23/2019 23:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "03/24/2019 00:00:00",
+    "footfall": 39
+  },
+  {
+    "timestamp_hour": "03/24/2019 01:00:00",
+    "footfall": 88
+  },
+  {
+    "timestamp_hour": "03/24/2019 02:00:00",
+    "footfall": 146
+  },
+  {
+    "timestamp_hour": "03/24/2019 03:00:00",
+    "footfall": 299
+  },
+  {
+    "timestamp_hour": "03/24/2019 04:00:00",
+    "footfall": 523
+  },
+  {
+    "timestamp_hour": "03/24/2019 05:00:00",
+    "footfall": 981
+  },
+  {
+    "timestamp_hour": "03/24/2019 06:00:00",
+    "footfall": 1102
+  },
+  {
+    "timestamp_hour": "03/24/2019 07:00:00",
+    "footfall": 1244
+  },
+  {
+    "timestamp_hour": "03/24/2019 08:00:00",
+    "footfall": 1297
+  },
+  {
+    "timestamp_hour": "03/24/2019 09:00:00",
+    "footfall": 1198
+  },
+  {
+    "timestamp_hour": "03/24/2019 10:00:00",
+    "footfall": 1305
+  },
+  {
+    "timestamp_hour": "03/24/2019 11:00:00",
+    "footfall": 1464
+  },
+  {
+    "timestamp_hour": "03/24/2019 12:00:00",
+    "footfall": 1856
+  },
+  {
+    "timestamp_hour": "03/24/2019 13:00:00",
+    "footfall": 2047
+  },
+  {
+    "timestamp_hour": "03/24/2019 14:00:00",
+    "footfall": 1761
+  },
+  {
+    "timestamp_hour": "03/24/2019 15:00:00",
+    "footfall": 872
+  },
+  {
+    "timestamp_hour": "03/24/2019 16:00:00",
+    "footfall": 328
+  },
+  {
+    "timestamp_hour": "03/24/2019 17:00:00",
+    "footfall": 110
+  },
+  {
+    "timestamp_hour": "03/24/2019 18:00:00",
+    "footfall": 249
+  },
+  {
+    "timestamp_hour": "03/24/2019 19:00:00",
+    "footfall": 90
+  },
+  {
+    "timestamp_hour": "03/24/2019 20:00:00",
+    "footfall": 34
+  },
+  {
+    "timestamp_hour": "03/24/2019 21:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/24/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/24/2019 23:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "03/25/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "03/25/2019 01:00:00",
+    "footfall": 164
+  },
+  {
+    "timestamp_hour": "03/25/2019 02:00:00",
+    "footfall": 324
+  },
+  {
+    "timestamp_hour": "03/25/2019 03:00:00",
+    "footfall": 497
+  },
+  {
+    "timestamp_hour": "03/25/2019 04:00:00",
+    "footfall": 748
+  },
+  {
+    "timestamp_hour": "03/25/2019 05:00:00",
+    "footfall": 1040
+  },
+  {
+    "timestamp_hour": "03/25/2019 06:00:00",
+    "footfall": 893
+  },
+  {
+    "timestamp_hour": "03/25/2019 07:00:00",
+    "footfall": 970
+  },
+  {
+    "timestamp_hour": "03/25/2019 08:00:00",
+    "footfall": 851
+  },
+  {
+    "timestamp_hour": "03/25/2019 09:00:00",
+    "footfall": 706
+  },
+  {
+    "timestamp_hour": "03/25/2019 10:00:00",
+    "footfall": 788
+  },
+  {
+    "timestamp_hour": "03/25/2019 11:00:00",
+    "footfall": 615
+  },
+  {
+    "timestamp_hour": "03/25/2019 12:00:00",
+    "footfall": 700
+  },
+  {
+    "timestamp_hour": "03/25/2019 13:00:00",
+    "footfall": 779
+  },
+  {
+    "timestamp_hour": "03/25/2019 14:00:00",
+    "footfall": 738
+  },
+  {
+    "timestamp_hour": "03/25/2019 15:00:00",
+    "footfall": 434
+  },
+  {
+    "timestamp_hour": "03/25/2019 16:00:00",
+    "footfall": 203
+  },
+  {
+    "timestamp_hour": "03/25/2019 17:00:00",
+    "footfall": 61
+  },
+  {
+    "timestamp_hour": "03/25/2019 18:00:00",
+    "footfall": 211
+  },
+  {
+    "timestamp_hour": "03/25/2019 19:00:00",
+    "footfall": 69
+  },
+  {
+    "timestamp_hour": "03/25/2019 20:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "03/25/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "03/25/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/25/2019 23:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/26/2019 00:00:00",
+    "footfall": 56
+  },
+  {
+    "timestamp_hour": "03/26/2019 01:00:00",
+    "footfall": 171
+  },
+  {
+    "timestamp_hour": "03/26/2019 02:00:00",
+    "footfall": 291
+  },
+  {
+    "timestamp_hour": "03/26/2019 03:00:00",
+    "footfall": 503
+  },
+  {
+    "timestamp_hour": "03/26/2019 04:00:00",
+    "footfall": 785
+  },
+  {
+    "timestamp_hour": "03/26/2019 05:00:00",
+    "footfall": 994
+  },
+  {
+    "timestamp_hour": "03/26/2019 06:00:00",
+    "footfall": 727
+  },
+  {
+    "timestamp_hour": "03/26/2019 07:00:00",
+    "footfall": 764
+  },
+  {
+    "timestamp_hour": "03/26/2019 08:00:00",
+    "footfall": 810
+  },
+  {
+    "timestamp_hour": "03/26/2019 09:00:00",
+    "footfall": 689
+  },
+  {
+    "timestamp_hour": "03/26/2019 10:00:00",
+    "footfall": 628
+  },
+  {
+    "timestamp_hour": "03/26/2019 11:00:00",
+    "footfall": 556
+  },
+  {
+    "timestamp_hour": "03/26/2019 12:00:00",
+    "footfall": 630
+  },
+  {
+    "timestamp_hour": "03/26/2019 13:00:00",
+    "footfall": 631
+  },
+  {
+    "timestamp_hour": "03/26/2019 14:00:00",
+    "footfall": 647
+  },
+  {
+    "timestamp_hour": "03/26/2019 15:00:00",
+    "footfall": 479
+  },
+  {
+    "timestamp_hour": "03/26/2019 16:00:00",
+    "footfall": 239
+  },
+  {
+    "timestamp_hour": "03/26/2019 17:00:00",
+    "footfall": 79
+  },
+  {
+    "timestamp_hour": "03/26/2019 18:00:00",
+    "footfall": 206
+  },
+  {
+    "timestamp_hour": "03/26/2019 19:00:00",
+    "footfall": 58
+  },
+  {
+    "timestamp_hour": "03/26/2019 20:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/26/2019 21:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/26/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "03/26/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/27/2019 00:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "03/27/2019 01:00:00",
+    "footfall": 150
+  },
+  {
+    "timestamp_hour": "03/27/2019 02:00:00",
+    "footfall": 234
+  },
+  {
+    "timestamp_hour": "03/27/2019 03:00:00",
+    "footfall": 415
+  },
+  {
+    "timestamp_hour": "03/27/2019 04:00:00",
+    "footfall": 671
+  },
+  {
+    "timestamp_hour": "03/27/2019 05:00:00",
+    "footfall": 952
+  },
+  {
+    "timestamp_hour": "03/27/2019 06:00:00",
+    "footfall": 867
+  },
+  {
+    "timestamp_hour": "03/27/2019 07:00:00",
+    "footfall": 978
+  },
+  {
+    "timestamp_hour": "03/27/2019 08:00:00",
+    "footfall": 832
+  },
+  {
+    "timestamp_hour": "03/27/2019 09:00:00",
+    "footfall": 653
+  },
+  {
+    "timestamp_hour": "03/27/2019 10:00:00",
+    "footfall": 637
+  },
+  {
+    "timestamp_hour": "03/27/2019 11:00:00",
+    "footfall": 659
+  },
+  {
+    "timestamp_hour": "03/27/2019 12:00:00",
+    "footfall": 782
+  },
+  {
+    "timestamp_hour": "03/27/2019 13:00:00",
+    "footfall": 800
+  },
+  {
+    "timestamp_hour": "03/27/2019 14:00:00",
+    "footfall": 763
+  },
+  {
+    "timestamp_hour": "03/27/2019 15:00:00",
+    "footfall": 513
+  },
+  {
+    "timestamp_hour": "03/27/2019 16:00:00",
+    "footfall": 247
+  },
+  {
+    "timestamp_hour": "03/27/2019 17:00:00",
+    "footfall": 66
+  },
+  {
+    "timestamp_hour": "03/27/2019 18:00:00",
+    "footfall": 212
+  },
+  {
+    "timestamp_hour": "03/27/2019 19:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "03/27/2019 20:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "03/27/2019 21:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "03/27/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "03/27/2019 23:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "03/28/2019 00:00:00",
+    "footfall": 54
+  },
+  {
+    "timestamp_hour": "03/28/2019 01:00:00",
+    "footfall": 165
+  },
+  {
+    "timestamp_hour": "03/28/2019 02:00:00",
+    "footfall": 285
+  },
+  {
+    "timestamp_hour": "03/28/2019 03:00:00",
+    "footfall": 548
+  },
+  {
+    "timestamp_hour": "03/28/2019 04:00:00",
+    "footfall": 779
+  },
+  {
+    "timestamp_hour": "03/28/2019 05:00:00",
+    "footfall": 988
+  },
+  {
+    "timestamp_hour": "03/28/2019 06:00:00",
+    "footfall": 990
+  },
+  {
+    "timestamp_hour": "03/28/2019 07:00:00",
+    "footfall": 990
+  },
+  {
+    "timestamp_hour": "03/28/2019 08:00:00",
+    "footfall": 805
+  },
+  {
+    "timestamp_hour": "03/28/2019 09:00:00",
+    "footfall": 741
+  },
+  {
+    "timestamp_hour": "03/28/2019 10:00:00",
+    "footfall": 664
+  },
+  {
+    "timestamp_hour": "03/28/2019 11:00:00",
+    "footfall": 742
+  },
+  {
+    "timestamp_hour": "03/28/2019 12:00:00",
+    "footfall": 797
+  },
+  {
+    "timestamp_hour": "03/28/2019 13:00:00",
+    "footfall": 801
+  },
+  {
+    "timestamp_hour": "03/28/2019 14:00:00",
+    "footfall": 822
+  },
+  {
+    "timestamp_hour": "03/28/2019 15:00:00",
+    "footfall": 557
+  },
+  {
+    "timestamp_hour": "03/28/2019 16:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "03/28/2019 17:00:00",
+    "footfall": 109
+  },
+  {
+    "timestamp_hour": "03/28/2019 18:00:00",
+    "footfall": 198
+  },
+  {
+    "timestamp_hour": "03/28/2019 19:00:00",
+    "footfall": 62
+  },
+  {
+    "timestamp_hour": "03/28/2019 20:00:00",
+    "footfall": 38
+  },
+  {
+    "timestamp_hour": "03/28/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/28/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "03/28/2019 23:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "03/29/2019 00:00:00",
+    "footfall": 60
+  },
+  {
+    "timestamp_hour": "03/29/2019 01:00:00",
+    "footfall": 143
+  },
+  {
+    "timestamp_hour": "03/29/2019 02:00:00",
+    "footfall": 263
+  },
+  {
+    "timestamp_hour": "03/29/2019 03:00:00",
+    "footfall": 506
+  },
+  {
+    "timestamp_hour": "03/29/2019 04:00:00",
+    "footfall": 751
+  },
+  {
+    "timestamp_hour": "03/29/2019 05:00:00",
+    "footfall": 919
+  },
+  {
+    "timestamp_hour": "03/29/2019 06:00:00",
+    "footfall": 1158
+  },
+  {
+    "timestamp_hour": "03/29/2019 07:00:00",
+    "footfall": 1200
+  },
+  {
+    "timestamp_hour": "03/29/2019 08:00:00",
+    "footfall": 1132
+  },
+  {
+    "timestamp_hour": "03/29/2019 09:00:00",
+    "footfall": 933
+  },
+  {
+    "timestamp_hour": "03/29/2019 10:00:00",
+    "footfall": 858
+  },
+  {
+    "timestamp_hour": "03/29/2019 11:00:00",
+    "footfall": 870
+  },
+  {
+    "timestamp_hour": "03/29/2019 12:00:00",
+    "footfall": 881
+  },
+  {
+    "timestamp_hour": "03/29/2019 13:00:00",
+    "footfall": 857
+  },
+  {
+    "timestamp_hour": "03/29/2019 14:00:00",
+    "footfall": 835
+  },
+  {
+    "timestamp_hour": "03/29/2019 15:00:00",
+    "footfall": 579
+  },
+  {
+    "timestamp_hour": "03/29/2019 16:00:00",
+    "footfall": 268
+  },
+  {
+    "timestamp_hour": "03/29/2019 17:00:00",
+    "footfall": 111
+  },
+  {
+    "timestamp_hour": "03/29/2019 18:00:00",
+    "footfall": 260
+  },
+  {
+    "timestamp_hour": "03/29/2019 19:00:00",
+    "footfall": 64
+  },
+  {
+    "timestamp_hour": "03/29/2019 20:00:00",
+    "footfall": 30
+  },
+  {
+    "timestamp_hour": "03/29/2019 21:00:00",
+    "footfall": 35
+  },
+  {
+    "timestamp_hour": "03/29/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "03/29/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "03/30/2019 00:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "03/30/2019 01:00:00",
+    "footfall": 129
+  },
+  {
+    "timestamp_hour": "03/30/2019 02:00:00",
+    "footfall": 214
+  },
+  {
+    "timestamp_hour": "03/30/2019 03:00:00",
+    "footfall": 401
+  },
+  {
+    "timestamp_hour": "03/30/2019 04:00:00",
+    "footfall": 731
+  },
+  {
+    "timestamp_hour": "03/30/2019 05:00:00",
+    "footfall": 1016
+  },
+  {
+    "timestamp_hour": "03/30/2019 06:00:00",
+    "footfall": 1220
+  },
+  {
+    "timestamp_hour": "03/30/2019 07:00:00",
+    "footfall": 1737
+  },
+  {
+    "timestamp_hour": "03/30/2019 08:00:00",
+    "footfall": 1420
+  },
+  {
+    "timestamp_hour": "03/30/2019 09:00:00",
+    "footfall": 1305
+  },
+  {
+    "timestamp_hour": "03/30/2019 10:00:00",
+    "footfall": 1434
+  },
+  {
+    "timestamp_hour": "03/30/2019 11:00:00",
+    "footfall": 1403
+  },
+  {
+    "timestamp_hour": "03/30/2019 12:00:00",
+    "footfall": 1369
+  },
+  {
+    "timestamp_hour": "03/30/2019 13:00:00",
+    "footfall": 1506
+  },
+  {
+    "timestamp_hour": "03/30/2019 14:00:00",
+    "footfall": 1543
+  },
+  {
+    "timestamp_hour": "03/30/2019 15:00:00",
+    "footfall": 981
+  },
+  {
+    "timestamp_hour": "03/30/2019 16:00:00",
+    "footfall": 453
+  },
+  {
+    "timestamp_hour": "03/30/2019 17:00:00",
+    "footfall": 133
+  },
+  {
+    "timestamp_hour": "03/30/2019 18:00:00",
+    "footfall": 277
+  },
+  {
+    "timestamp_hour": "03/30/2019 19:00:00",
+    "footfall": 88
+  },
+  {
+    "timestamp_hour": "03/30/2019 20:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "03/30/2019 21:00:00",
+    "footfall": 67
+  },
+  {
+    "timestamp_hour": "03/30/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "03/30/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "03/31/2019 00:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "03/31/2019 01:00:00",
+    "footfall": 74
+  },
+  {
+    "timestamp_hour": "03/31/2019 02:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "03/31/2019 03:00:00",
+    "footfall": 238
+  },
+  {
+    "timestamp_hour": "03/31/2019 04:00:00",
+    "footfall": 590
+  },
+  {
+    "timestamp_hour": "03/31/2019 05:00:00",
+    "footfall": 963
+  },
+  {
+    "timestamp_hour": "03/31/2019 06:00:00",
+    "footfall": 1190
+  },
+  {
+    "timestamp_hour": "03/31/2019 07:00:00",
+    "footfall": 1533
+  },
+  {
+    "timestamp_hour": "03/31/2019 08:00:00",
+    "footfall": 1598
+  },
+  {
+    "timestamp_hour": "03/31/2019 09:00:00",
+    "footfall": 1592
+  },
+  {
+    "timestamp_hour": "03/31/2019 10:00:00",
+    "footfall": 1391
+  },
+  {
+    "timestamp_hour": "03/31/2019 11:00:00",
+    "footfall": 1674
+  },
+  {
+    "timestamp_hour": "03/31/2019 12:00:00",
+    "footfall": 2189
+  },
+  {
+    "timestamp_hour": "03/31/2019 13:00:00",
+    "footfall": 2318
+  },
+  {
+    "timestamp_hour": "03/31/2019 14:00:00",
+    "footfall": 2294
+  },
+  {
+    "timestamp_hour": "03/31/2019 15:00:00",
+    "footfall": 1256
+  },
+  {
+    "timestamp_hour": "03/31/2019 16:00:00",
+    "footfall": 457
+  },
+  {
+    "timestamp_hour": "03/31/2019 17:00:00",
+    "footfall": 124
+  },
+  {
+    "timestamp_hour": "03/31/2019 18:00:00",
+    "footfall": 292
+  },
+  {
+    "timestamp_hour": "03/31/2019 19:00:00",
+    "footfall": 205
+  },
+  {
+    "timestamp_hour": "03/31/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "03/31/2019 22:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "03/31/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/01/2019 00:00:00",
+    "footfall": 63
+  },
+  {
+    "timestamp_hour": "04/01/2019 01:00:00",
+    "footfall": 161
+  },
+  {
+    "timestamp_hour": "04/01/2019 02:00:00",
+    "footfall": 259
+  },
+  {
+    "timestamp_hour": "04/01/2019 03:00:00",
+    "footfall": 497
+  },
+  {
+    "timestamp_hour": "04/01/2019 04:00:00",
+    "footfall": 744
+  },
+  {
+    "timestamp_hour": "04/01/2019 05:00:00",
+    "footfall": 942
+  },
+  {
+    "timestamp_hour": "04/01/2019 06:00:00",
+    "footfall": 781
+  },
+  {
+    "timestamp_hour": "04/01/2019 07:00:00",
+    "footfall": 918
+  },
+  {
+    "timestamp_hour": "04/01/2019 08:00:00",
+    "footfall": 784
+  },
+  {
+    "timestamp_hour": "04/01/2019 09:00:00",
+    "footfall": 628
+  },
+  {
+    "timestamp_hour": "04/01/2019 10:00:00",
+    "footfall": 715
+  },
+  {
+    "timestamp_hour": "04/01/2019 11:00:00",
+    "footfall": 661
+  },
+  {
+    "timestamp_hour": "04/01/2019 12:00:00",
+    "footfall": 681
+  },
+  {
+    "timestamp_hour": "04/01/2019 13:00:00",
+    "footfall": 793
+  },
+  {
+    "timestamp_hour": "04/01/2019 14:00:00",
+    "footfall": 773
+  },
+  {
+    "timestamp_hour": "04/01/2019 15:00:00",
+    "footfall": 463
+  },
+  {
+    "timestamp_hour": "04/01/2019 16:00:00",
+    "footfall": 226
+  },
+  {
+    "timestamp_hour": "04/01/2019 17:00:00",
+    "footfall": 56
+  },
+  {
+    "timestamp_hour": "04/01/2019 18:00:00",
+    "footfall": 258
+  },
+  {
+    "timestamp_hour": "04/01/2019 19:00:00",
+    "footfall": 76
+  },
+  {
+    "timestamp_hour": "04/01/2019 20:00:00",
+    "footfall": 31
+  },
+  {
+    "timestamp_hour": "04/01/2019 21:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "04/01/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "04/01/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/02/2019 00:00:00",
+    "footfall": 70
+  },
+  {
+    "timestamp_hour": "04/02/2019 01:00:00",
+    "footfall": 158
+  },
+  {
+    "timestamp_hour": "04/02/2019 02:00:00",
+    "footfall": 269
+  },
+  {
+    "timestamp_hour": "04/02/2019 03:00:00",
+    "footfall": 468
+  },
+  {
+    "timestamp_hour": "04/02/2019 04:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "04/02/2019 05:00:00",
+    "footfall": 999
+  },
+  {
+    "timestamp_hour": "04/02/2019 06:00:00",
+    "footfall": 707
+  },
+  {
+    "timestamp_hour": "04/02/2019 07:00:00",
+    "footfall": 943
+  },
+  {
+    "timestamp_hour": "04/02/2019 08:00:00",
+    "footfall": 958
+  },
+  {
+    "timestamp_hour": "04/02/2019 09:00:00",
+    "footfall": 711
+  },
+  {
+    "timestamp_hour": "04/02/2019 10:00:00",
+    "footfall": 691
+  },
+  {
+    "timestamp_hour": "04/02/2019 11:00:00",
+    "footfall": 654
+  },
+  {
+    "timestamp_hour": "04/02/2019 12:00:00",
+    "footfall": 936
+  },
+  {
+    "timestamp_hour": "04/02/2019 13:00:00",
+    "footfall": 880
+  },
+  {
+    "timestamp_hour": "04/02/2019 14:00:00",
+    "footfall": 783
+  },
+  {
+    "timestamp_hour": "04/02/2019 15:00:00",
+    "footfall": 434
+  },
+  {
+    "timestamp_hour": "04/02/2019 16:00:00",
+    "footfall": 228
+  },
+  {
+    "timestamp_hour": "04/02/2019 17:00:00",
+    "footfall": 71
+  },
+  {
+    "timestamp_hour": "04/02/2019 18:00:00",
+    "footfall": 237
+  },
+  {
+    "timestamp_hour": "04/02/2019 19:00:00",
+    "footfall": 59
+  },
+  {
+    "timestamp_hour": "04/02/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "04/02/2019 21:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/02/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "04/02/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/03/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "04/03/2019 01:00:00",
+    "footfall": 153
+  },
+  {
+    "timestamp_hour": "04/03/2019 02:00:00",
+    "footfall": 254
+  },
+  {
+    "timestamp_hour": "04/03/2019 03:00:00",
+    "footfall": 473
+  },
+  {
+    "timestamp_hour": "04/03/2019 04:00:00",
+    "footfall": 812
+  },
+  {
+    "timestamp_hour": "04/03/2019 05:00:00",
+    "footfall": 998
+  },
+  {
+    "timestamp_hour": "04/03/2019 06:00:00",
+    "footfall": 827
+  },
+  {
+    "timestamp_hour": "04/03/2019 07:00:00",
+    "footfall": 970
+  },
+  {
+    "timestamp_hour": "04/03/2019 08:00:00",
+    "footfall": 906
+  },
+  {
+    "timestamp_hour": "04/03/2019 09:00:00",
+    "footfall": 763
+  },
+  {
+    "timestamp_hour": "04/03/2019 10:00:00",
+    "footfall": 704
+  },
+  {
+    "timestamp_hour": "04/03/2019 11:00:00",
+    "footfall": 653
+  },
+  {
+    "timestamp_hour": "04/03/2019 12:00:00",
+    "footfall": 681
+  },
+  {
+    "timestamp_hour": "04/03/2019 13:00:00",
+    "footfall": 820
+  },
+  {
+    "timestamp_hour": "04/03/2019 14:00:00",
+    "footfall": 787
+  },
+  {
+    "timestamp_hour": "04/03/2019 15:00:00",
+    "footfall": 489
+  },
+  {
+    "timestamp_hour": "04/03/2019 16:00:00",
+    "footfall": 199
+  },
+  {
+    "timestamp_hour": "04/03/2019 17:00:00",
+    "footfall": 71
+  },
+  {
+    "timestamp_hour": "04/03/2019 18:00:00",
+    "footfall": 216
+  },
+  {
+    "timestamp_hour": "04/03/2019 19:00:00",
+    "footfall": 58
+  },
+  {
+    "timestamp_hour": "04/03/2019 20:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "04/03/2019 21:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "04/03/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/03/2019 23:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/04/2019 00:00:00",
+    "footfall": 38
+  },
+  {
+    "timestamp_hour": "04/04/2019 01:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "04/04/2019 02:00:00",
+    "footfall": 249
+  },
+  {
+    "timestamp_hour": "04/04/2019 03:00:00",
+    "footfall": 505
+  },
+  {
+    "timestamp_hour": "04/04/2019 04:00:00",
+    "footfall": 729
+  },
+  {
+    "timestamp_hour": "04/04/2019 05:00:00",
+    "footfall": 931
+  },
+  {
+    "timestamp_hour": "04/04/2019 06:00:00",
+    "footfall": 861
+  },
+  {
+    "timestamp_hour": "04/04/2019 07:00:00",
+    "footfall": 1008
+  },
+  {
+    "timestamp_hour": "04/04/2019 08:00:00",
+    "footfall": 951
+  },
+  {
+    "timestamp_hour": "04/04/2019 09:00:00",
+    "footfall": 722
+  },
+  {
+    "timestamp_hour": "04/04/2019 10:00:00",
+    "footfall": 684
+  },
+  {
+    "timestamp_hour": "04/04/2019 11:00:00",
+    "footfall": 635
+  },
+  {
+    "timestamp_hour": "04/04/2019 12:00:00",
+    "footfall": 733
+  },
+  {
+    "timestamp_hour": "04/04/2019 13:00:00",
+    "footfall": 810
+  },
+  {
+    "timestamp_hour": "04/04/2019 14:00:00",
+    "footfall": 866
+  },
+  {
+    "timestamp_hour": "04/04/2019 15:00:00",
+    "footfall": 537
+  },
+  {
+    "timestamp_hour": "04/04/2019 16:00:00",
+    "footfall": 261
+  },
+  {
+    "timestamp_hour": "04/04/2019 17:00:00",
+    "footfall": 78
+  },
+  {
+    "timestamp_hour": "04/04/2019 18:00:00",
+    "footfall": 239
+  },
+  {
+    "timestamp_hour": "04/04/2019 19:00:00",
+    "footfall": 76
+  },
+  {
+    "timestamp_hour": "04/04/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "04/04/2019 21:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "04/04/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/04/2019 23:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "04/05/2019 00:00:00",
+    "footfall": 57
+  },
+  {
+    "timestamp_hour": "04/05/2019 01:00:00",
+    "footfall": 162
+  },
+  {
+    "timestamp_hour": "04/05/2019 02:00:00",
+    "footfall": 287
+  },
+  {
+    "timestamp_hour": "04/05/2019 03:00:00",
+    "footfall": 501
+  },
+  {
+    "timestamp_hour": "04/05/2019 04:00:00",
+    "footfall": 765
+  },
+  {
+    "timestamp_hour": "04/05/2019 05:00:00",
+    "footfall": 954
+  },
+  {
+    "timestamp_hour": "04/05/2019 06:00:00",
+    "footfall": 904
+  },
+  {
+    "timestamp_hour": "04/05/2019 07:00:00",
+    "footfall": 969
+  },
+  {
+    "timestamp_hour": "04/05/2019 08:00:00",
+    "footfall": 1233
+  },
+  {
+    "timestamp_hour": "04/05/2019 09:00:00",
+    "footfall": 1032
+  },
+  {
+    "timestamp_hour": "04/05/2019 10:00:00",
+    "footfall": 901
+  },
+  {
+    "timestamp_hour": "04/05/2019 11:00:00",
+    "footfall": 845
+  },
+  {
+    "timestamp_hour": "04/05/2019 12:00:00",
+    "footfall": 774
+  },
+  {
+    "timestamp_hour": "04/05/2019 13:00:00",
+    "footfall": 1050
+  },
+  {
+    "timestamp_hour": "04/05/2019 14:00:00",
+    "footfall": 982
+  },
+  {
+    "timestamp_hour": "04/05/2019 15:00:00",
+    "footfall": 695
+  },
+  {
+    "timestamp_hour": "04/05/2019 16:00:00",
+    "footfall": 247
+  },
+  {
+    "timestamp_hour": "04/05/2019 17:00:00",
+    "footfall": 97
+  },
+  {
+    "timestamp_hour": "04/05/2019 18:00:00",
+    "footfall": 225
+  },
+  {
+    "timestamp_hour": "04/05/2019 19:00:00",
+    "footfall": 59
+  },
+  {
+    "timestamp_hour": "04/05/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "04/05/2019 21:00:00",
+    "footfall": 60
+  },
+  {
+    "timestamp_hour": "04/05/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "04/05/2019 23:00:00",
+    "footfall": 28
+  },
+  {
+    "timestamp_hour": "04/06/2019 00:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "04/06/2019 01:00:00",
+    "footfall": 80
+  },
+  {
+    "timestamp_hour": "04/06/2019 02:00:00",
+    "footfall": 143
+  },
+  {
+    "timestamp_hour": "04/06/2019 03:00:00",
+    "footfall": 299
+  },
+  {
+    "timestamp_hour": "04/06/2019 04:00:00",
+    "footfall": 590
+  },
+  {
+    "timestamp_hour": "04/06/2019 05:00:00",
+    "footfall": 848
+  },
+  {
+    "timestamp_hour": "04/06/2019 06:00:00",
+    "footfall": 989
+  },
+  {
+    "timestamp_hour": "04/06/2019 07:00:00",
+    "footfall": 1287
+  },
+  {
+    "timestamp_hour": "04/06/2019 08:00:00",
+    "footfall": 1514
+  },
+  {
+    "timestamp_hour": "04/06/2019 09:00:00",
+    "footfall": 1224
+  },
+  {
+    "timestamp_hour": "04/06/2019 10:00:00",
+    "footfall": 1423
+  },
+  {
+    "timestamp_hour": "04/06/2019 11:00:00",
+    "footfall": 1267
+  },
+  {
+    "timestamp_hour": "04/06/2019 12:00:00",
+    "footfall": 1902
+  },
+  {
+    "timestamp_hour": "04/06/2019 13:00:00",
+    "footfall": 2338
+  },
+  {
+    "timestamp_hour": "04/06/2019 14:00:00",
+    "footfall": 2206
+  },
+  {
+    "timestamp_hour": "04/06/2019 15:00:00",
+    "footfall": 1279
+  },
+  {
+    "timestamp_hour": "04/06/2019 16:00:00",
+    "footfall": 438
+  },
+  {
+    "timestamp_hour": "04/06/2019 17:00:00",
+    "footfall": 125
+  },
+  {
+    "timestamp_hour": "04/06/2019 18:00:00",
+    "footfall": 287
+  },
+  {
+    "timestamp_hour": "04/06/2019 19:00:00",
+    "footfall": 61
+  },
+  {
+    "timestamp_hour": "04/06/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "04/06/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/06/2019 22:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/06/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "04/07/2019 00:00:00",
+    "footfall": 32
+  },
+  {
+    "timestamp_hour": "04/07/2019 01:00:00",
+    "footfall": 90
+  },
+  {
+    "timestamp_hour": "04/07/2019 02:00:00",
+    "footfall": 155
+  },
+  {
+    "timestamp_hour": "04/07/2019 03:00:00",
+    "footfall": 241
+  },
+  {
+    "timestamp_hour": "04/07/2019 04:00:00",
+    "footfall": 528
+  },
+  {
+    "timestamp_hour": "04/07/2019 05:00:00",
+    "footfall": 1027
+  },
+  {
+    "timestamp_hour": "04/07/2019 06:00:00",
+    "footfall": 1128
+  },
+  {
+    "timestamp_hour": "04/07/2019 07:00:00",
+    "footfall": 1526
+  },
+  {
+    "timestamp_hour": "04/07/2019 08:00:00",
+    "footfall": 1806
+  },
+  {
+    "timestamp_hour": "04/07/2019 09:00:00",
+    "footfall": 1663
+  },
+  {
+    "timestamp_hour": "04/07/2019 10:00:00",
+    "footfall": 1548
+  },
+  {
+    "timestamp_hour": "04/07/2019 11:00:00",
+    "footfall": 1662
+  },
+  {
+    "timestamp_hour": "04/07/2019 12:00:00",
+    "footfall": 1948
+  },
+  {
+    "timestamp_hour": "04/07/2019 13:00:00",
+    "footfall": 2231
+  },
+  {
+    "timestamp_hour": "04/07/2019 14:00:00",
+    "footfall": 2151
+  },
+  {
+    "timestamp_hour": "04/07/2019 15:00:00",
+    "footfall": 1187
+  },
+  {
+    "timestamp_hour": "04/07/2019 16:00:00",
+    "footfall": 412
+  },
+  {
+    "timestamp_hour": "04/07/2019 17:00:00",
+    "footfall": 134
+  },
+  {
+    "timestamp_hour": "04/07/2019 18:00:00",
+    "footfall": 284
+  },
+  {
+    "timestamp_hour": "04/07/2019 19:00:00",
+    "footfall": 130
+  },
+  {
+    "timestamp_hour": "04/07/2019 20:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "04/07/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/07/2019 22:00:00",
+    "footfall": 9
+  },
+  {
+    "timestamp_hour": "04/07/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/08/2019 00:00:00",
+    "footfall": 32
+  },
+  {
+    "timestamp_hour": "04/08/2019 01:00:00",
+    "footfall": 174
+  },
+  {
+    "timestamp_hour": "04/08/2019 02:00:00",
+    "footfall": 294
+  },
+  {
+    "timestamp_hour": "04/08/2019 03:00:00",
+    "footfall": 482
+  },
+  {
+    "timestamp_hour": "04/08/2019 04:00:00",
+    "footfall": 819
+  },
+  {
+    "timestamp_hour": "04/08/2019 05:00:00",
+    "footfall": 972
+  },
+  {
+    "timestamp_hour": "04/08/2019 06:00:00",
+    "footfall": 768
+  },
+  {
+    "timestamp_hour": "04/08/2019 07:00:00",
+    "footfall": 977
+  },
+  {
+    "timestamp_hour": "04/08/2019 08:00:00",
+    "footfall": 900
+  },
+  {
+    "timestamp_hour": "04/08/2019 09:00:00",
+    "footfall": 750
+  },
+  {
+    "timestamp_hour": "04/08/2019 10:00:00",
+    "footfall": 676
+  },
+  {
+    "timestamp_hour": "04/08/2019 11:00:00",
+    "footfall": 703
+  },
+  {
+    "timestamp_hour": "04/08/2019 12:00:00",
+    "footfall": 685
+  },
+  {
+    "timestamp_hour": "04/08/2019 13:00:00",
+    "footfall": 799
+  },
+  {
+    "timestamp_hour": "04/08/2019 14:00:00",
+    "footfall": 735
+  },
+  {
+    "timestamp_hour": "04/08/2019 15:00:00",
+    "footfall": 506
+  },
+  {
+    "timestamp_hour": "04/08/2019 16:00:00",
+    "footfall": 179
+  },
+  {
+    "timestamp_hour": "04/08/2019 17:00:00",
+    "footfall": 72
+  },
+  {
+    "timestamp_hour": "04/08/2019 18:00:00",
+    "footfall": 223
+  },
+  {
+    "timestamp_hour": "04/08/2019 19:00:00",
+    "footfall": 68
+  },
+  {
+    "timestamp_hour": "04/08/2019 20:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/08/2019 21:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/08/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/08/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "04/09/2019 00:00:00",
+    "footfall": 43
+  },
+  {
+    "timestamp_hour": "04/09/2019 01:00:00",
+    "footfall": 143
+  },
+  {
+    "timestamp_hour": "04/09/2019 02:00:00",
+    "footfall": 268
+  },
+  {
+    "timestamp_hour": "04/09/2019 03:00:00",
+    "footfall": 424
+  },
+  {
+    "timestamp_hour": "04/09/2019 04:00:00",
+    "footfall": 724
+  },
+  {
+    "timestamp_hour": "04/09/2019 05:00:00",
+    "footfall": 911
+  },
+  {
+    "timestamp_hour": "04/09/2019 06:00:00",
+    "footfall": 817
+  },
+  {
+    "timestamp_hour": "04/09/2019 07:00:00",
+    "footfall": 884
+  },
+  {
+    "timestamp_hour": "04/09/2019 08:00:00",
+    "footfall": 832
+  },
+  {
+    "timestamp_hour": "04/09/2019 09:00:00",
+    "footfall": 723
+  },
+  {
+    "timestamp_hour": "04/09/2019 10:00:00",
+    "footfall": 575
+  },
+  {
+    "timestamp_hour": "04/09/2019 11:00:00",
+    "footfall": 658
+  },
+  {
+    "timestamp_hour": "04/09/2019 12:00:00",
+    "footfall": 725
+  },
+  {
+    "timestamp_hour": "04/09/2019 13:00:00",
+    "footfall": 795
+  },
+  {
+    "timestamp_hour": "04/09/2019 14:00:00",
+    "footfall": 876
+  },
+  {
+    "timestamp_hour": "04/09/2019 15:00:00",
+    "footfall": 642
+  },
+  {
+    "timestamp_hour": "04/09/2019 16:00:00",
+    "footfall": 203
+  },
+  {
+    "timestamp_hour": "04/09/2019 17:00:00",
+    "footfall": 73
+  },
+  {
+    "timestamp_hour": "04/09/2019 18:00:00",
+    "footfall": 210
+  },
+  {
+    "timestamp_hour": "04/09/2019 19:00:00",
+    "footfall": 61
+  },
+  {
+    "timestamp_hour": "04/09/2019 20:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "04/09/2019 21:00:00",
+    "footfall": 27
+  },
+  {
+    "timestamp_hour": "04/09/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "04/09/2019 23:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "04/10/2019 00:00:00",
+    "footfall": 42
+  },
+  {
+    "timestamp_hour": "04/10/2019 01:00:00",
+    "footfall": 157
+  },
+  {
+    "timestamp_hour": "04/10/2019 02:00:00",
+    "footfall": 238
+  },
+  {
+    "timestamp_hour": "04/10/2019 03:00:00",
+    "footfall": 452
+  },
+  {
+    "timestamp_hour": "04/10/2019 04:00:00",
+    "footfall": 732
+  },
+  {
+    "timestamp_hour": "04/10/2019 05:00:00",
+    "footfall": 1031
+  },
+  {
+    "timestamp_hour": "04/10/2019 06:00:00",
+    "footfall": 781
+  },
+  {
+    "timestamp_hour": "04/10/2019 07:00:00",
+    "footfall": 1019
+  },
+  {
+    "timestamp_hour": "04/10/2019 08:00:00",
+    "footfall": 811
+  },
+  {
+    "timestamp_hour": "04/10/2019 09:00:00",
+    "footfall": 767
+  },
+  {
+    "timestamp_hour": "04/10/2019 10:00:00",
+    "footfall": 810
+  },
+  {
+    "timestamp_hour": "04/10/2019 11:00:00",
+    "footfall": 728
+  },
+  {
+    "timestamp_hour": "04/10/2019 12:00:00",
+    "footfall": 888
+  },
+  {
+    "timestamp_hour": "04/10/2019 13:00:00",
+    "footfall": 925
+  },
+  {
+    "timestamp_hour": "04/10/2019 14:00:00",
+    "footfall": 830
+  },
+  {
+    "timestamp_hour": "04/10/2019 15:00:00",
+    "footfall": 533
+  },
+  {
+    "timestamp_hour": "04/10/2019 16:00:00",
+    "footfall": 253
+  },
+  {
+    "timestamp_hour": "04/10/2019 17:00:00",
+    "footfall": 81
+  },
+  {
+    "timestamp_hour": "04/10/2019 18:00:00",
+    "footfall": 220
+  },
+  {
+    "timestamp_hour": "04/10/2019 19:00:00",
+    "footfall": 46
+  },
+  {
+    "timestamp_hour": "04/10/2019 20:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/10/2019 21:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/10/2019 22:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "04/10/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "04/11/2019 00:00:00",
+    "footfall": 48
+  },
+  {
+    "timestamp_hour": "04/11/2019 01:00:00",
+    "footfall": 159
+  },
+  {
+    "timestamp_hour": "04/11/2019 02:00:00",
+    "footfall": 277
+  },
+  {
+    "timestamp_hour": "04/11/2019 03:00:00",
+    "footfall": 493
+  },
+  {
+    "timestamp_hour": "04/11/2019 04:00:00",
+    "footfall": 788
+  },
+  {
+    "timestamp_hour": "04/11/2019 05:00:00",
+    "footfall": 921
+  },
+  {
+    "timestamp_hour": "04/11/2019 06:00:00",
+    "footfall": 854
+  },
+  {
+    "timestamp_hour": "04/11/2019 07:00:00",
+    "footfall": 1007
+  },
+  {
+    "timestamp_hour": "04/11/2019 08:00:00",
+    "footfall": 923
+  },
+  {
+    "timestamp_hour": "04/11/2019 09:00:00",
+    "footfall": 861
+  },
+  {
+    "timestamp_hour": "04/11/2019 10:00:00",
+    "footfall": 935
+  },
+  {
+    "timestamp_hour": "04/11/2019 11:00:00",
+    "footfall": 920
+  },
+  {
+    "timestamp_hour": "04/11/2019 12:00:00",
+    "footfall": 985
+  },
+  {
+    "timestamp_hour": "04/11/2019 13:00:00",
+    "footfall": 1048
+  },
+  {
+    "timestamp_hour": "04/11/2019 14:00:00",
+    "footfall": 1201
+  },
+  {
+    "timestamp_hour": "04/11/2019 15:00:00",
+    "footfall": 664
+  },
+  {
+    "timestamp_hour": "04/11/2019 16:00:00",
+    "footfall": 355
+  },
+  {
+    "timestamp_hour": "04/11/2019 17:00:00",
+    "footfall": 86
+  },
+  {
+    "timestamp_hour": "04/11/2019 18:00:00",
+    "footfall": 269
+  },
+  {
+    "timestamp_hour": "04/11/2019 19:00:00",
+    "footfall": 73
+  },
+  {
+    "timestamp_hour": "04/11/2019 20:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "04/11/2019 21:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/11/2019 22:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/11/2019 23:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "04/12/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "04/12/2019 01:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "04/12/2019 02:00:00",
+    "footfall": 279
+  },
+  {
+    "timestamp_hour": "04/12/2019 03:00:00",
+    "footfall": 452
+  },
+  {
+    "timestamp_hour": "04/12/2019 04:00:00",
+    "footfall": 782
+  },
+  {
+    "timestamp_hour": "04/12/2019 05:00:00",
+    "footfall": 958
+  },
+  {
+    "timestamp_hour": "04/12/2019 06:00:00",
+    "footfall": 985
+  },
+  {
+    "timestamp_hour": "04/12/2019 07:00:00",
+    "footfall": 1184
+  },
+  {
+    "timestamp_hour": "04/12/2019 08:00:00",
+    "footfall": 1289
+  },
+  {
+    "timestamp_hour": "04/12/2019 09:00:00",
+    "footfall": 980
+  },
+  {
+    "timestamp_hour": "04/12/2019 10:00:00",
+    "footfall": 880
+  },
+  {
+    "timestamp_hour": "04/12/2019 11:00:00",
+    "footfall": 972
+  },
+  {
+    "timestamp_hour": "04/12/2019 12:00:00",
+    "footfall": 1107
+  },
+  {
+    "timestamp_hour": "04/12/2019 13:00:00",
+    "footfall": 1274
+  },
+  {
+    "timestamp_hour": "04/12/2019 14:00:00",
+    "footfall": 1440
+  },
+  {
+    "timestamp_hour": "04/12/2019 15:00:00",
+    "footfall": 1060
+  },
+  {
+    "timestamp_hour": "04/12/2019 16:00:00",
+    "footfall": 434
+  },
+  {
+    "timestamp_hour": "04/12/2019 17:00:00",
+    "footfall": 206
+  },
+  {
+    "timestamp_hour": "04/12/2019 18:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "04/12/2019 19:00:00",
+    "footfall": 52
+  },
+  {
+    "timestamp_hour": "04/12/2019 20:00:00",
+    "footfall": 29
+  },
+  {
+    "timestamp_hour": "04/12/2019 21:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/12/2019 22:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/12/2019 23:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/13/2019 00:00:00",
+    "footfall": 34
+  },
+  {
+    "timestamp_hour": "04/13/2019 01:00:00",
+    "footfall": 115
+  },
+  {
+    "timestamp_hour": "04/13/2019 02:00:00",
+    "footfall": 204
+  },
+  {
+    "timestamp_hour": "04/13/2019 03:00:00",
+    "footfall": 326
+  },
+  {
+    "timestamp_hour": "04/13/2019 04:00:00",
+    "footfall": 637
+  },
+  {
+    "timestamp_hour": "04/13/2019 05:00:00",
+    "footfall": 2687
+  },
+  {
+    "timestamp_hour": "04/13/2019 06:00:00",
+    "footfall": 2298
+  },
+  {
+    "timestamp_hour": "04/13/2019 07:00:00",
+    "footfall": 2659
+  },
+  {
+    "timestamp_hour": "04/13/2019 08:00:00",
+    "footfall": 3267
+  },
+  {
+    "timestamp_hour": "04/13/2019 09:00:00",
+    "footfall": 3316
+  },
+  {
+    "timestamp_hour": "04/13/2019 10:00:00",
+    "footfall": 2158
+  },
+  {
+    "timestamp_hour": "04/13/2019 11:00:00",
+    "footfall": 1477
+  },
+  {
+    "timestamp_hour": "04/13/2019 12:00:00",
+    "footfall": 1474
+  },
+  {
+    "timestamp_hour": "04/13/2019 13:00:00",
+    "footfall": 1774
+  },
+  {
+    "timestamp_hour": "04/13/2019 14:00:00",
+    "footfall": 1755
+  },
+  {
+    "timestamp_hour": "04/13/2019 15:00:00",
+    "footfall": 1170
+  },
+  {
+    "timestamp_hour": "04/13/2019 16:00:00",
+    "footfall": 586
+  },
+  {
+    "timestamp_hour": "04/13/2019 17:00:00",
+    "footfall": 211
+  },
+  {
+    "timestamp_hour": "04/13/2019 18:00:00",
+    "footfall": 294
+  },
+  {
+    "timestamp_hour": "04/13/2019 19:00:00",
+    "footfall": 133
+  },
+  {
+    "timestamp_hour": "04/13/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/13/2019 21:00:00",
+    "footfall": 33
+  },
+  {
+    "timestamp_hour": "04/13/2019 22:00:00",
+    "footfall": 104
+  },
+  {
+    "timestamp_hour": "04/13/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/14/2019 00:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "04/14/2019 01:00:00",
+    "footfall": 85
+  },
+  {
+    "timestamp_hour": "04/14/2019 02:00:00",
+    "footfall": 129
+  },
+  {
+    "timestamp_hour": "04/14/2019 03:00:00",
+    "footfall": 266
+  },
+  {
+    "timestamp_hour": "04/14/2019 04:00:00",
+    "footfall": 530
+  },
+  {
+    "timestamp_hour": "04/14/2019 05:00:00",
+    "footfall": 1080
+  },
+  {
+    "timestamp_hour": "04/14/2019 06:00:00",
+    "footfall": 1412
+  },
+  {
+    "timestamp_hour": "04/14/2019 07:00:00",
+    "footfall": 2013
+  },
+  {
+    "timestamp_hour": "04/14/2019 08:00:00",
+    "footfall": 1962
+  },
+  {
+    "timestamp_hour": "04/14/2019 09:00:00",
+    "footfall": 1998
+  },
+  {
+    "timestamp_hour": "04/14/2019 10:00:00",
+    "footfall": 2134
+  },
+  {
+    "timestamp_hour": "04/14/2019 11:00:00",
+    "footfall": 2243
+  },
+  {
+    "timestamp_hour": "04/14/2019 12:00:00",
+    "footfall": 2508
+  },
+  {
+    "timestamp_hour": "04/14/2019 13:00:00",
+    "footfall": 2807
+  },
+  {
+    "timestamp_hour": "04/14/2019 14:00:00",
+    "footfall": 2730
+  },
+  {
+    "timestamp_hour": "04/14/2019 15:00:00",
+    "footfall": 1494
+  },
+  {
+    "timestamp_hour": "04/14/2019 16:00:00",
+    "footfall": 453
+  },
+  {
+    "timestamp_hour": "04/14/2019 17:00:00",
+    "footfall": 148
+  },
+  {
+    "timestamp_hour": "04/14/2019 18:00:00",
+    "footfall": 357
+  },
+  {
+    "timestamp_hour": "04/14/2019 19:00:00",
+    "footfall": 81
+  },
+  {
+    "timestamp_hour": "04/14/2019 20:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "04/14/2019 21:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/14/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "04/14/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "04/15/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "04/15/2019 01:00:00",
+    "footfall": 120
+  },
+  {
+    "timestamp_hour": "04/15/2019 02:00:00",
+    "footfall": 261
+  },
+  {
+    "timestamp_hour": "04/15/2019 03:00:00",
+    "footfall": 484
+  },
+  {
+    "timestamp_hour": "04/15/2019 04:00:00",
+    "footfall": 687
+  },
+  {
+    "timestamp_hour": "04/15/2019 05:00:00",
+    "footfall": 969
+  },
+  {
+    "timestamp_hour": "04/15/2019 06:00:00",
+    "footfall": 905
+  },
+  {
+    "timestamp_hour": "04/15/2019 07:00:00",
+    "footfall": 1176
+  },
+  {
+    "timestamp_hour": "04/15/2019 08:00:00",
+    "footfall": 1139
+  },
+  {
+    "timestamp_hour": "04/15/2019 09:00:00",
+    "footfall": 993
+  },
+  {
+    "timestamp_hour": "04/15/2019 10:00:00",
+    "footfall": 767
+  },
+  {
+    "timestamp_hour": "04/15/2019 11:00:00",
+    "footfall": 675
+  },
+  {
+    "timestamp_hour": "04/15/2019 12:00:00",
+    "footfall": 773
+  },
+  {
+    "timestamp_hour": "04/15/2019 13:00:00",
+    "footfall": 904
+  },
+  {
+    "timestamp_hour": "04/15/2019 14:00:00",
+    "footfall": 967
+  },
+  {
+    "timestamp_hour": "04/15/2019 15:00:00",
+    "footfall": 679
+  },
+  {
+    "timestamp_hour": "04/15/2019 16:00:00",
+    "footfall": 296
+  },
+  {
+    "timestamp_hour": "04/15/2019 17:00:00",
+    "footfall": 77
+  },
+  {
+    "timestamp_hour": "04/15/2019 18:00:00",
+    "footfall": 242
+  },
+  {
+    "timestamp_hour": "04/15/2019 19:00:00",
+    "footfall": 60
+  },
+  {
+    "timestamp_hour": "04/15/2019 20:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/15/2019 21:00:00",
+    "footfall": 85
+  },
+  {
+    "timestamp_hour": "04/15/2019 22:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "04/15/2019 23:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/16/2019 00:00:00",
+    "footfall": 39
+  },
+  {
+    "timestamp_hour": "04/16/2019 01:00:00",
+    "footfall": 119
+  },
+  {
+    "timestamp_hour": "04/16/2019 02:00:00",
+    "footfall": 260
+  },
+  {
+    "timestamp_hour": "04/16/2019 03:00:00",
+    "footfall": 477
+  },
+  {
+    "timestamp_hour": "04/16/2019 04:00:00",
+    "footfall": 677
+  },
+  {
+    "timestamp_hour": "04/16/2019 05:00:00",
+    "footfall": 923
+  },
+  {
+    "timestamp_hour": "04/16/2019 06:00:00",
+    "footfall": 733
+  },
+  {
+    "timestamp_hour": "04/16/2019 07:00:00",
+    "footfall": 1063
+  },
+  {
+    "timestamp_hour": "04/16/2019 08:00:00",
+    "footfall": 829
+  },
+  {
+    "timestamp_hour": "04/16/2019 09:00:00",
+    "footfall": 794
+  },
+  {
+    "timestamp_hour": "04/16/2019 10:00:00",
+    "footfall": 700
+  },
+  {
+    "timestamp_hour": "04/16/2019 11:00:00",
+    "footfall": 712
+  },
+  {
+    "timestamp_hour": "04/16/2019 12:00:00",
+    "footfall": 718
+  },
+  {
+    "timestamp_hour": "04/16/2019 13:00:00",
+    "footfall": 918
+  },
+  {
+    "timestamp_hour": "04/16/2019 14:00:00",
+    "footfall": 979
+  },
+  {
+    "timestamp_hour": "04/16/2019 15:00:00",
+    "footfall": 534
+  },
+  {
+    "timestamp_hour": "04/16/2019 16:00:00",
+    "footfall": 225
+  },
+  {
+    "timestamp_hour": "04/16/2019 17:00:00",
+    "footfall": 66
+  },
+  {
+    "timestamp_hour": "04/16/2019 18:00:00",
+    "footfall": 213
+  },
+  {
+    "timestamp_hour": "04/16/2019 19:00:00",
+    "footfall": 91
+  },
+  {
+    "timestamp_hour": "04/16/2019 20:00:00",
+    "footfall": 26
+  },
+  {
+    "timestamp_hour": "04/16/2019 21:00:00",
+    "footfall": 72
+  },
+  {
+    "timestamp_hour": "04/16/2019 22:00:00",
+    "footfall": 28
+  },
+  {
+    "timestamp_hour": "04/16/2019 23:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "04/17/2019 00:00:00",
+    "footfall": 72
+  },
+  {
+    "timestamp_hour": "04/17/2019 01:00:00",
+    "footfall": 134
+  },
+  {
+    "timestamp_hour": "04/17/2019 02:00:00",
+    "footfall": 261
+  },
+  {
+    "timestamp_hour": "04/17/2019 03:00:00",
+    "footfall": 344
+  },
+  {
+    "timestamp_hour": "04/17/2019 04:00:00",
+    "footfall": 691
+  },
+  {
+    "timestamp_hour": "04/17/2019 05:00:00",
+    "footfall": 1091
+  },
+  {
+    "timestamp_hour": "04/17/2019 06:00:00",
+    "footfall": 1200
+  },
+  {
+    "timestamp_hour": "04/17/2019 07:00:00",
+    "footfall": 1594
+  },
+  {
+    "timestamp_hour": "04/17/2019 08:00:00",
+    "footfall": 1326
+  },
+  {
+    "timestamp_hour": "04/17/2019 09:00:00",
+    "footfall": 1191
+  },
+  {
+    "timestamp_hour": "04/17/2019 10:00:00",
+    "footfall": 926
+  },
+  {
+    "timestamp_hour": "04/17/2019 11:00:00",
+    "footfall": 998
+  },
+  {
+    "timestamp_hour": "04/17/2019 12:00:00",
+    "footfall": 1181
+  },
+  {
+    "timestamp_hour": "04/17/2019 13:00:00",
+    "footfall": 1398
+  },
+  {
+    "timestamp_hour": "04/17/2019 14:00:00",
+    "footfall": 1200
+  },
+  {
+    "timestamp_hour": "04/17/2019 15:00:00",
+    "footfall": 682
+  },
+  {
+    "timestamp_hour": "04/17/2019 16:00:00",
+    "footfall": 284
+  },
+  {
+    "timestamp_hour": "04/17/2019 17:00:00",
+    "footfall": 84
+  },
+  {
+    "timestamp_hour": "04/17/2019 18:00:00",
+    "footfall": 198
+  },
+  {
+    "timestamp_hour": "04/17/2019 19:00:00",
+    "footfall": 56
+  },
+  {
+    "timestamp_hour": "04/17/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/17/2019 21:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "04/17/2019 22:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/17/2019 23:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/18/2019 00:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "04/18/2019 01:00:00",
+    "footfall": 124
+  },
+  {
+    "timestamp_hour": "04/18/2019 02:00:00",
+    "footfall": 256
+  },
+  {
+    "timestamp_hour": "04/18/2019 03:00:00",
+    "footfall": 400
+  },
+  {
+    "timestamp_hour": "04/18/2019 04:00:00",
+    "footfall": 740
+  },
+  {
+    "timestamp_hour": "04/18/2019 05:00:00",
+    "footfall": 947
+  },
+  {
+    "timestamp_hour": "04/18/2019 06:00:00",
+    "footfall": 889
+  },
+  {
+    "timestamp_hour": "04/18/2019 07:00:00",
+    "footfall": 1069
+  },
+  {
+    "timestamp_hour": "04/18/2019 08:00:00",
+    "footfall": 986
+  },
+  {
+    "timestamp_hour": "04/18/2019 09:00:00",
+    "footfall": 717
+  },
+  {
+    "timestamp_hour": "04/18/2019 10:00:00",
+    "footfall": 676
+  },
+  {
+    "timestamp_hour": "04/18/2019 11:00:00",
+    "footfall": 696
+  },
+  {
+    "timestamp_hour": "04/18/2019 12:00:00",
+    "footfall": 718
+  },
+  {
+    "timestamp_hour": "04/18/2019 13:00:00",
+    "footfall": 882
+  },
+  {
+    "timestamp_hour": "04/18/2019 14:00:00",
+    "footfall": 860
+  },
+  {
+    "timestamp_hour": "04/18/2019 15:00:00",
+    "footfall": 555
+  },
+  {
+    "timestamp_hour": "04/18/2019 16:00:00",
+    "footfall": 247
+  },
+  {
+    "timestamp_hour": "04/18/2019 17:00:00",
+    "footfall": 85
+  },
+  {
+    "timestamp_hour": "04/18/2019 18:00:00",
+    "footfall": 228
+  },
+  {
+    "timestamp_hour": "04/18/2019 19:00:00",
+    "footfall": 78
+  },
+  {
+    "timestamp_hour": "04/18/2019 20:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/18/2019 21:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "04/18/2019 22:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "04/18/2019 23:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "04/19/2019 00:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "04/19/2019 01:00:00",
+    "footfall": 98
+  },
+  {
+    "timestamp_hour": "04/19/2019 02:00:00",
+    "footfall": 190
+  },
+  {
+    "timestamp_hour": "04/19/2019 03:00:00",
+    "footfall": 278
+  },
+  {
+    "timestamp_hour": "04/19/2019 04:00:00",
+    "footfall": 633
+  },
+  {
+    "timestamp_hour": "04/19/2019 05:00:00",
+    "footfall": 1099
+  },
+  {
+    "timestamp_hour": "04/19/2019 06:00:00",
+    "footfall": 1219
+  },
+  {
+    "timestamp_hour": "04/19/2019 07:00:00",
+    "footfall": 1345
+  },
+  {
+    "timestamp_hour": "04/19/2019 08:00:00",
+    "footfall": 1821
+  },
+  {
+    "timestamp_hour": "04/19/2019 09:00:00",
+    "footfall": 1540
+  },
+  {
+    "timestamp_hour": "04/19/2019 10:00:00",
+    "footfall": 1355
+  },
+  {
+    "timestamp_hour": "04/19/2019 11:00:00",
+    "footfall": 1224
+  },
+  {
+    "timestamp_hour": "04/19/2019 12:00:00",
+    "footfall": 1361
+  },
+  {
+    "timestamp_hour": "04/19/2019 13:00:00",
+    "footfall": 1434
+  },
+  {
+    "timestamp_hour": "04/19/2019 14:00:00",
+    "footfall": 1316
+  },
+  {
+    "timestamp_hour": "04/19/2019 15:00:00",
+    "footfall": 922
+  },
+  {
+    "timestamp_hour": "04/19/2019 16:00:00",
+    "footfall": 333
+  },
+  {
+    "timestamp_hour": "04/19/2019 17:00:00",
+    "footfall": 96
+  },
+  {
+    "timestamp_hour": "04/19/2019 18:00:00",
+    "footfall": 221
+  },
+  {
+    "timestamp_hour": "04/19/2019 19:00:00",
+    "footfall": 74
+  },
+  {
+    "timestamp_hour": "04/19/2019 20:00:00",
+    "footfall": 15
+  },
+  {
+    "timestamp_hour": "04/19/2019 21:00:00",
+    "footfall": 30
+  },
+  {
+    "timestamp_hour": "04/19/2019 22:00:00",
+    "footfall": 13
+  },
+  {
+    "timestamp_hour": "04/19/2019 23:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/20/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "04/20/2019 01:00:00",
+    "footfall": 101
+  },
+  {
+    "timestamp_hour": "04/20/2019 02:00:00",
+    "footfall": 154
+  },
+  {
+    "timestamp_hour": "04/20/2019 03:00:00",
+    "footfall": 341
+  },
+  {
+    "timestamp_hour": "04/20/2019 04:00:00",
+    "footfall": 790
+  },
+  {
+    "timestamp_hour": "04/20/2019 05:00:00",
+    "footfall": 1174
+  },
+  {
+    "timestamp_hour": "04/20/2019 06:00:00",
+    "footfall": 1204
+  },
+  {
+    "timestamp_hour": "04/20/2019 07:00:00",
+    "footfall": 1563
+  },
+  {
+    "timestamp_hour": "04/20/2019 08:00:00",
+    "footfall": 1514
+  },
+  {
+    "timestamp_hour": "04/20/2019 09:00:00",
+    "footfall": 1590
+  },
+  {
+    "timestamp_hour": "04/20/2019 10:00:00",
+    "footfall": 1326
+  },
+  {
+    "timestamp_hour": "04/20/2019 11:00:00",
+    "footfall": 1369
+  },
+  {
+    "timestamp_hour": "04/20/2019 12:00:00",
+    "footfall": 1709
+  },
+  {
+    "timestamp_hour": "04/20/2019 13:00:00",
+    "footfall": 2078
+  },
+  {
+    "timestamp_hour": "04/20/2019 14:00:00",
+    "footfall": 1505
+  },
+  {
+    "timestamp_hour": "04/20/2019 15:00:00",
+    "footfall": 1037
+  },
+  {
+    "timestamp_hour": "04/20/2019 16:00:00",
+    "footfall": 356
+  },
+  {
+    "timestamp_hour": "04/20/2019 17:00:00",
+    "footfall": 94
+  },
+  {
+    "timestamp_hour": "04/20/2019 18:00:00",
+    "footfall": 237
+  },
+  {
+    "timestamp_hour": "04/20/2019 19:00:00",
+    "footfall": 91
+  },
+  {
+    "timestamp_hour": "04/20/2019 20:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "04/20/2019 21:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "04/20/2019 22:00:00",
+    "footfall": 10
+  },
+  {
+    "timestamp_hour": "04/20/2019 23:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "04/21/2019 00:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "04/21/2019 01:00:00",
+    "footfall": 76
+  },
+  {
+    "timestamp_hour": "04/21/2019 02:00:00",
+    "footfall": 137
+  },
+  {
+    "timestamp_hour": "04/21/2019 03:00:00",
+    "footfall": 183
+  },
+  {
+    "timestamp_hour": "04/21/2019 04:00:00",
+    "footfall": 612
+  },
+  {
+    "timestamp_hour": "04/21/2019 05:00:00",
+    "footfall": 1076
+  },
+  {
+    "timestamp_hour": "04/21/2019 06:00:00",
+    "footfall": 1147
+  },
+  {
+    "timestamp_hour": "04/21/2019 07:00:00",
+    "footfall": 1704
+  },
+  {
+    "timestamp_hour": "04/21/2019 08:00:00",
+    "footfall": 1779
+  },
+  {
+    "timestamp_hour": "04/21/2019 09:00:00",
+    "footfall": 1739
+  },
+  {
+    "timestamp_hour": "04/21/2019 10:00:00",
+    "footfall": 1656
+  },
+  {
+    "timestamp_hour": "04/21/2019 11:00:00",
+    "footfall": 2311
+  },
+  {
+    "timestamp_hour": "04/21/2019 12:00:00",
+    "footfall": 2485
+  },
+  {
+    "timestamp_hour": "04/21/2019 13:00:00",
+    "footfall": 2997
+  },
+  {
+    "timestamp_hour": "04/21/2019 14:00:00",
+    "footfall": 2610
+  },
+  {
+    "timestamp_hour": "04/21/2019 15:00:00",
+    "footfall": 1371
+  },
+  {
+    "timestamp_hour": "04/21/2019 16:00:00",
+    "footfall": 426
+  },
+  {
+    "timestamp_hour": "04/21/2019 17:00:00",
+    "footfall": 105
+  },
+  {
+    "timestamp_hour": "04/21/2019 18:00:00",
+    "footfall": 322
+  },
+  {
+    "timestamp_hour": "04/21/2019 19:00:00",
+    "footfall": 129
+  },
+  {
+    "timestamp_hour": "04/21/2019 20:00:00",
+    "footfall": 36
+  },
+  {
+    "timestamp_hour": "04/21/2019 21:00:00",
+    "footfall": 45
+  },
+  {
+    "timestamp_hour": "04/21/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "04/21/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "04/22/2019 00:00:00",
+    "footfall": 37
+  },
+  {
+    "timestamp_hour": "04/22/2019 01:00:00",
+    "footfall": 145
+  },
+  {
+    "timestamp_hour": "04/22/2019 02:00:00",
+    "footfall": 294
+  },
+  {
+    "timestamp_hour": "04/22/2019 03:00:00",
+    "footfall": 427
+  },
+  {
+    "timestamp_hour": "04/22/2019 04:00:00",
+    "footfall": 682
+  },
+  {
+    "timestamp_hour": "04/22/2019 05:00:00",
+    "footfall": 936
+  },
+  {
+    "timestamp_hour": "04/22/2019 06:00:00",
+    "footfall": 856
+  },
+  {
+    "timestamp_hour": "04/22/2019 07:00:00",
+    "footfall": 1186
+  },
+  {
+    "timestamp_hour": "04/22/2019 08:00:00",
+    "footfall": 968
+  },
+  {
+    "timestamp_hour": "04/22/2019 09:00:00",
+    "footfall": 942
+  },
+  {
+    "timestamp_hour": "04/22/2019 10:00:00",
+    "footfall": 893
+  },
+  {
+    "timestamp_hour": "04/22/2019 11:00:00",
+    "footfall": 809
+  },
+  {
+    "timestamp_hour": "04/22/2019 12:00:00",
+    "footfall": 929
+  },
+  {
+    "timestamp_hour": "04/22/2019 13:00:00",
+    "footfall": 933
+  },
+  {
+    "timestamp_hour": "04/22/2019 14:00:00",
+    "footfall": 982
+  },
+  {
+    "timestamp_hour": "04/22/2019 15:00:00",
+    "footfall": 487
+  },
+  {
+    "timestamp_hour": "04/22/2019 16:00:00",
+    "footfall": 195
+  },
+  {
+    "timestamp_hour": "04/22/2019 17:00:00",
+    "footfall": 100
+  },
+  {
+    "timestamp_hour": "04/22/2019 18:00:00",
+    "footfall": 340
+  },
+  {
+    "timestamp_hour": "04/22/2019 19:00:00",
+    "footfall": 103
+  },
+  {
+    "timestamp_hour": "04/22/2019 20:00:00",
+    "footfall": 29
+  },
+  {
+    "timestamp_hour": "04/22/2019 21:00:00",
+    "footfall": 32
+  },
+  {
+    "timestamp_hour": "04/22/2019 22:00:00",
+    "footfall": 7
+  },
+  {
+    "timestamp_hour": "04/22/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "04/23/2019 00:00:00",
+    "footfall": 49
+  },
+  {
+    "timestamp_hour": "04/23/2019 01:00:00",
+    "footfall": 122
+  },
+  {
+    "timestamp_hour": "04/23/2019 02:00:00",
+    "footfall": 254
+  },
+  {
+    "timestamp_hour": "04/23/2019 03:00:00",
+    "footfall": 433
+  },
+  {
+    "timestamp_hour": "04/23/2019 04:00:00",
+    "footfall": 654
+  },
+  {
+    "timestamp_hour": "04/23/2019 05:00:00",
+    "footfall": 1009
+  },
+  {
+    "timestamp_hour": "04/23/2019 06:00:00",
+    "footfall": 976
+  },
+  {
+    "timestamp_hour": "04/23/2019 07:00:00",
+    "footfall": 1218
+  },
+  {
+    "timestamp_hour": "04/23/2019 08:00:00",
+    "footfall": 971
+  },
+  {
+    "timestamp_hour": "04/23/2019 09:00:00",
+    "footfall": 680
+  },
+  {
+    "timestamp_hour": "04/23/2019 10:00:00",
+    "footfall": 696
+  },
+  {
+    "timestamp_hour": "04/23/2019 11:00:00",
+    "footfall": 732
+  },
+  {
+    "timestamp_hour": "04/23/2019 12:00:00",
+    "footfall": 824
+  },
+  {
+    "timestamp_hour": "04/23/2019 13:00:00",
+    "footfall": 851
+  },
+  {
+    "timestamp_hour": "04/23/2019 14:00:00",
+    "footfall": 878
+  },
+  {
+    "timestamp_hour": "04/23/2019 15:00:00",
+    "footfall": 575
+  },
+  {
+    "timestamp_hour": "04/23/2019 16:00:00",
+    "footfall": 203
+  },
+  {
+    "timestamp_hour": "04/23/2019 17:00:00",
+    "footfall": 67
+  },
+  {
+    "timestamp_hour": "04/23/2019 18:00:00",
+    "footfall": 236
+  },
+  {
+    "timestamp_hour": "04/23/2019 19:00:00",
+    "footfall": 59
+  },
+  {
+    "timestamp_hour": "04/23/2019 20:00:00",
+    "footfall": 24
+  },
+  {
+    "timestamp_hour": "04/23/2019 21:00:00",
+    "footfall": 25
+  },
+  {
+    "timestamp_hour": "04/23/2019 22:00:00",
+    "footfall": 8
+  },
+  {
+    "timestamp_hour": "04/23/2019 23:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/24/2019 00:00:00",
+    "footfall": 44
+  },
+  {
+    "timestamp_hour": "04/24/2019 01:00:00",
+    "footfall": 126
+  },
+  {
+    "timestamp_hour": "04/24/2019 02:00:00",
+    "footfall": 294
+  },
+  {
+    "timestamp_hour": "04/24/2019 03:00:00",
+    "footfall": 375
+  },
+  {
+    "timestamp_hour": "04/24/2019 04:00:00",
+    "footfall": 600
+  },
+  {
+    "timestamp_hour": "04/24/2019 05:00:00",
+    "footfall": 1068
+  },
+  {
+    "timestamp_hour": "04/24/2019 06:00:00",
+    "footfall": 899
+  },
+  {
+    "timestamp_hour": "04/24/2019 07:00:00",
+    "footfall": 974
+  },
+  {
+    "timestamp_hour": "04/24/2019 08:00:00",
+    "footfall": 870
+  },
+  {
+    "timestamp_hour": "04/24/2019 09:00:00",
+    "footfall": 718
+  },
+  {
+    "timestamp_hour": "04/24/2019 10:00:00",
+    "footfall": 621
+  },
+  {
+    "timestamp_hour": "04/24/2019 11:00:00",
+    "footfall": 649
+  },
+  {
+    "timestamp_hour": "04/24/2019 12:00:00",
+    "footfall": 749
+  },
+  {
+    "timestamp_hour": "04/24/2019 13:00:00",
+    "footfall": 847
+  },
+  {
+    "timestamp_hour": "04/24/2019 14:00:00",
+    "footfall": 955
+  },
+  {
+    "timestamp_hour": "04/24/2019 15:00:00",
+    "footfall": 783
+  },
+  {
+    "timestamp_hour": "04/24/2019 16:00:00",
+    "footfall": 244
+  },
+  {
+    "timestamp_hour": "04/24/2019 17:00:00",
+    "footfall": 87
+  },
+  {
+    "timestamp_hour": "04/24/2019 18:00:00",
+    "footfall": 241
+  },
+  {
+    "timestamp_hour": "04/24/2019 19:00:00",
+    "footfall": 81
+  },
+  {
+    "timestamp_hour": "04/24/2019 20:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "04/24/2019 21:00:00",
+    "footfall": 40
+  },
+  {
+    "timestamp_hour": "04/24/2019 22:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "04/24/2019 23:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "04/25/2019 00:00:00",
+    "footfall": 31
+  },
+  {
+    "timestamp_hour": "04/25/2019 01:00:00",
+    "footfall": 118
+  },
+  {
+    "timestamp_hour": "04/25/2019 02:00:00",
+    "footfall": 239
+  },
+  {
+    "timestamp_hour": "04/25/2019 03:00:00",
+    "footfall": 394
+  },
+  {
+    "timestamp_hour": "04/25/2019 04:00:00",
+    "footfall": 674
+  },
+  {
+    "timestamp_hour": "04/25/2019 05:00:00",
+    "footfall": 871
+  },
+  {
+    "timestamp_hour": "04/25/2019 06:00:00",
+    "footfall": 701
+  },
+  {
+    "timestamp_hour": "04/25/2019 07:00:00",
+    "footfall": 970
+  },
+  {
+    "timestamp_hour": "04/25/2019 08:00:00",
+    "footfall": 877
+  },
+  {
+    "timestamp_hour": "04/25/2019 09:00:00",
+    "footfall": 668
+  },
+  {
+    "timestamp_hour": "04/25/2019 10:00:00",
+    "footfall": 700
+  },
+  {
+    "timestamp_hour": "04/25/2019 11:00:00",
+    "footfall": 665
+  },
+  {
+    "timestamp_hour": "04/25/2019 12:00:00",
+    "footfall": 730
+  },
+  {
+    "timestamp_hour": "04/25/2019 13:00:00",
+    "footfall": 934
+  },
+  {
+    "timestamp_hour": "04/25/2019 14:00:00",
+    "footfall": 915
+  },
+  {
+    "timestamp_hour": "04/25/2019 15:00:00",
+    "footfall": 583
+  },
+  {
+    "timestamp_hour": "04/25/2019 16:00:00",
+    "footfall": 200
+  },
+  {
+    "timestamp_hour": "04/25/2019 17:00:00",
+    "footfall": 59
+  },
+  {
+    "timestamp_hour": "04/25/2019 18:00:00",
+    "footfall": 253
+  },
+  {
+    "timestamp_hour": "04/25/2019 19:00:00",
+    "footfall": 91
+  },
+  {
+    "timestamp_hour": "04/25/2019 20:00:00",
+    "footfall": 27
+  },
+  {
+    "timestamp_hour": "04/25/2019 21:00:00",
+    "footfall": 136
+  },
+  {
+    "timestamp_hour": "04/25/2019 22:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "04/25/2019 23:00:00",
+    "footfall": 23
+  },
+  {
+    "timestamp_hour": "04/26/2019 00:00:00",
+    "footfall": 34
+  },
+  {
+    "timestamp_hour": "04/26/2019 01:00:00",
+    "footfall": 92
+  },
+  {
+    "timestamp_hour": "04/26/2019 02:00:00",
+    "footfall": 217
+  },
+  {
+    "timestamp_hour": "04/26/2019 03:00:00",
+    "footfall": 414
+  },
+  {
+    "timestamp_hour": "04/26/2019 04:00:00",
+    "footfall": 659
+  },
+  {
+    "timestamp_hour": "04/26/2019 05:00:00",
+    "footfall": 954
+  },
+  {
+    "timestamp_hour": "04/26/2019 06:00:00",
+    "footfall": 924
+  },
+  {
+    "timestamp_hour": "04/26/2019 07:00:00",
+    "footfall": 1109
+  },
+  {
+    "timestamp_hour": "04/26/2019 08:00:00",
+    "footfall": 921
+  },
+  {
+    "timestamp_hour": "04/26/2019 09:00:00",
+    "footfall": 807
+  },
+  {
+    "timestamp_hour": "04/26/2019 10:00:00",
+    "footfall": 799
+  },
+  {
+    "timestamp_hour": "04/26/2019 11:00:00",
+    "footfall": 817
+  },
+  {
+    "timestamp_hour": "04/26/2019 12:00:00",
+    "footfall": 912
+  },
+  {
+    "timestamp_hour": "04/26/2019 13:00:00",
+    "footfall": 994
+  },
+  {
+    "timestamp_hour": "04/26/2019 14:00:00",
+    "footfall": 951
+  },
+  {
+    "timestamp_hour": "04/26/2019 15:00:00",
+    "footfall": 659
+  },
+  {
+    "timestamp_hour": "04/26/2019 16:00:00",
+    "footfall": 300
+  },
+  {
+    "timestamp_hour": "04/26/2019 17:00:00",
+    "footfall": 120
+  },
+  {
+    "timestamp_hour": "04/26/2019 18:00:00",
+    "footfall": 217
+  },
+  {
+    "timestamp_hour": "04/26/2019 19:00:00",
+    "footfall": 41
+  },
+  {
+    "timestamp_hour": "04/26/2019 20:00:00",
+    "footfall": 20
+  },
+  {
+    "timestamp_hour": "04/26/2019 21:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "04/26/2019 22:00:00",
+    "footfall": 30
+  },
+  {
+    "timestamp_hour": "04/26/2019 23:00:00",
+    "footfall": 12
+  },
+  {
+    "timestamp_hour": "04/27/2019 00:00:00",
+    "footfall": 54
+  },
+  {
+    "timestamp_hour": "04/27/2019 01:00:00",
+    "footfall": 104
+  },
+  {
+    "timestamp_hour": "04/27/2019 02:00:00",
+    "footfall": 197
+  },
+  {
+    "timestamp_hour": "04/27/2019 03:00:00",
+    "footfall": 328
+  },
+  {
+    "timestamp_hour": "04/27/2019 04:00:00",
+    "footfall": 667
+  },
+  {
+    "timestamp_hour": "04/27/2019 05:00:00",
+    "footfall": 970
+  },
+  {
+    "timestamp_hour": "04/27/2019 06:00:00",
+    "footfall": 1256
+  },
+  {
+    "timestamp_hour": "04/27/2019 07:00:00",
+    "footfall": 1499
+  },
+  {
+    "timestamp_hour": "04/27/2019 08:00:00",
+    "footfall": 1351
+  },
+  {
+    "timestamp_hour": "04/27/2019 09:00:00",
+    "footfall": 1232
+  },
+  {
+    "timestamp_hour": "04/27/2019 10:00:00",
+    "footfall": 1314
+  },
+  {
+    "timestamp_hour": "04/27/2019 11:00:00",
+    "footfall": 1210
+  },
+  {
+    "timestamp_hour": "04/27/2019 12:00:00",
+    "footfall": 1529
+  },
+  {
+    "timestamp_hour": "04/27/2019 13:00:00",
+    "footfall": 1572
+  },
+  {
+    "timestamp_hour": "04/27/2019 14:00:00",
+    "footfall": 1521
+  },
+  {
+    "timestamp_hour": "04/27/2019 15:00:00",
+    "footfall": 874
+  },
+  {
+    "timestamp_hour": "04/27/2019 16:00:00",
+    "footfall": 445
+  },
+  {
+    "timestamp_hour": "04/27/2019 17:00:00",
+    "footfall": 119
+  },
+  {
+    "timestamp_hour": "04/27/2019 18:00:00",
+    "footfall": 255
+  },
+  {
+    "timestamp_hour": "04/27/2019 19:00:00",
+    "footfall": 100
+  },
+  {
+    "timestamp_hour": "04/27/2019 20:00:00",
+    "footfall": 22
+  },
+  {
+    "timestamp_hour": "04/27/2019 21:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "04/27/2019 22:00:00",
+    "footfall": 17
+  },
+  {
+    "timestamp_hour": "04/27/2019 23:00:00",
+    "footfall": 11
+  },
+  {
+    "timestamp_hour": "04/28/2019 00:00:00",
+    "footfall": 28
+  },
+  {
+    "timestamp_hour": "04/28/2019 01:00:00",
+    "footfall": 81
+  },
+  {
+    "timestamp_hour": "04/28/2019 02:00:00",
+    "footfall": 155
+  },
+  {
+    "timestamp_hour": "04/28/2019 03:00:00",
+    "footfall": 185
+  },
+  {
+    "timestamp_hour": "04/28/2019 04:00:00",
+    "footfall": 525
+  },
+  {
+    "timestamp_hour": "04/28/2019 05:00:00",
+    "footfall": 975
+  },
+  {
+    "timestamp_hour": "04/28/2019 06:00:00",
+    "footfall": 1326
+  },
+  {
+    "timestamp_hour": "04/28/2019 07:00:00",
+    "footfall": 1626
+  },
+  {
+    "timestamp_hour": "04/28/2019 08:00:00",
+    "footfall": 1193
+  },
+  {
+    "timestamp_hour": "04/28/2019 09:00:00",
+    "footfall": 1138
+  },
+  {
+    "timestamp_hour": "04/28/2019 10:00:00",
+    "footfall": 1154
+  },
+  {
+    "timestamp_hour": "04/28/2019 11:00:00",
+    "footfall": 1383
+  },
+  {
+    "timestamp_hour": "04/28/2019 12:00:00",
+    "footfall": 1636
+  },
+  {
+    "timestamp_hour": "04/28/2019 13:00:00",
+    "footfall": 2074
+  },
+  {
+    "timestamp_hour": "04/28/2019 14:00:00",
+    "footfall": 1090
+  },
+  {
+    "timestamp_hour": "04/28/2019 16:00:00",
+    "footfall": 5
+  },
+  {
+    "timestamp_hour": "04/28/2019 18:00:00",
+    "footfall": 292
+  },
+  {
+    "timestamp_hour": "04/28/2019 19:00:00",
+    "footfall": 77
+  },
+  {
+    "timestamp_hour": "04/28/2019 20:00:00",
+    "footfall": 53
+  },
+  {
+    "timestamp_hour": "04/28/2019 21:00:00",
+    "footfall": 19
+  },
+  {
+    "timestamp_hour": "04/28/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/28/2019 23:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/29/2019 01:00:00",
+    "footfall": 1
+  },
+  {
+    "timestamp_hour": "04/29/2019 04:00:00",
+    "footfall": 205
+  },
+  {
+    "timestamp_hour": "04/29/2019 05:00:00",
+    "footfall": 509
+  },
+  {
+    "timestamp_hour": "04/29/2019 06:00:00",
+    "footfall": 352
+  },
+  {
+    "timestamp_hour": "04/29/2019 07:00:00",
+    "footfall": 371
+  },
+  {
+    "timestamp_hour": "04/29/2019 08:00:00",
+    "footfall": 332
+  },
+  {
+    "timestamp_hour": "04/29/2019 09:00:00",
+    "footfall": 411
+  },
+  {
+    "timestamp_hour": "04/29/2019 10:00:00",
+    "footfall": 566
+  },
+  {
+    "timestamp_hour": "04/29/2019 11:00:00",
+    "footfall": 949
+  },
+  {
+    "timestamp_hour": "04/29/2019 12:00:00",
+    "footfall": 2016
+  },
+  {
+    "timestamp_hour": "04/29/2019 13:00:00",
+    "footfall": 2601
+  },
+  {
+    "timestamp_hour": "04/29/2019 14:00:00",
+    "footfall": 2092
+  },
+  {
+    "timestamp_hour": "04/29/2019 15:00:00",
+    "footfall": 979
+  },
+  {
+    "timestamp_hour": "04/29/2019 16:00:00",
+    "footfall": 392
+  },
+  {
+    "timestamp_hour": "04/29/2019 17:00:00",
+    "footfall": 95
+  },
+  {
+    "timestamp_hour": "04/29/2019 18:00:00",
+    "footfall": 18
+  },
+  {
+    "timestamp_hour": "04/29/2019 23:00:00",
+    "footfall": 4
+  },
+  {
+    "timestamp_hour": "04/30/2019 00:00:00",
+    "footfall": 34
+  },
+  {
+    "timestamp_hour": "04/30/2019 01:00:00",
+    "footfall": 150
+  },
+  {
+    "timestamp_hour": "04/30/2019 02:00:00",
+    "footfall": 257
+  },
+  {
+    "timestamp_hour": "04/30/2019 03:00:00",
+    "footfall": 444
+  },
+  {
+    "timestamp_hour": "04/30/2019 04:00:00",
+    "footfall": 670
+  },
+  {
+    "timestamp_hour": "04/30/2019 05:00:00",
+    "footfall": 1044
+  },
+  {
+    "timestamp_hour": "04/30/2019 06:00:00",
+    "footfall": 947
+  },
+  {
+    "timestamp_hour": "04/30/2019 07:00:00",
+    "footfall": 1102
+  },
+  {
+    "timestamp_hour": "04/30/2019 08:00:00",
+    "footfall": 928
+  },
+  {
+    "timestamp_hour": "04/30/2019 09:00:00",
+    "footfall": 849
+  },
+  {
+    "timestamp_hour": "04/30/2019 10:00:00",
+    "footfall": 809
+  },
+  {
+    "timestamp_hour": "04/30/2019 11:00:00",
+    "footfall": 835
+  },
+  {
+    "timestamp_hour": "04/30/2019 12:00:00",
+    "footfall": 1012
+  },
+  {
+    "timestamp_hour": "04/30/2019 13:00:00",
+    "footfall": 1073
+  },
+  {
+    "timestamp_hour": "04/30/2019 14:00:00",
+    "footfall": 1030
+  },
+  {
+    "timestamp_hour": "04/30/2019 15:00:00",
+    "footfall": 720
+  },
+  {
+    "timestamp_hour": "04/30/2019 16:00:00",
+    "footfall": 319
+  },
+  {
+    "timestamp_hour": "04/30/2019 17:00:00",
+    "footfall": 63
+  },
+  {
+    "timestamp_hour": "04/30/2019 18:00:00",
+    "footfall": 235
+  },
+  {
+    "timestamp_hour": "04/30/2019 19:00:00",
+    "footfall": 49
+  },
+  {
+    "timestamp_hour": "04/30/2019 20:00:00",
+    "footfall": 21
+  },
+  {
+    "timestamp_hour": "04/30/2019 21:00:00",
+    "footfall": 16
+  },
+  {
+    "timestamp_hour": "04/30/2019 22:00:00",
+    "footfall": 14
+  },
+  {
+    "timestamp_hour": "04/30/2019 23:00:00",
+    "footfall": 14
+  }
+ ]

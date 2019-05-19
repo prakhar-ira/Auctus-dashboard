@@ -13,6 +13,7 @@ div.flex-container {
 
 select.select-container {
   width: 20%;
+  display: block;
 }
 
 input.date-container {
@@ -21,5 +22,24 @@ input.date-container {
 
 div.flex-elements {
   flex: 1;
+}
+
+button.button-margin {
+  margin: 0.5rem;
+}
+
+.select-range-container {
+  width: 20%;
+  margin-right: 1.1rem;
+  float: right;
+}
+
+.container-padding {
+  padding: 1rem;
+}
+
+select.custom-select-range-container {
+  margin-right: 1.1rem;
+  float: right;
 }
 
