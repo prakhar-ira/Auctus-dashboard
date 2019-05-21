@@ -15,24 +15,39 @@
             [showDropdowns]="true"
             ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose date" (ngModelChange)="change($event, selectedDateObject)"/> 
           </div>
-        <div class="select-range-container">
-          <label>Select range</label>
-            <select class="browser-default custom-select custom-select-range-container" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
-              <option disabled value="range">Select range</option>
-              <option value="lastMonth">Last month</option>
-              <option value="lastWeek">Last week</option>
-              <option value="last30Days">Last 30 days</option>
-              <option value="last7Days">Last 7 days</option>
-              <option value="Custom">Custom</option>
-        </select>
-      </div>
-        <div class="select-range-container" *ngIf="dateRange === 'Custom'">
-        <input type="text"
-             [(ngModel)]="customStartDate" placeholder="Start date (MM/DD/YYYY)" (ngModelChange)="change($event, selectedDateObject)"/> 
-        <input type="text"
-            [(ngModel)]="customEndDate" placeholder="End date (MM/DD/YYYY)" (ngModelChange)="change($event, selectedDateObject)"/> 
-        <button type="button" class="btn btn-primary button-margin" (click)="applyCustomDate()">Apply</button>
-      </div>
+          <div class="flexbox-container">
+            <div class="compareTo">
+                <div class="custom-control custom-checkbox custom-checkbox-input">
+                    <input type="checkbox" class="custom-control-input" [(ngModel)]="compareto" id="compareToInput">
+                    <label class="custom-control-label" for="compareToInput">Compare to</label>
+                </div>
+              <select [disabled]="!compareto" [(ngModel)]="compareToSelect" class="browser-default custom-select select-container" (change)="changeCompareTo($event)">
+                <option selected value="previousPeriod">Previous period</option>
+                <option value="custom">Custom</option>
+              </select>
+              <div class="compare-range-container">
+                <input type="text" class="date-container" 
+                [showDropdowns]="true"
+                ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (ngModelChange)="compareToDateRange($event)"/> 
+            </div>
+            </div>
+            <div class="range-container">
+                <label>Select range</label>
+                  <select class="browser-default custom-select" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+                    <option disabled value="range">Select range</option>
+                    <option value="lastMonth">Last month</option>
+                    <option value="lastWeek">Last week</option>
+                    <option value="last30Days">Last 30 days</option>
+                    <option value="last7Days">Last 7 days</option>
+                    <option value="Custom">Custom</option>
+              </select>
+              <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
+                  <input type="text" class="custom-input"
+                  [showDropdowns]="true"
+                  ngxDaterangepickerMd [(ngModel)]="customSelected" placeholder="Choose custom date" (ngModelChange)="changeCustomDate($event, selectedDateObject)"/> 
+              </div>
+            </div>
+          </div>
       <div class="col-xs-12 container-padding">
           <div id="tab" class="btn-group btn-group-justified button-group-margin" data-toggle="buttons">
             <a href="#prices" class="btn btn-default active button-background" data-toggle="tab">
@@ -48,10 +63,18 @@
     
           <div class="tab-content">
             <div class="tab-pane active" id="prices">
-              <div class="row">
+              <div *ngIf="!compareToCustomDate" class="row">
                   <table>
                     <tr>
                       <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
+                      <td></td>
+                    </tr>
+                  </table>
+              </div>
+              <div *ngIf="compareToCustomDate" class="row">
+                  <table>
+                    <tr>
+                      <td style="width: 10000px; height: 20%"><canvas id="compareTo"></canvas></td>
                       <td></td>
                     </tr>
                   </table>

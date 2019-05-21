@@ -11,9 +11,31 @@ div.flex-container {
   margin: 2rem;
 }
 
+div.compare-range-container {
+  margin-top: 1rem;
+}
+
+.custom-checkbox-input {
+  margin-bottom: 0.4rem;
+}
+
+div.flexbox-container {
+  display: flex;
+  justify-content: space-between;
+}
 select.select-container {
   width: 20%;
   display: block;
+}
+
+div.compareTo {
+  width: 80%;
+  margin-left: 1.8rem;
+}
+
+div.range-container {
+  width: 20%;
+  margin-right: 2rem;
 }
 
 input.date-container {
@@ -26,6 +48,11 @@ div.flex-elements {
 
 button.button-margin {
   margin: 0.5rem;
+}
+
+input.custom-input {
+  width: 100%;
+  margin-top: 1.1rem;
 }
 
 .select-range-container {
