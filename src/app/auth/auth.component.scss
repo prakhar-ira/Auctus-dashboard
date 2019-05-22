@@ -1,0 +1,54 @@
+div.wrapper{
+  max-height:640px;
+  background-color: #F5F5F5;
+  overflow-y:hidden;
+  width: 100%;
+  div.sign-in{
+    width: 60%;
+    margin:150px auto;
+    text-align: center;
+ }
+}
+
+div.sign-in 
+  {
+    input {
+  padding:15px;
+  width:260px;
+  background-color:#E8F0FE;
+  border-color: lightblue;
+  font-size: 17px;
+  font-weight: bolder;
+}
+  }
+
+div.sign-in {
+  button {
+  width:250px;
+  padding: 15px;
+  background-color: #0069D9;
+  color: white;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+  }
+}
+
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width:1300px)  {
+  div.wrapper{
+    max-height: 620px;
+    overflow: hidden;
+  }
+}

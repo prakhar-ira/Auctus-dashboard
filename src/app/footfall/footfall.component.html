@@ -1,0 +1,124 @@
+<div class="container container-box">
+    <!-- <ul class="nav nav-pills">
+        <li class="active"><a href="#" data-toggle="pill">Sub-Items</a></li>
+        <li><a href="#" data-toggle="pill">Displays</a></li>
+        <li><a href="#" data-toggle="pill">Properties</a></li>
+      </ul> -->
+      <div class="flex-container">
+        <div class="flex-elements">
+          <select class="browser-default custom-select select-container" (change)="changeMetrics($event)">
+            <option selected value="Footfall">Footfall</option>
+            <option value="Dwelltime">Dwell time</option>
+          </select>
+        </div>
+            <input type="text" class="date-container"
+            [showDropdowns]="true"
+            ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose date" (ngModelChange)="change($event, selectedDateObject)"/> 
+          </div>
+          <div class="flexbox-container">
+            <div class="compareTo">
+                <div class="custom-control custom-checkbox custom-checkbox-input">
+                    <input type="checkbox" class="custom-control-input" [(ngModel)]="compareto" id="compareToInput">
+                    <label class="custom-control-label" for="compareToInput">Compare to</label>
+                </div>
+              <select [disabled]="!compareto" [(ngModel)]="compareToSelect" class="browser-default custom-select select-container" (change)="changeCompareTo($event)">
+                <option selected value="previousPeriod">Previous period</option>
+                <option value="custom">Custom</option>
+              </select>
+              <div class="compare-range-container">
+                <input type="text" class="date-container" 
+                [showDropdowns]="true"
+                ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (ngModelChange)="compareToDateRange($event)"/> 
+            </div>
+            </div>
+            <div class="range-container">
+                <label>Select range</label>
+                  <select class="browser-default custom-select" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+                    <option disabled value="range">Select range</option>
+                    <option value="lastMonth">Last month</option>
+                    <option value="lastWeek">Last week</option>
+                    <option value="last30Days">Last 30 days</option>
+                    <option value="last7Days">Last 7 days</option>
+                    <option value="Custom">Custom</option>
+              </select>
+              <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
+                  <input type="text" class="custom-input"
+                  [showDropdowns]="true"
+                  ngxDaterangepickerMd [(ngModel)]="customSelected" placeholder="Choose custom date" (ngModelChange)="changeCustomDate($event, selectedDateObject)"/> 
+              </div>
+            </div>
+          </div>
+      <div class="col-xs-12 container-padding" [class.loading]="isLoading">
+          <div id="tab" class="btn-group btn-group-justified button-group-margin" data-toggle="buttons">
+            <a href="#prices" class="btn btn-default active button-background" data-toggle="tab">
+              <input type="radio" />Daily
+            </a>
+            <a href="#features" class="btn btn-default button-background" data-toggle="tab">
+              <input type="radio" />Weekly
+            </a>
+            <a href="#requests" class="btn btn-default button-background" data-toggle="tab">
+              <input type="radio" />Hourly
+            </a>
+          </div>
+    
+          <div class="tab-content">
+            <div class="tab-pane active" id="prices">
+              <div class="row">
+                  <table>
+                    <tr>
+                      <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
+                      <td></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="features">
+              <div class="row">
+                  <table>
+                    <tr>
+                      <td style="width: 10000px; height: 50%"><canvas id="weeklyChart"></canvas></td>
+                      <td></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="requests">
+              <div class="row">
+                  <table>
+                    <tr>
+                      <td style="width: 10000px; height: 50%"><canvas id="monthlyChart"></canvas></td>
+                      <td></td>
+                    </tr>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+  <!-- <div class="row">
+    <table>
+        <tr>
+          <td style="width: 10000px; height: 50%"><canvas id="hourlyChart"></canvas></td>
+          <td></td>
+        </tr>
+      </table>
+    <table>
+      <tr>
+        <td style="width: 10000px; height: 50%"><canvas id="lineChart"></canvas></td>
+        <td></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="width: 10000px; height: 50%"><canvas id="monthlyChart"></canvas></td>
+        <td></td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <td style="width: 10000px; height: 50%"><canvas id="weeklyChart"></canvas></td>
+        <td></td>
+      </tr>
+    </table>
+</div> -->
+</div>
+

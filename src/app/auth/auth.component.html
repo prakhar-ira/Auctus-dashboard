@@ -1,0 +1,27 @@
+<div class="row" *ngIf="!_userService.token">
+    <div class="wrapper">
+      <div class="sign-in">
+        <img src="./assets/main.png" alt="logo">
+        <p style='font-size:17px;font-weight:bold;font-family:verdana'>Please Sign in to SGC Dashboard</p>
+        <hr style='width:50%;'>
+        <div class="col-lg-4">
+          <br>
+          <input type="text" name="login-username" [(ngModel)]="user.username" placeholder="Username" required autofocus>
+        </div>
+        <div class="col-lg-4">
+          <input type="password" name="login-password" [(ngModel)]="user.password" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="col-lg-4">
+          <button (click)="login()" class="btn btn-primary">Log In</button>
+        </div>
+        <div class="col-lg-12">
+          <span *ngFor="let error of _userService.errors.non_field_errors">{{ error }}<br /></span>
+        </div>
+        <br>
+        <br>
+        <hr style='width:100px;'>
+        <p style='font-size:11px;font-weight:lighter;'>&copy;2019 Auctus Advisors</p>
+      </div>
+   </div>
+  </div>  
