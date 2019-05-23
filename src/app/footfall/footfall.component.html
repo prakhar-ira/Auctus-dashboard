@@ -44,7 +44,7 @@
               <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
                   <input type="text" class="custom-input"
                   [showDropdowns]="true"
-                  ngxDaterangepickerMd [(ngModel)]="customSelected" placeholder="Choose custom date" (ngModelChange)="changeCustomDate($event, selectedDateObject)"/> 
+                  ngxDaterangepickerMd [(ngModel)]="customSelected" placeholder="Choose custom date" (ngModelChange)="change($event)"/> 
               </div>
             </div>
           </div>

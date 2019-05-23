@@ -123,13 +123,13 @@ export class FootfallComponent implements OnInit, OnDestroy {
 
   change(event: any) {
     if (event.startDate && event.endDate) {
-      this.selected.startDate = event.startDate.format('M/D/YYYY');
-      this.selected.endDate = event.endDate.format('M/D/YYYY');
+      this.selected.startDate = event.startDate.format('YYYY-MM-DD');
+      this.selected.endDate = event.endDate.format('YYYY-MM-DD');
       console.log(this.selected.startDate, this.selected.endDate, event);
       this.isLoading = true;
       const footfall = {
-        'from': Date.parse(this.selected.startDate) / 1000,
-        'to': Date.parse(this.selected.endDate) / 1000
+        'from': this.selected.startDate,
+        'to': this.selected.endDate
       };
       this.auth
    .postDailyFootFall(footfall)
@@ -139,7 +139,8 @@ export class FootfallComponent implements OnInit, OnDestroy {
    .subscribe(
       (results: any) => {
         this.isLoading = false;
-       console.log(results);
+        this.results = results;
+        this.showMetricsData();
       },
       res => {
         console.log(res);
@@ -213,8 +214,8 @@ export class FootfallComponent implements OnInit, OnDestroy {
 
   changeCustomDate(event: any) {
     if (event.startDate && event.endDate) {
-      this.selected.startDate = event.startDate.format('M/D/YYYY');
-      this.selected.endDate = event.endDate.format('M/D/YYYY');
+      this.selected.startDate = event.startDate.format('YYYY-MM-DD');
+      this.selected.endDate = event.endDate.format('YYYY-MM-DD');
       console.log(this.selected.startDate, this.selected.endDate, event);
       const date = this.results.map(result => {
         return result.date;
@@ -365,7 +366,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
           labels: this.results.date,
           datasets: [{
               label: '',
-              data: this.results.footfall,
+              data: this.results.daily_footfall,
               fill: false,
               lineTension: 0.2,
               borderColor: '#cc181f',
