@@ -23,6 +23,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
   compareTo: any;
   showCompareToGraph = false;
   results: any;
+  compareToResults: any;
   monthlyData: any;
   weeklyData: any;
   hourlyData: any;
@@ -159,16 +160,30 @@ export class FootfallComponent implements OnInit, OnDestroy {
 
   compareToDateRange(event: any) {
     if (event.startDate && event.endDate) {
-      this.selected.startDate = event.startDate.format('M/D/YYYY');
-      this.selected.endDate = event.endDate.format('M/D/YYYY');
+      this.selected.startDate = event.startDate.format('YYYY-MM-DD');
+      this.selected.endDate = event.endDate.format('YYYY-MM-DD');
       console.log(this.selected.startDate, this.selected.endDate, event);
-      const date = this.results.map(result => {
-        return result.date;
-      });
-     const startIndex = date.indexOf(this.selected.startDate);
-     const endIndex = date.indexOf(this.selected.endDate);
-     this.changedRows = date.slice(startIndex, (endIndex + 1));
-     this.showCompareTo(this.typeMetrics);
+      this.isLoading = true;
+      const footfall = {
+        'from': this.selected.startDate,
+        'to': this.selected.endDate
+      };
+      this.auth
+   .postDailyFootFall(footfall)
+   .pipe(
+    takeWhile(() => this.alive),
+  )
+   .subscribe(
+      (results: any) => {
+        this.isLoading = false;
+        this.compareToResults = results;
+        this.showCompareTo();
+      },
+      res => {
+        console.log(res);
+        this.router.navigate(['/']);
+      }
+    );
   }
   }
 
@@ -227,45 +242,43 @@ export class FootfallComponent implements OnInit, OnDestroy {
     }
  }
 
- showCompareTo(type) {
-  this.typeMetrics = type;
-  if (type === 'Foot fall') {
-     this.data = this.results.map(result => {
-      return result.footfall;
-    });
-  } else {
-     this.data = this.results.map(result => {
-      return result.dwell_time;
-    });
-  }
-  const date = this.results.map(result => {
-    return result.date;
-  });
-  const value = this.monthlyData.map(result => {
-    return result.footfall;
-  });
-  console.log(this.data, value);
-
-  this.compareTo = new Chart('compareTo', {
+ showCompareTo() {
+  this.LineChart = new Chart('lineChart', {
     type: 'line',
     data: {
-      labels: date,
-  datasets: [{
-              data: this.data,
-              backgroundColor: 'rgba(102, 187, 158,0.2)',
-              borderColor: 'rgb(102,187,158)',
-              pointBackgroundColor: 'rgb(67, 122, 103)',
-              xAxisID: 'x-axis-1'
+      labels: this.results.date,
+      datasets: [{
+              label: 'Primary range',
+              data: this.results.daily_footfall,
+              lineTension: 0.2,
+              borderColor: '#cc181f',
+              borderWidth: 1,
+              pointBackgroundColor: '#ce4532',
+              fill: false
             },
             {
-              backgroundColor: 'rgba(188,101,47,0.2)',
-              borderColor: 'rgb(168,101,47)',
-              pointBackgroundColor: 'rgb(155, 21, 6)',
-              data: value,
-              xAxisID: 'x-axis-2'
+              label: 'Secondary range',
+              lineTension: 0.2,
+              borderWidth: 1,
+              borderColor: 'rgb(30, 95, 236)',
+              pointBackgroundColor: '#134fcf',
+              data: this.compareToResults.daily_footfall,
+              fill: false
             }]
           },
           options: {
+            title: {
+              display: true,
+              text: 'Foorfall data'
+            },
+            tooltips: {
+              mode: 'index',
+              intersect: false,
+            },
+            hover: {
+              mode: 'nearest',
+              intersect: true
+            },
             legend: {
               position: 'top',
               display: false
@@ -274,20 +287,21 @@ export class FootfallComponent implements OnInit, OnDestroy {
               yAxes: [{
                 ticks: {
                     beginAtZero: true
-                }
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Footfall'
+                },
             }],
               xAxes: [{
                 display: true,
-                position: 'top',
-                id: 'x-axis-1'
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Date'
+                },
               },
-              {
-                display: true,
-                position: 'bottom',
-                id: 'x-axis-2'
-              }]
+        ]
             },
-            responsive: true,
             maintainAspectRatio: true,
           }
         });
