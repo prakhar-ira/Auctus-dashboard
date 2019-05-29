@@ -61,8 +61,13 @@ input.custom-input {
   float: right;
 }
 
+div.hierarchy-container {
+  flex: 1;
+  margin-left: -5rem;}
+
 .container-padding {
   padding: 1rem;
+  color: #ce4532
 }
 
 select.custom-select-range-container {

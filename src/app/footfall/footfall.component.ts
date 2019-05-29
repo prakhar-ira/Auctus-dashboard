@@ -7,6 +7,10 @@ import { Moment } from 'moment';
 import { ChartService } from 'src/app/shared/services/chart.service';
 import { AuthService } from 'src/app/shared/services/auth.service';
 import { Router } from '@angular/router';
+import { TreeModel, TreeNode } from 'angular-tree-component';
+import * as moment from 'moment';
+import { ToastrService } from 'ngx-toastr';
+
 
 @Component({
   selector: 'app-footfall',
@@ -34,10 +38,14 @@ export class FootfallComponent implements OnInit, OnDestroy {
   customSelected: {startDate: Moment, endDate: Moment};
   compareto = false;
   compareToCustomDate: {startDate: Moment, endDate: Moment};
-  compareToSelect: any = 'previousPeriod';
+  compareToSelect: any = 'range';
   isLoading: boolean;
-
-
+  showHiearchy: false;
+  nodes: any;
+  isPreviousPeriodSelected: boolean;
+  options = {
+    useCheckbox: true
+  };
   private alive = true;
 
 
@@ -45,7 +53,8 @@ export class FootfallComponent implements OnInit, OnDestroy {
     private http: HttpClient,
     private router: Router,
     private chart: ChartService,
-    private auth: AuthService
+    private auth: AuthService,
+    private toastr: ToastrService
     ) {}
 
   showhHourlyData() {
@@ -122,7 +131,8 @@ export class FootfallComponent implements OnInit, OnDestroy {
 
   }
 
-  change(event: any) {
+  changeSelection(event: any) {
+      console.log(event);
     if (event.startDate && event.endDate) {
       this.selected.startDate = event.startDate.format('YYYY-MM-DD');
       this.selected.endDate = event.endDate.format('YYYY-MM-DD');
@@ -155,8 +165,52 @@ export class FootfallComponent implements OnInit, OnDestroy {
   }
 
   changeCompareTo(ev: any) {
-    console.log(ev);
+    console.log(this.compareToSelect, this.dateRange);
+    if (this.compareToSelect === 'previousPeriod') {
+      const footfall = {};
+      switch (this.dateRange) {
+        case 'last7Days': footfall['to'] = moment().subtract(7, 'days').format('YYYY-MM-DD');
+                          footfall['from'] = moment().subtract(14, 'days').format('YYYY-MM-DD');
+                          break;
+        case 'last30Days' : footfall['to'] = moment().subtract(1, 'months').format('YYYY-MM-DD');
+                            footfall['from'] = moment().subtract(2, 'months').format('YYYY-MM-DD');
+                          break;
+        case 'thisWeek' : footfall['from'] = moment().startOf('week').subtract(7, 'days').format('YYYY-MM-DD');
+                          footfall['to'] = moment().startOf('week').format('YYYY-MM-DD');
+                          break;
+        case 'lastWeek' : footfall['from'] = moment().startOf('week').subtract(14, 'days').format('YYYY-MM-DD');
+                          footfall['to'] = moment().startOf('week').subtract(7, 'days').format('YYYY-MM-DD');
+                          break;
+        case 'thisMonth' : footfall['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
+                          footfall['to'] = moment().startOf('month').format('YYYY-MM-DD');
+                          break;
+        case 'lastMonth' : footfall['to'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
+                          footfall['from'] = moment().startOf('month').subtract(2, 'months').format('YYYY-MM-DD');
+                          break;
+        case 'yearToDate' : footfall['to'] = moment().subtract(1, 'years').format('YYYY-MM-DD');
+                          footfall['from'] = moment().subtract(2, 'years').format('YYYY-MM-DD');
+                          break;
+        default: return this.toastr.error('Please select primary date range');
+      }
+this.isLoading = true;
+      this.auth
+   .postDailyFootFall(footfall)
+   .pipe(
+    takeWhile(() => this.alive),
+  )
+   .subscribe(
+      (results: any) => {
+        this.isLoading = false;
+        this.compareToResults = results;
+        this.showCompareTo();
+      },
+      res => {
+        console.log(res);
+        this.router.navigate(['/']);
+      }
+    );
   }
+}
 
   compareToDateRange(event: any) {
     if (event.startDate && event.endDate) {
@@ -308,19 +362,54 @@ export class FootfallComponent implements OnInit, OnDestroy {
  }
 
   changeDateRange(ev: any) {
-    console.log(ev.target.value);
+    if (this.compareToSelect === 'previousPeriod') {
+      return this.changeCompareTo(ev);
+    } else {
+    const footfall = {};
     switch (ev.target.value) {
-      case 'lastMonth': this.showLastMonthdata();
+      case 'last7Days': footfall['to'] = moment().format('YYYY-MM-DD');
+                        footfall['from'] = moment().subtract(7, 'days').format('YYYY-MM-DD');
                         break;
-      case 'lastWeek' : this.showLastWeekdata();
+      case 'last30Days' : footfall['to'] = moment().format('YYYY-MM-DD');
+                          footfall['from'] = moment().subtract(1, 'months').format('YYYY-MM-DD');
                         break;
-      case 'last30Days' : this.showLast30Daysdata();
+      case 'thisWeek' : footfall['from'] = moment().startOf('week').format('YYYY-MM-DD');
+                        footfall['to'] = moment().format('YYYY-MM-DD');
                         break;
-      case 'last7Days' : this.showLast7Daysdata();
+      case 'lastWeek' : footfall['from'] = moment().startOf('week').subtract(7, 'days').format('YYYY-MM-DD');
+                        footfall['to'] = moment().startOf('week').format('YYYY-MM-DD');
+                        break;
+      case 'thisMonth' : footfall['from'] = moment().startOf('month').format('YYYY-MM-DD');
+                        footfall['to'] = moment().format('YYYY-MM-DD');
+                        break;
+      case 'lastMonth' : footfall['to'] = moment().startOf('month').format('YYYY-MM-DD');
+                        footfall['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
+                        break;
+      case 'yearToDate' : footfall['to'] = moment().format('YYYY-MM-DD');
+                        footfall['from'] = moment().subtract(1, 'years').format('YYYY-MM-DD');
                         break;
       default: return;
     }
+    this.isLoading = true;
+      this.auth
+   .postDailyFootFall(footfall)
+   .pipe(
+    takeWhile(() => this.alive),
+  )
+   .subscribe(
+      (results: any) => {
+        this.isLoading = false;
+        this.results = results;
+        this.showMetricsData();
+      },
+      res => {
+        console.log(res);
+        this.router.navigate(['/']);
+      }
+    );
+    }
   }
+
 
   showLastMonthdata() {
     const date = this.results.map(result => {
@@ -417,6 +506,19 @@ export class FootfallComponent implements OnInit, OnDestroy {
         this.router.navigate(['/']);
       }
     );
+
+  this.http.get('../assets/store_hierarchy_modified.json')
+      .pipe(
+         takeWhile(() => this.alive),
+      )
+      .subscribe(
+        (results: any) => {
+          console.log(results, this.nodes);
+           this.nodes = results;
+        },
+        res => {
+          console.log(res);        }
+      );
   //  this.monthlyData =  await this.http.get('../assets/monthly.json').toPromise();
   //  this.weeklyData =  await this.http.get('../assets/weekly.json').toPromise();
   //  this.hourlyData =  await this.http.get('../assets/hourly.json').toPromise();

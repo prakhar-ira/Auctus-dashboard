@@ -1,9 +1,4 @@
 <div class="container container-box">
-    <!-- <ul class="nav nav-pills">
-        <li class="active"><a href="#" data-toggle="pill">Sub-Items</a></li>
-        <li><a href="#" data-toggle="pill">Displays</a></li>
-        <li><a href="#" data-toggle="pill">Properties</a></li>
-      </ul> -->
       <div class="flex-container">
         <div class="flex-elements">
           <select class="browser-default custom-select select-container" (change)="changeMetrics($event)">
@@ -11,10 +6,26 @@
             <option value="Dwelltime">Dwell time</option>
           </select>
         </div>
-            <input type="text" class="date-container"
-            [showDropdowns]="true"
-            ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose date" (ngModelChange)="change($event, selectedDateObject)"/> 
+        <div class="range-container">
+            <label>Select range</label>
+              <select class="browser-default custom-select" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+                <option disabled value="range">Select range</option>
+                <option value="last7Days">Last 7 days</option>
+                <option value="last30Days">Last 30 days</option>
+                <option value="thisWeek">This week</option>
+                <option value="lastWeek">Last week</option>
+                <option value="thisMonth">This month</option>
+                <option value="lastMonth">Last month</option>
+                <option value="yearToDate">Year to date</option>
+                <option value="Custom">Custom</option>
+          </select>
+          <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
+              <input type="text" class="custom-input"
+              [showDropdowns]="true"
+              ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose custom date" (change)="changeSelection($event)"/> 
           </div>
+        </div>
+     </div>
           <div class="flexbox-container">
             <div class="compareTo">
                 <div class="custom-control custom-checkbox custom-checkbox-input">
@@ -22,7 +33,8 @@
                     <label class="custom-control-label" for="compareToInput">Compare to</label>
                 </div>
               <select [disabled]="!compareto" [(ngModel)]="compareToSelect" class="browser-default custom-select select-container" (change)="changeCompareTo($event)">
-                <option selected value="previousPeriod">Previous period</option>
+                <option disabled value="range">Select compare to range</option>
+                <option value="previousPeriod">Previous period</option>
                 <option value="custom">Custom</option>
               </select>
               <div class="compare-range-container">
@@ -31,21 +43,16 @@
                 ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (ngModelChange)="compareToDateRange($event)"/> 
             </div>
             </div>
-            <div class="range-container">
-                <label>Select range</label>
-                  <select class="browser-default custom-select" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
-                    <option disabled value="range">Select range</option>
-                    <option value="lastMonth">Last month</option>
-                    <option value="lastWeek">Last week</option>
-                    <option value="last30Days">Last 30 days</option>
-                    <option value="last7Days">Last 7 days</option>
-                    <option value="Custom">Custom</option>
-              </select>
-              <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
-                  <input type="text" class="custom-input"
-                  [showDropdowns]="true"
-                  ngxDaterangepickerMd [(ngModel)]="customSelected" placeholder="Choose custom date" (ngModelChange)="change($event)"/> 
-              </div>
+            <div class="hierarchy-container">
+              <div class="custom-control custom-checkbox custom-checkbox-input">
+                  <input type="checkbox" class="custom-control-input" [(ngModel)]="showHiearchy" id="showHiearchy">
+                  <label class="custom-control-label" for="showHiearchy">Show hierarchy</label>
+              </div>    
+              <ng-container *ngIf="showHiearchy">    
+                <input id="filter" #filter (keyup)="tree.treeModel.filterNodes(filter.value)" placeholder="Search area"/>
+                <button (click)="tree.treeModel.clearFilter()">Clear</button>
+                <tree-root #tree [focused]="true" [options]="options" [nodes]="nodes"></tree-root>
+              </ng-container>  
             </div>
           </div>
       <div class="col-xs-12 container-padding" [class.loading]="isLoading">

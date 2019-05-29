@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
+import { TreeModule } from 'angular-tree-component';
+import { ToastrModule } from 'ngx-toastr';
+
+
 
 
 @NgModule({
@@ -12,12 +16,20 @@ import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    NgxDaterangepickerMd.forRoot()
+    TreeModule.forRoot(),
+    NgxDaterangepickerMd.forRoot(),
+    ToastrModule.forRoot({
+      timeOut: 10000,
+      positionClass: 'toast-bottom-right',
+      preventDuplicates: true,
+    })
   ],
   exports: [
     ReactiveFormsModule,
     FormsModule,
-    NgxDaterangepickerMd
+    NgxDaterangepickerMd,
+    TreeModule,
+    ToastrModule
   ],
 })
 export class SharedModule { }

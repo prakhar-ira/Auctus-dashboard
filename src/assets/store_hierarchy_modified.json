@@ -1,0 +1,661 @@
+[
+   {
+      "name":"Upper Ground",
+      "children":[
+         {
+            "name":"NorthEast Corridor",
+            "children":[
+               {
+                  "name":"Forever New"
+               },
+               {
+                  "name":"Adamis"
+               },
+               {
+                  "name":"Aeropostale"
+               },
+               {
+                  "name":"Charles & Keith"
+               },
+               {
+                  "name":"Kama Ayurveda"
+               },
+               {
+                  "name":"Rosso Brunello"
+               }
+            ]
+         },
+         {
+            "name":"SouthWest Corridor",
+            "children":[
+               {
+                  "name":"Organic Harvest"
+               },
+               {
+                  "name":"Raymond"
+               },
+               {
+                  "name":"Nike Sports"
+               },
+               {
+                  "name":"Hunkemoller"
+               },
+               {
+                  "name":"Daniel Wellington"
+               },
+               {
+                  "name":"Vero Moda"
+               },
+               {
+                  "name":"Da Milano"
+               },
+               {
+                  "name":"Accessorize"
+               },
+               {
+                  "name":"Tanishq"
+               },
+               {
+                  "name":"Only"
+               },
+               {
+                  "name":"Tommy Hilfiger"
+               },
+               {
+                  "name":"Being Human"
+               },
+               {
+                  "name":"Maple"
+               }
+            ]
+         },
+         {
+            "name":"NorthWest Corridor",
+            "children":[
+               {
+                  "name":"Clarks"
+               },
+               {
+                  "name":"Zodiac"
+               },
+               {
+                  "name":"Promod"
+               },
+               {
+                  "name":"Jack & Jones"
+               },
+               {
+                  "name":"Looks Unisex Salon"
+               },
+               {
+                  "name":"True Blue"
+               },
+               {
+                  "name":"Hush Puppies"
+               },
+               {
+                  "name":"COVERSTORY"
+               },
+               {
+                  "name":"Lacoste"
+               }
+            ]
+         },
+         {
+            "name":"West Atrium",
+            "children":[
+               {
+                  "name":"Innisfree"
+               },
+               {
+                  "name":"Hidesign"
+               },
+               {
+                  "name":"Adidas Originals"
+               },
+               {
+                  "name":"Lifestyle"
+               },
+               {
+                  "name":"Gutereise"
+               }
+            ]
+         },
+         {
+            "name":"SouthEast Corridor",
+            "children":[
+               {
+                  "name":"Ritukumar Label"
+               },
+               {
+                  "name":"Selected"
+               },
+               {
+                  "name":"Sephora"
+               },
+               {
+                  "name":"Superdry"
+               },
+               {
+                  "name":"Starbucks"
+               },
+               {
+                  "name":"Helios"
+               },
+               {
+                  "name":"GAS"
+               },
+               {
+                  "name":"Steve madden"
+               }
+            ]
+         },
+         {
+            "name":"Center Atrium",
+            "children":[
+               {
+                  "name":"Ethos"
+               },
+               {
+                  "name":"Swarovski"
+               },
+               {
+                  "name":"Sunglass Hut"
+               },
+               {
+                  "name":"Tissot"
+               },
+               {
+                  "name":"MAC"
+               },
+               {
+                  "name":"Swatch"
+               },
+               {
+                  "name":"Parcos"
+               },
+               {
+                  "name":"Forest Essentials"
+               },
+               {
+                  "name":"Rare Rabbit"
+               }
+            ]
+         },
+         {
+            "name":"East Atrium",
+            "children":[
+               {
+                  "name":"Nykaa"
+               },
+               {
+                  "name":"Marks & Spencer"
+               },
+               {
+                  "name":"Forever 21"
+               },
+               {
+                  "name":"ALDO"
+               },
+               {
+                  "name":"DC Shoes"
+               },
+               {
+                  "name":"CARATLANE"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name":"Lower Ground",
+      "children":[
+         {
+            "name":"High Street",
+            "children":[
+               {
+                  "name":"Pearl Harbour"
+               },
+               {
+                  "name":"Home Center"
+               },
+               {
+                  "name":"The Perfume Store"
+               }
+            ]
+         },
+         {
+            "name":"Big Bazaar",
+            "children":[
+               {
+                  "name":"Big Bazaar"
+               },
+               {
+                  "name":"Onestop"
+               }
+            ]
+         },
+         {
+            "name":"Rail Concourse",
+            "children":[
+               {
+                  "name":"Wow! Momo"
+               },
+               {
+                  "name":"One Plus"
+               },
+               {
+                  "name":"HEALTH & GLOW"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name":"First Floor",
+      "children":[
+         {
+            "name":"NorthWest Corridor",
+            "children":[
+               {
+                  "name":"Happy Socks"
+               },
+               {
+                  "name":"GKB opticals"
+               },
+               {
+                  "name":"Woodland"
+               },
+               {
+                  "name":"Park Avenue"
+               },
+               {
+                  "name":"ColorPlus"
+               },
+               {
+                  "name":"Red Tape"
+               },
+               {
+                  "name":"Urbana"
+               },
+               {
+                  "name":"Wet Blue"
+               },
+               {
+                  "name":"Allensolly"
+               },
+               {
+                  "name":"Van Heusen Men"
+               },
+               {
+                  "name":"Cadini"
+               },
+               {
+                  "name":"US POLO Denim"
+               }
+            ]
+         },
+         {
+            "name":"NorthEast Corridor",
+            "children":[
+               {
+                  "name":"AND"
+               },
+               {
+                  "name":"109F"
+               },
+               {
+                  "name":"Latin Quarters"
+               },
+               {
+                  "name":"Esbeda"
+               },
+               {
+                  "name":"Mineral"
+               },
+               {
+                  "name":"Shaze"
+               },
+               {
+                  "name":"ALL"
+               }
+            ]
+         },
+         {
+            "name":"Center Circle",
+            "children":[
+               {
+                  "name":"Canon"
+               },
+               {
+                  "name":"Regal"
+               },
+               {
+                  "name":"Puma"
+               },
+               {
+                  "name":"Waman Hari Pethe"
+               },
+               {
+                  "name":"Voylla"
+               },
+               {
+                  "name":"ASICS"
+               },
+               {
+                  "name":"Metro"
+               },
+               {
+                  "name":"William Penn"
+               }
+            ]
+         },
+         {
+            "name":"SouthWest Corridor",
+            "children":[
+               {
+                  "name":"Samsonite"
+               },
+               {
+                  "name":"Wills Lifestyle"
+               },
+               {
+                  "name":"Croma"
+               },
+               {
+                  "name":"Wildcraft"
+               },
+               {
+                  "name":"Lavie"
+               },
+               {
+                  "name":"LOUIS PHILIPPE"
+               },
+               {
+                  "name":"ARROW"
+               },
+               {
+                  "name":"Nike"
+               },
+               {
+                  "name":"Blackberrys"
+               },
+               {
+                  "name":"INC.5"
+               },
+               {
+                  "name":"United Colors of Benetton"
+               }
+            ]
+         },
+         {
+            "name":"East Corridor",
+            "children":[
+               {
+                  "name":"Baggit"
+               },
+               {
+                  "name":"Olde Bailey's"
+               },
+               {
+                  "name":"Skechers"
+               },
+               {
+                  "name":"Westside"
+               },
+               {
+                  "name":"KOMPANERO"
+               }
+            ]
+         },
+         {
+            "name":"West Corridor",
+            "children":[
+               {
+                  "name":"Casio"
+               },
+               {
+                  "name":"Splash"
+               },
+               {
+                  "name":"Lamy"
+               },
+               {
+                  "name":"Pantaloons"
+               }
+            ]
+         },
+         {
+            "name":"SourthEast Corridor",
+            "children":[
+               {
+                  "name":"FLYING MACHINE"
+               },
+               {
+                  "name":"Indian Terrain"
+               },
+               {
+                  "name":"Speedo"
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name":"Second Floor",
+      "children":[
+         {
+            "name":"NorthEast Corridor",
+            "children":[
+               {
+                  "name":"Gini & Jony"
+               },
+               {
+                  "name":"Bargain Book Hut"
+               },
+               {
+                  "name":"TOMMY HILFIGER KIDS"
+               },
+               {
+                  "name":"Myo Thai Spa"
+               },
+               {
+                  "name":"Mother Care"
+               },
+               {
+                  "name":"Jockey Women"
+               },
+               {
+                  "name":"UNITED COLORS OF BENETTON KIDS"
+               },
+               {
+                  "name":"Peora"
+               }
+            ]
+         },
+         {
+            "name":"NorthWest Corridor",
+            "children":[
+               {
+                  "name":"Envi"
+               },
+               {
+                  "name":"VIP"
+               },
+               {
+                  "name":"Peter England"
+               },
+               {
+                  "name":"MANYAVAR"
+               },
+               {
+                  "name":"Emart"
+               },
+               {
+                  "name":"ARCHIES"
+               },
+               {
+                  "name":"Silver Shines"
+               },
+               {
+                  "name":"Samsung"
+               },
+               {
+                  "name":"Lee Cooper"
+               },
+               {
+                  "name":"Mufti"
+               },
+               {
+                  "name":"Octave"
+               },
+               {
+                  "name":"Mobikins"
+               },
+               {
+                  "name":"Spykar"
+               },
+               {
+                  "name":"Bodhi Thai Spa"
+               }
+            ]
+         },
+         {
+            "name":"East Corridor - Foodcourt",
+            "children":[
+               {
+                  "name":"Gelato"
+               },
+               {
+                  "name":"Kailash Parbat"
+               },
+               {
+                  "name":"Burger King"
+               },
+               {
+                  "name":"FALAFEL'S"
+               },
+               {
+                  "name":"Only Parathas"
+               },
+               {
+                  "name":"Sbarro"
+               },
+               {
+                  "name":"Hanky Franky Malgudi"
+               },
+               {
+                  "name":"Subway"
+               },
+               {
+                  "name":"MC DONALD'S"
+               },
+               {
+                  "name":"Soup Bowl"
+               },
+               {
+                  "name":"Bhagat Tarachand"
+               },
+               {
+                  "name":"KFC"
+               },
+               {
+                  "name":"Chaat Caf\u00e9"
+               },
+               {
+                  "name":"Shahi Durbar"
+               }
+            ]
+         },
+         {
+            "name":"SouthWest Corridor",
+            "children":[
+               {
+                  "name":"Hamleys"
+               },
+               {
+                  "name":"Global Desi"
+               },
+               {
+                  "name":"Go colors"
+               },
+               {
+                  "name":"Biba"
+               },
+               {
+                  "name":"UNLIMITED"
+               },
+               {
+                  "name":"Cotton Culture"
+               },
+               {
+                  "name":"W"
+               },
+               {
+                  "name":"Kaya"
+               }
+            ]
+         },
+         {
+            "name":"West Corridor",
+            "children":[
+               {
+                  "name":"Bose"
+               },
+               {
+                  "name":"Max"
+               },
+               {
+                  "name":"IMARA"
+               },
+               {
+                  "name":"Justplay"
+               }
+            ]
+         },
+         {
+            "name":"Center Circle",
+            "children":[
+               {
+                  "name":"CRAFTSVILLA"
+               },
+               {
+                  "name":"Aurelia"
+               },
+               {
+                  "name":"Mustard"
+               },
+               {
+                  "name":"WonderChef"
+               },
+               {
+                  "name":"Fabindia"
+               }
+            ]
+         },
+         {
+            "name":"SourthEast Corridor",
+            "children":[
+               {
+                  "name":"SOCH"
+               },
+               {
+                  "name":"Indifusion"
+               },
+               {
+                  "name":"Meena Bazaar"
+               },
+               {
+                  "name":"Span"
+               },
+               {
+                  "name":"Ethnicity"
+               },
+               {
+                  "name":"Ritu Kumar"
+               }
+            ]
+         }
+      ]
+   }
+]

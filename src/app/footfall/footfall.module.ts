@@ -13,7 +13,7 @@ import { SharedModule } from '../shared/shared/shared.module';
   imports: [
     CommonModule,
     FootfallRoutingModule,
-   SharedModule
+   SharedModule,
   ]
 })
 export class FootfallModule { }
