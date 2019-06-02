@@ -140,7 +140,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
       this.isLoading = true;
       const footfall = {
         'from': this.selected.startDate,
-        'to': this.selected.endDate
+        'to': this.selected.endDate,
       };
       this.auth
    .postDailyFootFall(footfall)
@@ -188,7 +188,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
                           footfall['from'] = moment().startOf('month').subtract(2, 'months').format('YYYY-MM-DD');
                           break;
         case 'yearToDate' : footfall['to'] = moment().subtract(1, 'years').format('YYYY-MM-DD');
-                          footfall['from'] = moment().subtract(2, 'years').format('YYYY-MM-DD');
+                          footfall['from'] = moment().startOf('year').subtract(1, 'years').format('YYYY-MM-DD');
                           break;
         default: return this.toastr.error('Please select primary date range');
       }
@@ -300,7 +300,7 @@ this.isLoading = true;
   this.LineChart = new Chart('lineChart', {
     type: 'line',
     data: {
-      labels: this.results.date,
+      labels: this.compareToResults.date,
       datasets: [{
               label: 'Primary range',
               data: this.results.daily_footfall,
@@ -386,7 +386,7 @@ this.isLoading = true;
                         footfall['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
                         break;
       case 'yearToDate' : footfall['to'] = moment().format('YYYY-MM-DD');
-                        footfall['from'] = moment().subtract(1, 'years').format('YYYY-MM-DD');
+                          footfall['from'] = moment().startOf('year').format('YYYY-MM-DD');
                         break;
       default: return;
     }
@@ -466,10 +466,10 @@ this.isLoading = true;
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
-          labels: this.results.date,
+          labels: this.results.Date,
           datasets: [{
               label: '',
-              data: this.results.daily_footfall,
+              data: this.results.footfall,
               fill: false,
               lineTension: 0.2,
               borderColor: '#cc181f',
@@ -500,6 +500,33 @@ this.isLoading = true;
         this.isLoading = false;
         this.results = results;
         this.showMetricsData();
+      },
+      res => {
+        console.log(res);
+        this.router.navigate(['/']);
+      }
+    );
+
+    const postData = {
+      'from': '2019-05-01',
+      'to': '2019-05-15',
+      'metric': 'Footfall',
+      'compare_flag': 'true',
+      'compare_from': '2019-04-01',
+      'compare_to': '2019-05-15',
+      'vs_metric_flag': 'true',
+      'vs_metric': 'Camera Count',
+      'period': 'Daily'
+    };
+
+    this.auth
+   .postDailyFootFall(postData)
+   .pipe(
+    takeWhile(() => this.alive),
+  )
+   .subscribe(
+      (results: any) => {
+        console.log(results);
       },
       res => {
         console.log(res);

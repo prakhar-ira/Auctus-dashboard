@@ -93,12 +93,12 @@ export class AuthService implements OnDestroy {
 
   getDailyFootFall() {
     const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
-    return this.httpClient.get(`${ENV.API_URL}/dailyfootfall`, { headers });
+    return this.httpClient.get(`${ENV.API_URL}/analytics/`, { headers });
   }
 
   postDailyFootFall(dailyfootfall) {
     const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
-    return this.httpClient.post(`${ENV.API_URL}/dailyfootfall/`, dailyfootfall, { headers });
+    return this.httpClient.post(`${ENV.API_URL}/analytics/`, dailyfootfall, { headers });
   }
 
   private updateData(token: string) {
