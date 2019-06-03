@@ -23,23 +23,26 @@ export class FootfallComponent implements OnInit, OnDestroy {
   data: any[] = [];
   MonthlyChart: any;
   WeeklyChart: any;
+  period: any;
   HourlyChart: any;
-  compareTo: any;
+  compareTo = false;
   showCompareToGraph = false;
   results: any;
   compareToResults: any;
   monthlyData: any;
   weeklyData: any;
+  vsMetric = false;
   hourlyData: any;
   changedRows: any;
   typeMetrics: string;
-  selected: {startDate: string, endDate: string};
+  selected = {startDate: moment, endDate: moment};
   dateRange: any = 'range';
-  customSelected: {startDate: Moment, endDate: Moment};
   compareto = false;
-  compareToCustomDate: {startDate: Moment, endDate: Moment};
+  compareToCustomDate = {startDate: moment, endDate: moment};
   compareToSelect: any = 'range';
   isLoading: boolean;
+  primaryMetrics = 'Footfall';
+  secondaryMetrics = '';
   showHiearchy: false;
   nodes: any;
   isPreviousPeriodSelected: boolean;
@@ -137,29 +140,29 @@ export class FootfallComponent implements OnInit, OnDestroy {
       this.selected.startDate = event.startDate.format('YYYY-MM-DD');
       this.selected.endDate = event.endDate.format('YYYY-MM-DD');
       console.log(this.selected.startDate, this.selected.endDate, event);
-      this.isLoading = true;
-      const footfall = {
-        'from': this.selected.startDate,
-        'to': this.selected.endDate,
-      };
-      this.auth
-   .postDailyFootFall(footfall)
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        this.isLoading = false;
-        this.results = results;
-        this.showMetricsData();
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      }
-    );
+      // this.isLoading = true;
+  //     const footfall = {
+  //       'from': this.selected.startDate,
+  //       'to': this.selected.endDate,
+  //     };
+  //     this.auth
+  //  .postDailyFootFall(footfall)
+  //  .pipe(
+  //   takeWhile(() => this.alive),
+  // )
+  //  .subscribe(
+  //     (results: any) => {
+  //       this.isLoading = false;
+  //       this.results = results;
+  //       this.showMetricsData();
+  //     },
+  //     res => {
+  //       console.log(res);
+  //       this.router.navigate(['/']);
+  //     }
+    // );
+    // }
     }
-
     //  this.changedRows = date.slice(startIndex, (endIndex + 1));
     //  this.showMetricsData();
   }
@@ -192,52 +195,102 @@ export class FootfallComponent implements OnInit, OnDestroy {
                           break;
         default: return this.toastr.error('Please select primary date range');
       }
-this.isLoading = true;
-      this.auth
-   .postDailyFootFall(footfall)
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        this.isLoading = false;
-        this.compareToResults = results;
-        this.showCompareTo();
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
+      this.compareToCustomDate.startDate = footfall['from'];
+      this.compareToCustomDate.endDate = footfall['to'];
+// this.isLoading = true;
+//       this.auth
+//    .postDailyFootFall(footfall)
+//    .pipe(
+//     takeWhile(() => this.alive),
+//   )
+//    .subscribe(
+//       (results: any) => {
+//         this.isLoading = false;
+//         this.compareToResults = results;
+//         this.showCompareTo();
+//       },
+//       res => {
+//         console.log(res);
+//         this.router.navigate(['/']);
+//       }
+//     );
+//   }
+    }
+}
+
+changeTab(e) {
+  console.log('hi', e, e.target.value, this.period);
+}
+
+changeVsMetrics(event) {
+
+}
+
+applyDateRange() {
+  console.log(this.compareTo, this.vsMetric, this.dateRange, this.selected, this.compareToCustomDate);
+  const postData = {
+    'from':  this.selected.startDate,
+    'to': this.selected.endDate,
+    'metric': this.primaryMetrics,
+    'compare_flag': `${this.compareTo}`,
+    'compare_from': this.compareToCustomDate.startDate,
+    'compare_to': this.compareToCustomDate.endDate,
+    'vs_metric_flag': `${this.vsMetric}`,
+    'vs_metric': this.secondaryMetrics,
+    'period': 'Daily'
+  };
+  this.isLoading = true;
+  this.auth
+ .postDailyFootFall(postData)
+ .pipe(
+  takeWhile(() => this.alive),
+)
+ .subscribe(
+    (results: any) => {
+      this.isLoading = false;
+      if (results.flag.compare_data_flag  === 'false') {
+            this.results = results.data.metric.primary_date;
+            this.showMetricsData();
+      } else if (results.flag.compare_data_flag  === 'true') {
+            this.results = results.data.metric.primary_date;
+            this.compareToResults = results.data.metric.primary_date;
+            this.compareToResults = results.data.metric.compare_date;
+            this.showCompareTo();
       }
-    );
-  }
+    },
+    res => {
+      console.log(res);
+      this.router.navigate(['/']);
+    }
+  );
 }
 
   compareToDateRange(event: any) {
     if (event.startDate && event.endDate) {
-      this.selected.startDate = event.startDate.format('YYYY-MM-DD');
-      this.selected.endDate = event.endDate.format('YYYY-MM-DD');
-      console.log(this.selected.startDate, this.selected.endDate, event);
-      this.isLoading = true;
-      const footfall = {
-        'from': this.selected.startDate,
-        'to': this.selected.endDate
-      };
-      this.auth
-   .postDailyFootFall(footfall)
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        this.isLoading = false;
-        this.compareToResults = results;
-        this.showCompareTo();
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      }
-    );
+      this.compareToCustomDate.startDate = event.startDate.format('YYYY-MM-DD');
+      this.compareToCustomDate.endDate = event.endDate.format('YYYY-MM-DD');
+      console.log(this.compareToCustomDate.startDate, this.compareToCustomDate.endDate, event);
+      // this.isLoading = true;
+  //     const footfall = {
+  //       'from': this.selected.startDate,
+  //       'to': this.selected.endDate
+  //     };
+  //     this.auth
+  //  .postDailyFootFall(footfall)
+  //  .pipe(
+  //   takeWhile(() => this.alive),
+  // )
+  //  .subscribe(
+  //     (results: any) => {
+  //       this.isLoading = false;
+  //       this.compareToResults = results;
+  //       this.showCompareTo();
+  //     },
+  //     res => {
+  //       console.log(res);
+  //       this.router.navigate(['/']);
+  //     }
+  //   );
   }
   }
 
@@ -281,29 +334,14 @@ this.isLoading = true;
   changeMetrics(ev: any) {
   }
 
-  changeCustomDate(event: any) {
-    if (event.startDate && event.endDate) {
-      this.selected.startDate = event.startDate.format('YYYY-MM-DD');
-      this.selected.endDate = event.endDate.format('YYYY-MM-DD');
-      console.log(this.selected.startDate, this.selected.endDate, event);
-      const date = this.results.map(result => {
-        return result.date;
-      });
-     const startIndex = date.indexOf(this.selected.startDate);
-     const endIndex = date.indexOf(this.selected.endDate);
-     this.changedRows = date.slice(startIndex, (endIndex + 1));
-     this.showMetricsData();
-    }
- }
-
  showCompareTo() {
   this.LineChart = new Chart('lineChart', {
     type: 'line',
     data: {
-      labels: this.compareToResults.date,
+      labels: this.results.date,
       datasets: [{
               label: 'Primary range',
-              data: this.results.daily_footfall,
+              data: this.results.footfall,
               lineTension: 0.2,
               borderColor: '#cc181f',
               borderWidth: 1,
@@ -316,7 +354,7 @@ this.isLoading = true;
               borderWidth: 1,
               borderColor: 'rgb(30, 95, 236)',
               pointBackgroundColor: '#134fcf',
-              data: this.compareToResults.daily_footfall,
+              data: this.compareToResults.footfall,
               fill: false
             }]
           },
@@ -390,23 +428,26 @@ this.isLoading = true;
                         break;
       default: return;
     }
-    this.isLoading = true;
-      this.auth
-   .postDailyFootFall(footfall)
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        this.isLoading = false;
-        this.results = results;
-        this.showMetricsData();
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      }
-    );
+
+    this.selected.startDate = footfall['from'];
+    this.selected.endDate = footfall['to'];
+  //   this.isLoading = true;
+  //     this.auth
+  //  .postDailyFootFall(footfall)
+  //  .pipe(
+  //   takeWhile(() => this.alive),
+  // )
+  //  .subscribe(
+  //     (results: any) => {
+  //       this.isLoading = false;
+  //       this.results = results;
+  //       this.showMetricsData();
+  //     },
+  //     res => {
+  //       console.log(res);
+  //       this.router.navigate(['/']);
+  //     }
+  //   );
     }
   }
 
@@ -466,7 +507,7 @@ this.isLoading = true;
     this.LineChart = new Chart('lineChart', {
       type: 'line',
       data: {
-          labels: this.results.Date,
+          labels: this.results.date,
           datasets: [{
               label: '',
               data: this.results.footfall,
@@ -507,45 +548,18 @@ this.isLoading = true;
       }
     );
 
-    const postData = {
-      'from': '2019-05-01',
-      'to': '2019-05-15',
-      'metric': 'Footfall',
-      'compare_flag': 'true',
-      'compare_from': '2019-04-01',
-      'compare_to': '2019-05-15',
-      'vs_metric_flag': 'true',
-      'vs_metric': 'Camera Count',
-      'period': 'Daily'
-    };
-
-    this.auth
-   .postDailyFootFall(postData)
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        console.log(results);
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      }
-    );
-
-  this.http.get('../assets/store_hierarchy_modified.json')
-      .pipe(
-         takeWhile(() => this.alive),
-      )
-      .subscribe(
-        (results: any) => {
-          console.log(results, this.nodes);
-           this.nodes = results;
-        },
-        res => {
-          console.log(res);        }
-      );
+  // this.http.get('../assets/store_hierarchy_modified.json')
+  //     .pipe(
+  //        takeWhile(() => this.alive),
+  //     )
+  //     .subscribe(
+  //       (results: any) => {
+  //         console.log(results, this.nodes);
+  //          this.nodes = results;
+  //       },
+  //       res => {
+  //         console.log(res);        }
+  //     );
   //  this.monthlyData =  await this.http.get('../assets/monthly.json').toPromise();
   //  this.weeklyData =  await this.http.get('../assets/weekly.json').toPromise();
   //  this.hourlyData =  await this.http.get('../assets/hourly.json').toPromise();

@@ -1,8 +1,8 @@
 <div class="container container-box">
       <div class="flex-container">
         <div class="flex-elements">
-          <select class="browser-default custom-select select-container" (change)="changeMetrics($event)">
-            <option selected value="Footfall">Footfall</option>
+          <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="changeMetrics($event)">
+            <option value="Footfall">Footfall</option>
             <option value="Dwelltime">Dwell time</option>
             <option value="returningCustomers">Returning customers</option>
             <option value="newCustomers">New customers</option>
@@ -31,12 +31,27 @@
         </div>
      </div>
           <div class="flexbox-container">
-            <div class="compareTo">
+              <div class="flex-elements flex-margin-left">
                 <div class="custom-control custom-checkbox custom-checkbox-input">
-                    <input type="checkbox" class="custom-control-input" [(ngModel)]="compareto" id="compareToInput">
+                    <input type="checkbox" class="custom-control-input" [(ngModel)]="vsMetric" id="vsMetric">
+                    <label class="custom-control-label" for="vsMetric">vs Metric</label>
+                </div>
+                <select [disabled]="!vsMetric" [(ngModel)]="secondaryMetrics" class="browser-default custom-select select-container" (change)="changeVsMetrics($event)">
+                  <option disabled value="">Select metrics</option>
+                  <option value="Footfall">Footfall</option>
+                  <option value="Dwelltime">Dwell time</option>
+                  <option value="returningCustomers">Returning customers</option>
+                  <option value="newCustomers">New customers</option>
+                  <option value="Dwelltime">Avg Dwell time</option>
+                  <option value="cameraCount">Camera count</option>
+                </select>
+              </div>
+            <div class="compare-to-range-container">
+                <div class="custom-control custom-checkbox custom-checkbox-input">
+                    <input type="checkbox" class="custom-control-input" [(ngModel)]="compareTo" id="compareToInput">
                     <label class="custom-control-label" for="compareToInput">Compare to</label>
                 </div>
-              <select [disabled]="!compareto" [(ngModel)]="compareToSelect" class="browser-default custom-select select-container" (change)="changeCompareTo($event)">
+              <select [disabled]="!compareTo" [(ngModel)]="compareToSelect" class="browser-default custom-select" (change)="changeCompareTo($event)">
                 <option disabled value="range">Select compare to range</option>
                 <option value="previousPeriod">Previous period</option>
                 <option value="custom">Custom</option>
@@ -44,31 +59,21 @@
               <div class="compare-range-container">
                 <input type="text" class="date-container" 
                 [showDropdowns]="true"
-                ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (ngModelChange)="compareToDateRange($event)"/> 
+                ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (change)="compareToDateRange($event)"/>  
             </div>
-            </div>
-            <div class="hierarchy-container">
-              <div class="custom-control custom-checkbox custom-checkbox-input">
-                  <input type="checkbox" class="custom-control-input" [(ngModel)]="showHiearchy" id="showHiearchy">
-                  <label class="custom-control-label" for="showHiearchy">Show hierarchy</label>
-              </div>    
-              <ng-container *ngIf="showHiearchy">    
-                <input id="filter" #filter (keyup)="tree.treeModel.filterNodes(filter.value)" placeholder="Search area"/>
-                <button (click)="tree.treeModel.clearFilter()">Clear</button>
-                <tree-root #tree [focused]="true" [options]="options" [nodes]="nodes"></tree-root>
-              </ng-container>  
-            </div>
+            <button type="button" (click)="applyDateRange()" class="btn btn-primary button-margin">Apply </button>
           </div>
+        </div>
       <div class="col-xs-12 container-padding" [class.loading]="isLoading">
           <div id="tab" class="btn-group btn-group-justified button-group-margin" data-toggle="buttons">
             <a href="#prices" class="btn btn-default active button-background" data-toggle="tab">
-              <input type="radio" />Daily
+              <input type="radio" >Daily
             </a>
             <a href="#features" class="btn btn-default button-background" data-toggle="tab">
               <input type="radio" />Weekly
             </a>
             <a href="#requests" class="btn btn-default button-background" data-toggle="tab">
-              <input type="radio" />Hourly
+              <input type="radio"  />Hourly
             </a>
           </div>
     
