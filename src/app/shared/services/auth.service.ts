@@ -62,7 +62,7 @@ export class AuthService implements OnDestroy {
      ).subscribe(
       data => {
         this.updateData(data['token']);
-        this.router.navigate(['/footfall']);
+        this.router.navigate(['/dashboard']);
       },
       err => {
         this.errors = err['error'];

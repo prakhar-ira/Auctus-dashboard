@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AuthComponent } from './auth.component';
 import { FootfallComponent } from '../footfall/footfall.component';
 import { Chart1Component } from '../charts/chart1/chart1.component';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -11,10 +12,9 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'footfall',
-    component: FootfallComponent,
-    pathMatch: 'full'
-  }
+    path: 'dashboard',
+    loadChildren: '../dashboard/dashboard.module#DashboardModule'
+  },
 ];
 
 

@@ -2,12 +2,11 @@
       <div class="flex-container">
         <div class="flex-elements">
           <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="changeMetrics($event)">
-            <option value="Footfall">Footfall</option>
-            <option value="Dwelltime">Dwell time</option>
-            <option value="returningCustomers">Returning customers</option>
-            <option value="newCustomers">New customers</option>
-            <option value="Dwelltime">Avg Dwell time</option>
-            <option value="cameraCount">Camera count</option>
+            <option value="footfall">Footfall</option>
+            <option value="returning_customers">Returning customers</option>
+            <option value="new_customers">New customers</option>
+            <option value="avg_dwell_time_mins">Avg. Dwell Time (mins)</option>
+            <option value="camera_count">Camera count</option>
           </select>
         </div>
         <div class="range-container">
@@ -38,12 +37,11 @@
                 </div>
                 <select [disabled]="!vsMetric" [(ngModel)]="secondaryMetrics" class="browser-default custom-select select-container" (change)="changeVsMetrics($event)">
                   <option disabled value="">Select metrics</option>
-                  <option value="Footfall">Footfall</option>
-                  <option value="Dwelltime">Dwell time</option>
-                  <option value="returningCustomers">Returning customers</option>
-                  <option value="newCustomers">New customers</option>
-                  <option value="Dwelltime">Avg Dwell time</option>
-                  <option value="cameraCount">Camera count</option>
+                  <option value="footfall">Footfall</option>
+                  <option value="returning_customers">Returning customers</option>
+                  <option value="new_customers">New customers</option>
+                  <option value="avg_dwell_time_mins">Avg. Dwell Time (mins)</option>
+                  <option value="camera_count">Camera count</option>
                 </select>
               </div>
             <div class="compare-to-range-container">
@@ -64,77 +62,54 @@
             <button type="button" (click)="applyDateRange()" class="btn btn-primary button-margin">Apply </button>
           </div>
         </div>
+
+        <ul class="nav nav-pills" role="tablist">
+          <li class="nav-item" (click)="toggleTab('Daily')">
+            <a class="nav-link active" data-toggle="pill" href="#daily">Daily</a>
+          </li>
+          <li class="nav-item" (click)="toggleTab('Weekly')">
+            <a class="nav-link" data-toggle="pill" href="#weekly">Weekly</a>
+          </li>
+          <li class="nav-item" (click)="toggleTab('Monthly')">
+            <a class="nav-link" data-toggle="pill" href="#monthly">Monthly</a>
+          </li>
+        </ul>
       <div class="col-xs-12 container-padding" [class.loading]="isLoading">
-          <div id="tab" class="btn-group btn-group-justified button-group-margin" data-toggle="buttons">
-            <a href="#prices" class="btn btn-default active button-background" data-toggle="tab">
-              <input type="radio" >Daily
-            </a>
-            <a href="#features" class="btn btn-default button-background" data-toggle="tab">
-              <input type="radio" />Weekly
-            </a>
-            <a href="#requests" class="btn btn-default button-background" data-toggle="tab">
-              <input type="radio"  />Hourly
-            </a>
-          </div>
-    
           <div class="tab-content">
-            <div class="tab-pane active" id="prices">
-              <div class="row">
-                  <table>
-                    <tr>
-                      <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
-                      <td></td>
-                    </tr>
-                  </table>
+              <div id="daily" class="container tab-pane active"><br>
+                <h3>Daily</h3>
+                <div class="row">
+                    <table>
+                      <tr>
+                        <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                </div>              
+              </div>
+              <div id="weekly" class="container tab-pane fade"><br>
+                <h3>Weekly</h3>
+                <div class="row">
+                    <table>
+                      <tr>
+                        <td style="width: 10000px; height: 20%"><canvas id="weeklyChart"></canvas></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                </div>              
+              </div>
+              <div id="monthly" class="container tab-pane fade"><br>
+                <h3>Monthly</h3>
+                  <div class="row">
+                      <table>
+                        <tr>
+                          <td style="width: 10000px; height: 50%"><canvas id="monthlyChart"></canvas></td>
+                          <td></td>
+                        </tr>
+                      </table>
+                  </div>
               </div>
             </div>
-            <div class="tab-pane" id="features">
-              <div class="row">
-                  <table>
-                    <tr>
-                      <td style="width: 10000px; height: 50%"><canvas id="weeklyChart"></canvas></td>
-                      <td></td>
-                    </tr>
-                  </table>
-              </div>
-            </div>
-            <div class="tab-pane" id="requests">
-              <div class="row">
-                  <table>
-                    <tr>
-                      <td style="width: 10000px; height: 50%"><canvas id="monthlyChart"></canvas></td>
-                      <td></td>
-                    </tr>
-                  </table>
-              </div>
-            </div>
-          </div>
         </div>
-  <!-- <div class="row">
-    <table>
-        <tr>
-          <td style="width: 10000px; height: 50%"><canvas id="hourlyChart"></canvas></td>
-          <td></td>
-        </tr>
-      </table>
-    <table>
-      <tr>
-        <td style="width: 10000px; height: 50%"><canvas id="lineChart"></canvas></td>
-        <td></td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td style="width: 10000px; height: 50%"><canvas id="monthlyChart"></canvas></td>
-        <td></td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <td style="width: 10000px; height: 50%"><canvas id="weeklyChart"></canvas></td>
-        <td></td>
-      </tr>
-    </table>
-</div> -->
 </div>
 

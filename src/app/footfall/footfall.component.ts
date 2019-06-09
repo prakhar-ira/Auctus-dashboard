@@ -41,7 +41,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
   compareToCustomDate = {startDate: moment, endDate: moment};
   compareToSelect: any = 'range';
   isLoading: boolean;
-  primaryMetrics = 'Footfall';
+  primaryMetrics = 'footfall';
   secondaryMetrics = '';
   showHiearchy: false;
   nodes: any;
@@ -83,43 +83,6 @@ export class FootfallComponent implements OnInit, OnDestroy {
       options: {
         title: {
           text: 'Foot fall hourly data',
-          display: true
-        },
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero: true
-                  }
-              }]
-          }
-      }
-  });
-
-  }
-
-  showWeeklyData() {
-    const date = this.weeklyData.map(result => {
-      return result.week_start_date;
-    });
-    const footfall = this.weeklyData.map(result => {
-      return result.footfall;
-    });
-    this.WeeklyChart = new Chart('weeklyChart', {
-      type: 'line',
-      data: {
-          labels: date,
-          datasets: [{
-              label: '',
-              data: footfall,
-              fill: false,
-              lineTension: 0.2,
-              borderColor: 'red',
-              borderWidth: 1,
-          }]
-        },
-      options: {
-        title: {
-          text: 'Foot fall weekly data',
           display: true
         },
           scales: {
@@ -223,11 +186,41 @@ changeTab(e) {
 }
 
 changeVsMetrics(event) {
-
+  if (!this.selected.startDate && !this.selected.endDate) {
+    return this.toastr.error('Please select primary date range');
+  }
+console.log(event.target.value, this.secondaryMetrics);
+const postData = {
+  'from':  this.selected.startDate,
+  'to': this.selected.endDate,
+  'metric': this.primaryMetrics,
+  'compare_flag': `${this.compareTo}`,
+  'compare_from': this.compareToCustomDate.startDate,
+  'compare_to': this.compareToCustomDate.endDate,
+  'vs_metric_flag': `${this.vsMetric}`,
+  'vs_metric': event.target.value,
+  'period': 'Daily'
+};
+this.isLoading = true;
+this.auth
+.postDailyFootFall(postData)
+.pipe(
+ takeWhile(() => this.alive),
+)
+.subscribe(
+   (results: any) => {
+    console.log(results);
+    this.isLoading = false;
+    this.showVsMetricData(results);
+   },
+   res => {
+     console.log(res);
+     this.router.navigate(['/']);
+   }
+ );
 }
 
 applyDateRange() {
-  console.log(this.compareTo, this.vsMetric, this.dateRange, this.selected, this.compareToCustomDate);
   const postData = {
     'from':  this.selected.startDate,
     'to': this.selected.endDate,
@@ -248,15 +241,8 @@ applyDateRange() {
  .subscribe(
     (results: any) => {
       this.isLoading = false;
-      if (results.flag.compare_data_flag  === 'false') {
-            this.results = results.data.metric.primary_date;
-            this.showMetricsData();
-      } else if (results.flag.compare_data_flag  === 'true') {
-            this.results = results.data.metric.primary_date;
-            this.compareToResults = results.data.metric.primary_date;
-            this.compareToResults = results.data.metric.compare_date;
-            this.showCompareTo();
-      }
+            this.showChart(results.data.metric.primary_date.date, results.data.metric.compare_date.date, this.primaryMetrics,
+              results.data.metric.compare_date.footfall, this.secondaryMetrics, results.data.vs_metric.compare_date);
     },
     res => {
       console.log(res);
@@ -264,6 +250,475 @@ applyDateRange() {
     }
   );
 }
+
+toggleTab(period) {
+  this.period = period;
+  const postData = {
+    'from':  this.selected.startDate,
+    'to': this.selected.endDate,
+    'metric': this.primaryMetrics,
+    'compare_flag': `${this.compareTo}`,
+    'compare_from': this.compareToCustomDate.startDate,
+    'compare_to': this.compareToCustomDate.endDate,
+    'vs_metric_flag': `${this.vsMetric}`,
+    'vs_metric': this.secondaryMetrics,
+    'period': this.period
+  };
+
+this.isLoading = true;
+this.auth
+.postDailyFootFall(postData)
+.pipe(
+ takeWhile(() => this.alive),
+)
+.subscribe(
+   (results: any) => {
+    console.log(results);
+    this.isLoading = false;
+    if (this.compareTo === true && this.vsMetric === true) {
+      return this.showCompareVsMetricWeeklyData(results);
+    } else if (this.compareTo === true && this.vsMetric === false) {
+      return this.showCompareToWeeklyData(results);
+    } else if (this.compareTo === false && this.vsMetric === true) {
+      return this.showMetricsWeeklyData(results);
+    } else if (this.compareTo === false && this.vsMetric === false) {
+      return this.showWeeklyData(results);
+    }
+   },
+   res => {
+     console.log(res);
+     this.router.navigate(['/']);
+   }
+ );
+  console.log(period);
+}
+
+showCompareVsMetricWeeklyData(results) {
+
+}
+
+showChart(primary_date, compare_to, metric1, metric, metric2, vs_metric) {
+  const vs_metric_date_compare = [];
+  const metric_date_compare  = [];
+  Chart.defaults.global.elements.line.fill = false;
+if (primary_date.length > 0) {
+  primary_date = primary_date.map(function(date) {
+    const new_date = new Date(date);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new_date.toLocaleDateString('en-US', options);
+  });
+}
+
+if (compare_to.length > 0) {
+  compare_to = compare_to.map(function(date) {
+    const new_date = new Date(date);
+    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+    return new_date.toLocaleDateString('en-US', options);
+  });
+}
+
+const color_metric1 = '#0000ff';
+const color_metric1_compare = '#b2b2ff';
+const color_metric2 = '#7f0019';
+const color_metric2_compare = '#ff99ad';
+
+const data1 = {
+  datasets: [
+    {
+      type: 'line',
+      fillOpacity: 100,
+      label: metric1,
+      yAxisID: 'y-axis-0',
+      xAxisID: 'x-axis-0',
+      backgroundColor: color_metric1,
+      borderColor: color_metric1,
+      borderWidth: 1.5,
+      data: metric
+    }
+  ]
+};
+
+const dataset2 = {
+  type: 'line',
+  label: metric1,
+  fillOpacity: 100,
+  yAxisID: 'y-axis-0',
+  xAxisID: 'x-axis-1',
+  backgroundColor: color_metric1_compare,
+  borderColor: color_metric1_compare,
+  borderWidth: 1.5,
+  data: metric_date_compare
+};
+const dataset3 = {
+  type: 'line',
+  label: metric2,
+  fillOpacity: 100,
+  yAxisID: 'y-axis-1',
+  xAxisID: 'x-axis-0',
+  backgroundColor: color_metric2,
+  borderColor: color_metric2,
+  borderWidth: 1.5,
+  data: vs_metric
+};
+const dataset4 = {
+  type: 'line',
+  label: metric2,
+  yAxisID: 'y-axis-1',
+  fillOpacity: 100,
+  xAxisID: 'x-axis-1',
+  backgroundColor: color_metric2_compare,
+  borderColor: color_metric2_compare,
+  borderWidth: 1.5,
+  data: vs_metric_date_compare
+};
+
+if (compare_to.length > 0 && vs_metric.length > 0) {
+  data1.datasets.push(dataset2, dataset3, dataset4);
+}
+
+if (compare_to.length > 0 && vs_metric.length === 0) {
+  data1.datasets.push(dataset2);
+}
+
+if (compare_to.length === 0 && vs_metric.length > 0) {
+  data1.datasets.push(dataset3);
+}
+const xaxis2 = {
+  stacked: false,
+  labels: compare_to,
+  labelString: 'Comparison Date',
+  xAxisID: 'x-axis-1',
+  scaleLabel: {
+    display: true,
+    labelString: 'Comparison Date',
+    fontColor: 'black',
+    fontFamily: 'Roboto'
+  },
+  gridLines: {
+    display: false
+  },
+  position: 'top'
+};
+
+const yaxis2 = {
+  stacked: false,
+  position: 'right',
+  yAxisID: 'y-axis-1',
+  scaleLabel: {
+    display: true,
+    labelString: metric2,
+    fontColor: 'black',
+    fontFamily: 'Roboto'
+  },
+  gridLines: {
+    display: false
+  }
+};
+const config = {
+  type: 'line',
+  data: data1,
+  options: {
+    tooltips: {
+      mode: 'label',
+      callbacks: {
+        label: function(tooltipItem, data) {
+          return (
+            tooltipItem.xLabel +
+            ' ' +
+            data.datasets[tooltipItem.datasetIndex].label +
+            ' : ' +
+            tooltipItem.yLabel
+          );
+        },
+        // remove title
+        title: function(tooltipItem, data) {
+          return;
+        }
+      },
+      backgroundColor: '#fff',
+      borderColor: '#DCDCDC',
+      bodyFontColor: '#000000',
+      borderWidth: 1,
+      opacity: 20,
+      caretSize: 12,
+      caretPadding: 12,
+      cornerRadius: 12,
+      bodyFontFamily: 'Roboto',
+      bodySpacing: 12,
+      xPadding: 12,
+      yPadding: 12
+    },
+
+    legend: { display: false },
+    legendCallback: function(ch) {
+      return (
+        `<head> <link href='https://fonts.googleapis.com/css?family=Roboto' rel ='stylesheet' >
+        <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
+        <p style='text-align: left;'>` +
+        primary_date[0] +
+        '&nbsp;-&nbsp;' +
+        primary_date[primary_date.length - 1] +
+        `:&emsp;<span style= color:`  +
+        color_metric1 +
+        `;> &#x25CF;&emsp;</span>` +
+        metric1
+      );
+    },
+    title: {
+      display: false
+    },
+
+    responsive: true,
+    scales: {
+      xAxes: [
+        {
+          stacked: false,
+          labels: primary_date,
+          scaleLabel: {
+            display: true,
+            labelString: 'Date',
+            fontColor: 'black',
+            fontFamily: 'Roboto'
+          },
+          xAxisID: 'x-axis-0',
+          gridLines: {
+            display: false
+          }
+        }
+      ],
+      yAxes: [
+        {
+          stacked: false,
+          position: 'left',
+          yAxisID: 'y-axis-0',
+          scaleLabel: {
+            display: true,
+            labelString: metric1,
+            fontColor: 'black',
+            fontFamily: 'Roboto'
+          },
+          gridLines: {
+            display: false
+          }
+        }
+      ]
+    }
+  }
+};
+
+if (compare_to.length > 0 && vs_metric.length > 0) {
+  config.options.scales.xAxes.push(xaxis2);
+  config.options.scales.yAxes.push(yaxis2);
+  config.options.legendCallback = function(ch) {
+    return (
+      `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
+      rel ='stylesheet' > <style> body {font-family: 'Roboto';
+      font-size: 14px;color:'#666'}</style </head><p style='text-align: left;'>` +
+      primary_date[0] +
+      '&nbsp;-&nbsp;' +
+      primary_date[primary_date.length - 1] +
+      `:&emsp;<span style='color:` +
+      color_metric1 +
+      `';>&#x25CF;&emsp;</span>` +
+      metric1 +
+      `&emsp;<span style='color: ` +
+      color_metric1_compare +
+      `';>&#x25CF;&emsp;</span>` +
+      metric2 +
+      '<br>' +
+      compare_to[0] +
+      ' - ' +
+      compare_to[compare_to.length - 1] +
+      `:&emsp;<span style='color:` +
+      color_metric2 +
+      `';>&#x25CF;&emsp;</span>` +
+      metric1 +
+      `&emsp;<span style='color: ` +
+      color_metric2_compare +
+      `';>&#x25CF;&emsp;</span>` +
+      metric2 +
+      '</p>'
+    );
+  };
+}
+
+if (compare_to.length > 0 && vs_metric.length === 0) {
+  config.options.scales.xAxes.push(xaxis2);
+  config.options.legendCallback = function(ch) {
+    return (
+      `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
+       rel ='stylesheet' > <style> body {font-family: 'Roboto';font-size: 14px;
+       color:'#666'}</style </head><p style='text-align: left;'>` +
+      primary_date[0] +
+      '&nbsp;-&nbsp;' +
+      primary_date[primary_date.length - 1] +
+      `:&emsp;<span style='color: ` +
+      color_metric1 +
+      `';>&#x25CF;&ensp;</span>` +
+      metric1 +
+      '<br>' +
+      compare_to[0] +
+      '&nbsp;-&nbsp;' +
+      compare_to[compare_to.length - 1] +
+      `:&emsp;<span style='color: ` +
+      color_metric1_compare +
+      `';>&#x25CF;</span>` +
+      metric1 +
+      '</p>'
+    );
+  };
+}
+
+if (compare_to.length === 0 && vs_metric.length > 0) {
+  config.options.scales.yAxes.push(yaxis2);
+  config.options.legendCallback = function(ch) {
+    return (
+      `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
+      rel ='stylesheet' > <style> body {font-family: 'Roboto';font-size: 14px;color:'#666'}
+      </style </head><p style='text-align: left;'>` +
+      primary_date[0] +
+      '&nbsp;-&nbsp;' +
+      primary_date[primary_date.length - 1] +
+      `:&emsp;<span style='color: ` +
+      color_metric1 +
+      `';>&#x25CF;&emsp;</span>` +
+      metric1 +
+      `'&emsp;<span style='color: ` +
+      color_metric2 +
+      `';> &#x25CF;</span>&emsp;` +
+      metric2
+    );
+  };
+}
+// allocate and initialize a chart
+// this.LineChart = new Chart('lineChart', config);
+}
+
+showCompareToWeeklyData(results) {
+  this.WeeklyChart = new Chart('weeklyChart', {
+    type: 'line',
+    data: {
+      labels: results.data.metric.primary_date.date,
+      datasets: [{
+              label: 'Primary range',
+              data: results.data.metric.primary_date.footfall,
+              lineTension: 0.2,
+              borderColor: '#cc181f',
+              borderWidth: 1,
+              pointBackgroundColor: '#ce4532',
+              fill: false
+            },
+            {
+              label: 'Secondary range',
+              lineTension: 0.2,
+              borderWidth: 1,
+              borderColor: 'rgb(30, 95, 236)',
+              pointBackgroundColor: '#134fcf',
+              data:  results.data.metric.compare_date.footfall,
+              fill: false
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: 'Foorfall data'
+            },
+            tooltips: {
+              mode: 'index',
+              intersect: false,
+            },
+            hover: {
+              mode: 'nearest',
+              intersect: true
+            },
+            legend: {
+              position: 'top',
+              display: false
+            },
+            scales: {
+              yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Footfall'
+                },
+            }],
+              xAxes: [{
+                display: true,
+                scaleLabel: {
+                  display: false,
+                  labelString: 'Date'
+                },
+              },
+        ]
+            },
+            maintainAspectRatio: true,
+          }
+        });
+      }
+showMetricsWeeklyData(results) {
+
+}
+
+showWeeklyData(results) {
+  this.WeeklyChart = new Chart('weeklyChart', {
+    type: 'line',
+    data: {
+        labels: results.data.metric.primary_date.date,
+        datasets: [{
+            label: `${this.primaryMetrics} weekly data`,
+            data: results.data.metric.primary_date.footfall,
+            lineTension: 0.2,
+            borderColor: '#cc181f',
+            borderWidth: 1,
+            pointBackgroundColor: '#ce4532',
+            fill: false
+        }]
+      },
+    options: {
+      title: {
+        display: true,
+        text: 'Foorfall data'
+      },
+      tooltips: {
+        mode: 'index',
+        intersect: false,
+      },
+      hover: {
+        mode: 'nearest',
+        intersect: true
+      },
+      legend: {
+        position: 'top',
+        display: false
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+              beginAtZero: true
+          },
+          scaleLabel: {
+            display: true,
+            labelString: `${this.primaryMetrics}`
+          },
+      }],
+        xAxes: [{
+          display: true,
+          scaleLabel: {
+            display: false,
+            labelString: 'Date'
+          },
+        },
+  ]
+      },
+      maintainAspectRatio: true,
+    }
+});
+
+}
+
 
   compareToDateRange(event: any) {
     if (event.startDate && event.endDate) {
@@ -292,6 +747,114 @@ applyDateRange() {
   //     }
   //   );
   }
+  }
+
+  showVsMetricData(results) {
+    Chart.defaults.global.elements.line.fill = false;
+    this.LineChart = new Chart('lineChart', {
+      type: 'line',
+      data: {
+        labels: results.data.metric.primary_date.date,
+        datasets: [{
+                type: 'line',
+                label: 'Primary range',
+                yAxisID: 'y-axis-0',
+                data: results.data.metric.primary_date.footfall,
+                lineTension: 0.2,
+                borderColor: '#cc181f',
+                borderWidth: 1,
+                pointBackgroundColor: '#ce4532',
+                fill: false
+              },
+              {
+                type: 'line',
+                label: 'Primary compare to range',
+                yAxisID: 'y-axis-0',
+                lineTension: 0.2,
+                borderWidth: 1,
+                borderColor: 'rgb(30, 95, 236)',
+                pointBackgroundColor: '#134fcf',
+                data: results.data.metric.compare_date.footfall,
+                fill: false
+              },
+              {
+                type: 'line',
+                label: 'Secondary date range',
+                lineTension: 0.2,
+                yAxisID: 'y-axis-0',
+                borderWidth: 1,
+                borderColor: '#cc181f',
+                pointBackgroundColor: '#ce4532',
+                data: results.data.vs_metric.primary_date.footfall,
+                fill: false
+              },
+              {
+                type: 'line',
+                label: 'Secondary compare to range',
+                yAxisID: 'y-axis-1',
+                lineTension: 0.2,
+                borderWidth: 1,
+                borderColor: 'rgb(30, 95, 236)',
+                pointBackgroundColor: '#134fcf',
+                data: results.data.vs_metric.compare_date.footfall,
+                fill: false
+              }]
+            },
+            options: {
+              title: {
+                display: true,
+                text: 'Foorfall data'
+              },
+              tooltips: {
+                mode: 'index',
+                intersect: false,
+              },
+              hover: {
+                mode: 'nearest',
+                intersect: true
+              },
+              legend: {
+                position: 'top',
+                display: true
+              },
+              scales: {
+                yAxes: [{
+                  stacked: false,
+                  position: 'left',
+                  id: 'y-axis-0',
+                  ticks: {
+                      beginAtZero: true
+                  },
+                  scaleLabel: {
+                    display: true,
+                    labelString: 'Footfall'
+                  },
+              },
+              {
+                stacked: false,
+                position: 'right',
+                id: 'y-axis-1',
+                ticks: {
+                  beginAtZero: true,
+                },
+                scaleLabel: {
+                  display: true,
+                  labelString: 'Footfall'
+                },
+              }],
+                xAxes: [{
+                  display: true,
+                  stacked: false,
+                  scaleLabel: {
+                    display: true,
+                    labelString: 'Date'
+                  },
+                },
+          ]
+              },
+              maintainAspectRatio: true,
+            }
+          });
   }
 
   showMonthlyData() {
@@ -388,7 +951,7 @@ applyDateRange() {
               xAxes: [{
                 display: true,
                 scaleLabel: {
-                  display: true,
+                  display: false,
                   labelString: 'Date'
                 },
               },

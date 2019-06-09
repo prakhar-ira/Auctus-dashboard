@@ -7,9 +7,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FootfallComponent } from '../footfall/footfall.component';
 import { Chart1Component } from '../charts/chart1/chart1.component';
 import { SharedModule } from '../shared/shared/shared.module';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AuthComponent, FootfallComponent],
+  declarations: [AuthComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,
