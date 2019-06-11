@@ -9,13 +9,15 @@
         <ul id="side-main-menu" class="side-menu list-unstyled">                  
           <li><a [routerLink]="['home']" routerLinkActive="active"> <i class="fa fa-home"></i>Home </a></li>
           <li><a [routerLink]="['profile']" routerLinkActive="active"> <i class="fa fa-user"></i>Profile</a></li>
-          <li><a [routerLink]="['overview']" routerLinkActive="active"> <i class="fa fa-file"></i>Overview</a></li>
-          <li><a [routerLink]="['footfall']" routerLinkActive="active"> <i class="fa fa-bar-chart"></i>Analytics</a></li>
-          <li><a href="#heatMapDropdown"  routerLinkActive="active" aria-expanded="false" style="color: #900909;" data-toggle="collapse"> <i class="fa fa-map-marker"></i>Heatmap </a>
-            <ul id="heatMapDropdown" class="collapse list-unstyled ">
-              <li><a [routerLink]="['heatmap-summary']" routerLinkActive="active">Summary</a></li>
+          <li><a href="#overViewDropdown" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-file"></i>Overview </a>
+            <ul id="overViewDropdown" class="collapse list-unstyled ">
+              <li><a [routerLink]="['overview']" routerLinkActive="active">Mall</a></li>
+              <li><a [routerLink]="['overview']" routerLinkActive="active">Store</a></li>
+              <li><a [routerLink]="['overview']" routerLinkActive="active">Category</a></li>
             </ul>
           </li>
+          <li><a [routerLink]="['footfall']" routerLinkActive="active"> <i class="fa fa-bar-chart"></i>Analytics</a></li>
+          <li><a [routerLink]="['heatmap-summary']" routerLinkActive="active"> <i class="fa fa-map-marker"></i>Heatmap</a></li>
         </ul>
       </div>
     </div>

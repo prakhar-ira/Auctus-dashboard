@@ -33,6 +33,15 @@ div.compare-to-range-container {
   margin-bottom: 0.4rem;
 }
 
+div.container-margin-top {
+margin-top: -2rem;
+}
+
+ul.nav-link-style {
+  font-size: 13px;
+  margin-top: -1rem;
+}
+
 div.flexbox-container {
   display: flex;
   justify-content: space-between;
@@ -40,6 +49,8 @@ div.flexbox-container {
 select.select-container {
   width: 20%;
   display: block;
+  height: 1.9rem;
+  font-size: 12px;
 }
 
 div.compareTo {
@@ -49,7 +60,8 @@ div.compareTo {
 
 div.range-container {
   width: 20%;
-  margin-right: 2rem;
+  margin-right: 1.4rem;
+  margin-top: -2rem;
 }
 
 input.date-container {
@@ -62,11 +74,16 @@ div.flex-elements {
 
 button.button-margin {
   margin: 0.5rem;
-}
+  font-size: 10px;}
 
 input.custom-input {
   width: 100%;
   margin-top: 1.1rem;
+}
+
+select.compare-to-container {
+  height: 1.9rem;
+  font-size: 12px;
 }
 
 .select-range-container {

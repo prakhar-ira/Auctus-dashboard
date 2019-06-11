@@ -60,74 +60,12 @@ export class FootfallComponent implements OnInit, OnDestroy {
     private toastr: ToastrService
     ) {}
 
-  showhHourlyData() {
-    const date = this.hourlyData.map(result => {
-      return result.month_start_date;
-    });
-    const footfall = this.hourlyData.map(result => {
-      return result.footfall;
-    });
-    this.HourlyChart = new Chart('hourlyChart ', {
-      type: 'line',
-      data: {
-          labels: date,
-          datasets: [{
-              label: '',
-              data: footfall,
-              fill: false,
-              lineTension: 0.2,
-              borderColor: 'red',
-              borderWidth: 1,
-          }]
-        },
-      options: {
-        title: {
-          text: 'Foot fall hourly data',
-          display: true
-        },
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero: true
-                  }
-              }]
-          }
-      }
-  });
-
-  }
-
   changeSelection(event: any) {
       console.log(event);
     if (event.startDate && event.endDate) {
       this.selected.startDate = event.startDate.format('YYYY-MM-DD');
       this.selected.endDate = event.endDate.format('YYYY-MM-DD');
-      console.log(this.selected.startDate, this.selected.endDate, event);
-      // this.isLoading = true;
-  //     const footfall = {
-  //       'from': this.selected.startDate,
-  //       'to': this.selected.endDate,
-  //     };
-  //     this.auth
-  //  .postDailyFootFall(footfall)
-  //  .pipe(
-  //   takeWhile(() => this.alive),
-  // )
-  //  .subscribe(
-  //     (results: any) => {
-  //       this.isLoading = false;
-  //       this.results = results;
-  //       this.showMetricsData();
-  //     },
-  //     res => {
-  //       console.log(res);
-  //       this.router.navigate(['/']);
-  //     }
-    // );
-    // }
     }
-    //  this.changedRows = date.slice(startIndex, (endIndex + 1));
-    //  this.showMetricsData();
   }
 
   changeCompareTo(ev: any) {
@@ -160,24 +98,6 @@ export class FootfallComponent implements OnInit, OnDestroy {
       }
       this.compareToCustomDate.startDate = footfall['from'];
       this.compareToCustomDate.endDate = footfall['to'];
-// this.isLoading = true;
-//       this.auth
-//    .postDailyFootFall(footfall)
-//    .pipe(
-//     takeWhile(() => this.alive),
-//   )
-//    .subscribe(
-//       (results: any) => {
-//         this.isLoading = false;
-//         this.compareToResults = results;
-//         this.showCompareTo();
-//       },
-//       res => {
-//         console.log(res);
-//         this.router.navigate(['/']);
-//       }
-//     );
-//   }
     }
 }
 
@@ -185,42 +105,8 @@ changeTab(e) {
   console.log('hi', e, e.target.value, this.period);
 }
 
-changeVsMetrics(event) {
-  if (!this.selected.startDate && !this.selected.endDate) {
-    return this.toastr.error('Please select primary date range');
-  }
-console.log(event.target.value, this.secondaryMetrics);
-const postData = {
-  'from':  this.selected.startDate,
-  'to': this.selected.endDate,
-  'metric': this.primaryMetrics,
-  'compare_flag': `${this.compareTo}`,
-  'compare_from': this.compareToCustomDate.startDate,
-  'compare_to': this.compareToCustomDate.endDate,
-  'vs_metric_flag': `${this.vsMetric}`,
-  'vs_metric': event.target.value,
-  'period': 'Daily'
-};
-this.isLoading = true;
-this.auth
-.postDailyFootFall(postData)
-.pipe(
- takeWhile(() => this.alive),
-)
-.subscribe(
-   (results: any) => {
-    console.log(results);
-    this.isLoading = false;
-    this.showVsMetricData(results);
-   },
-   res => {
-     console.log(res);
-     this.router.navigate(['/']);
-   }
- );
-}
 
-applyDateRange() {
+applyDateRange(e?) {
   const postData = {
     'from':  this.selected.startDate,
     'to': this.selected.endDate,
@@ -242,7 +128,9 @@ applyDateRange() {
     (results: any) => {
       this.isLoading = false;
             this.showChart(results.data.metric.primary_date.date, results.data.metric.compare_date.date, this.primaryMetrics,
-              results.data.metric.compare_date.footfall, this.secondaryMetrics, results.data.vs_metric.compare_date);
+              results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
+              results.data.vs_metric.primary_date[results.metrics[1]],
+              results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
     },
     res => {
       console.log(res);
@@ -275,31 +163,20 @@ this.auth
    (results: any) => {
     console.log(results);
     this.isLoading = false;
-    if (this.compareTo === true && this.vsMetric === true) {
-      return this.showCompareVsMetricWeeklyData(results);
-    } else if (this.compareTo === true && this.vsMetric === false) {
-      return this.showCompareToWeeklyData(results);
-    } else if (this.compareTo === false && this.vsMetric === true) {
-      return this.showMetricsWeeklyData(results);
-    } else if (this.compareTo === false && this.vsMetric === false) {
-      return this.showWeeklyData(results);
-    }
+    this.showChart(results.data.metric.primary_date.date, results.data.metric.compare_date.date, this.primaryMetrics,
+      results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
+      results.data.vs_metric.primary_date[results.metrics[1]],
+      results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
    },
    res => {
      console.log(res);
      this.router.navigate(['/']);
    }
  );
-  console.log(period);
 }
 
-showCompareVsMetricWeeklyData(results) {
 
-}
-
-showChart(primary_date, compare_to, metric1, metric, metric2, vs_metric) {
-  const vs_metric_date_compare = [];
-  const metric_date_compare  = [];
+showChart(primary_date, compare_to, metric1, metric, metric2, vs_metric, metric_date_compare, vs_metric_date_compare) {
   Chart.defaults.global.elements.line.fill = false;
 if (primary_date.length > 0) {
   primary_date = primary_date.map(function(date) {
@@ -315,6 +192,35 @@ if (compare_to.length > 0) {
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     return new_date.toLocaleDateString('en-US', options);
   });
+}
+
+const del = compare_to.length - primary_date.length;
+if (del > 0) {
+  compare_to = compare_to.slice(0, -del);
+  metric_date_compare = metric_date_compare.slice(0, -del);
+
+  if (vs_metric_date_compare.length > 0) {
+    vs_metric_date_compare = vs_metric_date_compare.slice(0, -del);
+  }
+}
+const ts = primary_date[0];
+const te = primary_date[primary_date.length - 1];
+const ts_c = compare_to[0];
+const te_c = compare_to[compare_to.length - 1];
+
+if (compare_to.length > 0) {
+  if (compare_to.length < primary_date.length) {
+    const del1 = primary_date.length - compare_to.length;
+    for (let i = 0; i < del1; i++) {
+      compare_to.push('');
+      metric_date_compare.push(null);
+    }
+    if (vs_metric.length > 0) {
+      for (let i = 0; i < del1; i++) {
+        vs_metric_date_compare.push(null);
+      }
+    }
+  }
 }
 
 const color_metric1 = '#0000ff';
@@ -333,7 +239,8 @@ const data1 = {
       backgroundColor: color_metric1,
       borderColor: color_metric1,
       borderWidth: 1.5,
-      data: metric
+      data: metric,
+      lineTension: 0
     }
   ]
 };
@@ -347,8 +254,10 @@ const dataset2 = {
   backgroundColor: color_metric1_compare,
   borderColor: color_metric1_compare,
   borderWidth: 1.5,
-  data: metric_date_compare
+  data: metric_date_compare,
+  lineTension: 0
 };
+
 const dataset3 = {
   type: 'line',
   label: metric2,
@@ -358,7 +267,8 @@ const dataset3 = {
   backgroundColor: color_metric2,
   borderColor: color_metric2,
   borderWidth: 1.5,
-  data: vs_metric
+  data: vs_metric,
+  lineTension: 0
 };
 const dataset4 = {
   type: 'line',
@@ -369,7 +279,8 @@ const dataset4 = {
   backgroundColor: color_metric2_compare,
   borderColor: color_metric2_compare,
   borderWidth: 1.5,
-  data: vs_metric_date_compare
+  data: vs_metric_date_compare,
+  lineTension: 0
 };
 
 if (compare_to.length > 0 && vs_metric.length > 0) {
@@ -418,13 +329,24 @@ const config = {
   type: 'line',
   data: data1,
   options: {
+    over: {
+      mode: 'index',
+      intersect: false
+    },
     tooltips: {
       mode: 'label',
+      intersect: false,
       callbacks: {
         label: function(tooltipItem, data) {
+          const options1 = {
+            weekday: 'short',
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+          };
           return (
-            tooltipItem.xLabel +
-            ' ' +
+            new Date(tooltipItem.xLabel).toLocaleDateString('en-US', options1) +
+            ' | ' +
             data.datasets[tooltipItem.datasetIndex].label +
             ' : ' +
             tooltipItem.yLabel
@@ -455,12 +377,12 @@ const config = {
         `<head> <link href='https://fonts.googleapis.com/css?family=Roboto' rel ='stylesheet' >
         <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
         <p style='text-align: left;'>` +
-        primary_date[0] +
+        ts +
         '&nbsp;-&nbsp;' +
-        primary_date[primary_date.length - 1] +
-        `:&emsp;<span style= color:`  +
+        te +
+        `:&emsp;<span style= 'color:`  +
         color_metric1 +
-        `;> &#x25CF;&emsp;</span>` +
+        `;'> &#x25CF;&emsp;</span>` +
         metric1
       );
     },
@@ -513,29 +435,29 @@ if (compare_to.length > 0 && vs_metric.length > 0) {
     return (
       `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
       rel ='stylesheet' > <style> body {font-family: 'Roboto';
-      font-size: 14px;color:'#666'}</style </head><p style='text-align: left;'>` +
-      primary_date[0] +
+      font-size: 14px;color:'#666' }</style </head><p style='text-align: left;'>` +
+      ts +
       '&nbsp;-&nbsp;' +
-      primary_date[primary_date.length - 1] +
+      te +
       `:&emsp;<span style='color:` +
       color_metric1 +
-      `';>&#x25CF;&emsp;</span>` +
+      `;'>&#x25CF;&emsp;</span>` +
       metric1 +
       `&emsp;<span style='color: ` +
-      color_metric1_compare +
-      `';>&#x25CF;&emsp;</span>` +
+      color_metric2 +
+      `;'>&#x25CF;&emsp;</span>` +
       metric2 +
       '<br>' +
-      compare_to[0] +
+      ts_c +
       ' - ' +
-      compare_to[compare_to.length - 1] +
+      te_c +
       `:&emsp;<span style='color:` +
       color_metric2 +
-      `';>&#x25CF;&emsp;</span>` +
+      `;'>&#x25CF;&emsp;</span>` +
       metric1 +
       `&emsp;<span style='color: ` +
       color_metric2_compare +
-      `';>&#x25CF;&emsp;</span>` +
+      `;'>&#x25CF;&emsp;</span>` +
       metric2 +
       '</p>'
     );
@@ -548,21 +470,21 @@ if (compare_to.length > 0 && vs_metric.length === 0) {
     return (
       `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
        rel ='stylesheet' > <style> body {font-family: 'Roboto';font-size: 14px;
-       color:'#666'}</style </head><p style='text-align: left;'>` +
-      primary_date[0] +
+       color: '#666'}</style </head><p style='text-align: left;'>` +
+     ts +
       '&nbsp;-&nbsp;' +
-      primary_date[primary_date.length - 1] +
+      te +
       `:&emsp;<span style='color: ` +
       color_metric1 +
-      `';>&#x25CF;&ensp;</span>` +
+      `;'>&#x25CF;&ensp;</span>` +
       metric1 +
       '<br>' +
-      compare_to[0] +
+      ts_c +
       '&nbsp;-&nbsp;' +
-      compare_to[compare_to.length - 1] +
+      te_c +
       `:&emsp;<span style='color: ` +
       color_metric1_compare +
-      `';>&#x25CF;</span>` +
+      `;'>&#x25CF;</span>` +
       metric1 +
       '</p>'
     );
@@ -576,391 +498,24 @@ if (compare_to.length === 0 && vs_metric.length > 0) {
       `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
       rel ='stylesheet' > <style> body {font-family: 'Roboto';font-size: 14px;color:'#666'}
       </style </head><p style='text-align: left;'>` +
-      primary_date[0] +
+      ts +
       '&nbsp;-&nbsp;' +
-      primary_date[primary_date.length - 1] +
+      te +
       `:&emsp;<span style='color: ` +
       color_metric1 +
       `';>&#x25CF;&emsp;</span>` +
       metric1 +
-      `'&emsp;<span style='color: ` +
+      `&emsp;<span style='color: ` +
       color_metric2 +
-      `';> &#x25CF;</span>&emsp;` +
+      `;'> &#x25CF;</span>&emsp;` +
       metric2
     );
   };
 }
 // allocate and initialize a chart
-// this.LineChart = new Chart('lineChart', config);
+this.LineChart = new Chart('lineChart', config);
+this.LineChart.generateLegend();
 }
-
-showCompareToWeeklyData(results) {
-  this.WeeklyChart = new Chart('weeklyChart', {
-    type: 'line',
-    data: {
-      labels: results.data.metric.primary_date.date,
-      datasets: [{
-              label: 'Primary range',
-              data: results.data.metric.primary_date.footfall,
-              lineTension: 0.2,
-              borderColor: '#cc181f',
-              borderWidth: 1,
-              pointBackgroundColor: '#ce4532',
-              fill: false
-            },
-            {
-              label: 'Secondary range',
-              lineTension: 0.2,
-              borderWidth: 1,
-              borderColor: 'rgb(30, 95, 236)',
-              pointBackgroundColor: '#134fcf',
-              data:  results.data.metric.compare_date.footfall,
-              fill: false
-            }]
-          },
-          options: {
-            title: {
-              display: true,
-              text: 'Foorfall data'
-            },
-            tooltips: {
-              mode: 'index',
-              intersect: false,
-            },
-            hover: {
-              mode: 'nearest',
-              intersect: true
-            },
-            legend: {
-              position: 'top',
-              display: false
-            },
-            scales: {
-              yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                },
-                scaleLabel: {
-                  display: true,
-                  labelString: 'Footfall'
-                },
-            }],
-              xAxes: [{
-                display: true,
-                scaleLabel: {
-                  display: false,
-                  labelString: 'Date'
-                },
-              },
-        ]
-            },
-            maintainAspectRatio: true,
-          }
-        });
-      }
-showMetricsWeeklyData(results) {
-
-}
-
-showWeeklyData(results) {
-  this.WeeklyChart = new Chart('weeklyChart', {
-    type: 'line',
-    data: {
-        labels: results.data.metric.primary_date.date,
-        datasets: [{
-            label: `${this.primaryMetrics} weekly data`,
-            data: results.data.metric.primary_date.footfall,
-            lineTension: 0.2,
-            borderColor: '#cc181f',
-            borderWidth: 1,
-            pointBackgroundColor: '#ce4532',
-            fill: false
-        }]
-      },
-    options: {
-      title: {
-        display: true,
-        text: 'Foorfall data'
-      },
-      tooltips: {
-        mode: 'index',
-        intersect: false,
-      },
-      hover: {
-        mode: 'nearest',
-        intersect: true
-      },
-      legend: {
-        position: 'top',
-        display: false
-      },
-      scales: {
-        yAxes: [{
-          ticks: {
-              beginAtZero: true
-          },
-          scaleLabel: {
-            display: true,
-            labelString: `${this.primaryMetrics}`
-          },
-      }],
-        xAxes: [{
-          display: true,
-          scaleLabel: {
-            display: false,
-            labelString: 'Date'
-          },
-        },
-  ]
-      },
-      maintainAspectRatio: true,
-    }
-});
-
-}
-
-
-  compareToDateRange(event: any) {
-    if (event.startDate && event.endDate) {
-      this.compareToCustomDate.startDate = event.startDate.format('YYYY-MM-DD');
-      this.compareToCustomDate.endDate = event.endDate.format('YYYY-MM-DD');
-      console.log(this.compareToCustomDate.startDate, this.compareToCustomDate.endDate, event);
-      // this.isLoading = true;
-  //     const footfall = {
-  //       'from': this.selected.startDate,
-  //       'to': this.selected.endDate
-  //     };
-  //     this.auth
-  //  .postDailyFootFall(footfall)
-  //  .pipe(
-  //   takeWhile(() => this.alive),
-  // )
-  //  .subscribe(
-  //     (results: any) => {
-  //       this.isLoading = false;
-  //       this.compareToResults = results;
-  //       this.showCompareTo();
-  //     },
-  //     res => {
-  //       console.log(res);
-  //       this.router.navigate(['/']);
-  //     }
-  //   );
-  }
-  }
-
-  showVsMetricData(results) {
-    Chart.defaults.global.elements.line.fill = false;
-    this.LineChart = new Chart('lineChart', {
-      type: 'line',
-      data: {
-        labels: results.data.metric.primary_date.date,
-        datasets: [{
-                type: 'line',
-                label: 'Primary range',
-                yAxisID: 'y-axis-0',
-                data: results.data.metric.primary_date.footfall,
-                lineTension: 0.2,
-                borderColor: '#cc181f',
-                borderWidth: 1,
-                pointBackgroundColor: '#ce4532',
-                fill: false
-              },
-              {
-                type: 'line',
-                label: 'Primary compare to range',
-                yAxisID: 'y-axis-0',
-                lineTension: 0.2,
-                borderWidth: 1,
-                borderColor: 'rgb(30, 95, 236)',
-                pointBackgroundColor: '#134fcf',
-                data: results.data.metric.compare_date.footfall,
-                fill: false
-              },
-              {
-                type: 'line',
-                label: 'Secondary date range',
-                lineTension: 0.2,
-                yAxisID: 'y-axis-0',
-                borderWidth: 1,
-                borderColor: '#cc181f',
-                pointBackgroundColor: '#ce4532',
-                data: results.data.vs_metric.primary_date.footfall,
-                fill: false
-              },
-              {
-                type: 'line',
-                label: 'Secondary compare to range',
-                yAxisID: 'y-axis-1',
-                lineTension: 0.2,
-                borderWidth: 1,
-                borderColor: 'rgb(30, 95, 236)',
-                pointBackgroundColor: '#134fcf',
-                data: results.data.vs_metric.compare_date.footfall,
-                fill: false
-              }]
-            },
-            options: {
-              title: {
-                display: true,
-                text: 'Foorfall data'
-              },
-              tooltips: {
-                mode: 'index',
-                intersect: false,
-              },
-              hover: {
-                mode: 'nearest',
-                intersect: true
-              },
-              legend: {
-                position: 'top',
-                display: true
-              },
-              scales: {
-                yAxes: [{
-                  stacked: false,
-                  position: 'left',
-                  id: 'y-axis-0',
-                  ticks: {
-                      beginAtZero: true
-                  },
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Footfall'
-                  },
-              },
-              {
-                stacked: false,
-                position: 'right',
-                id: 'y-axis-1',
-                ticks: {
-                  beginAtZero: true,
-                },
-                scaleLabel: {
-                  display: true,
-                  labelString: 'Footfall'
-                },
-              }],
-                xAxes: [{
-                  display: true,
-                  stacked: false,
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Date'
-                  },
-                },
-          ]
-              },
-              maintainAspectRatio: true,
-            }
-          });
-  }
-
-  showMonthlyData() {
-    const date = this.monthlyData.map(result => {
-      return result.timestamp_hour;
-    });
-    const footfall = this.monthlyData.map(result => {
-      return result.footfall;
-    });
-    this.MonthlyChart = new Chart('monthlyChart', {
-      type: 'line',
-      data: {
-          labels: date,
-          datasets: [{
-              label: '',
-              data: footfall,
-              fill: false,
-              lineTension: 0.2,
-              borderColor: 'red',
-              borderWidth: 1,
-          }]
-        },
-      options: {
-        title: {
-          text: 'Foot fall monthly data',
-          display: true
-        },
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero: true
-                  }
-              }]
-          }
-      }
-  });
-
-  }
-
-  changeMetrics(ev: any) {
-  }
-
- showCompareTo() {
-  this.LineChart = new Chart('lineChart', {
-    type: 'line',
-    data: {
-      labels: this.results.date,
-      datasets: [{
-              label: 'Primary range',
-              data: this.results.footfall,
-              lineTension: 0.2,
-              borderColor: '#cc181f',
-              borderWidth: 1,
-              pointBackgroundColor: '#ce4532',
-              fill: false
-            },
-            {
-              label: 'Secondary range',
-              lineTension: 0.2,
-              borderWidth: 1,
-              borderColor: 'rgb(30, 95, 236)',
-              pointBackgroundColor: '#134fcf',
-              data: this.compareToResults.footfall,
-              fill: false
-            }]
-          },
-          options: {
-            title: {
-              display: true,
-              text: 'Foorfall data'
-            },
-            tooltips: {
-              mode: 'index',
-              intersect: false,
-            },
-            hover: {
-              mode: 'nearest',
-              intersect: true
-            },
-            legend: {
-              position: 'top',
-              display: false
-            },
-            scales: {
-              yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                },
-                scaleLabel: {
-                  display: true,
-                  labelString: 'Footfall'
-                },
-            }],
-              xAxes: [{
-                display: true,
-                scaleLabel: {
-                  display: false,
-                  labelString: 'Date'
-                },
-              },
-        ]
-            },
-            maintainAspectRatio: true,
-          }
-        });
- }
 
   changeDateRange(ev: any) {
     if (this.compareToSelect === 'previousPeriod') {
@@ -994,102 +549,129 @@ showWeeklyData(results) {
 
     this.selected.startDate = footfall['from'];
     this.selected.endDate = footfall['to'];
-  //   this.isLoading = true;
-  //     this.auth
-  //  .postDailyFootFall(footfall)
-  //  .pipe(
-  //   takeWhile(() => this.alive),
-  // )
-  //  .subscribe(
-  //     (results: any) => {
-  //       this.isLoading = false;
-  //       this.results = results;
-  //       this.showMetricsData();
-  //     },
-  //     res => {
-  //       console.log(res);
-  //       this.router.navigate(['/']);
-  //     }
-  //   );
     }
   }
 
-
-  showLastMonthdata() {
-    const date = this.results.map(result => {
-      return result.date;
-    });
-    const lastMonthStartIndex = date.indexOf('2/1/2019');
-    const lastMonthEndIndex = date.indexOf('2/28/2019');
-    this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
-    this.showMetricsData();
-  }
-
-  showLastWeekdata() {
-  const date = this.results.map(result => {
-    return result.date;
-  });
-  const lastMonthStartIndex = date.indexOf('2/1/2019');
-  const lastMonthEndIndex = date.indexOf('2/8/2019');
-  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
-  this.showMetricsData();
-}
-
-  showLast30Daysdata() {
-  const date = this.results.map(result => {
-    return result.date;
-  });
-  const lastMonthStartIndex = date.indexOf('2/19/2019');
-  const lastMonthEndIndex = date.indexOf('3/19/2019');
-  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
-  this.showMetricsData();
-}
-
-  showLast7Daysdata() {
-  const date = this.results.map(result => {
-    return result.date;
-  });
-  const lastMonthStartIndex = date.indexOf('3/12/2019');
-  const lastMonthEndIndex = date.indexOf('3/19/2019');
-  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
-   this.showMetricsData();
-  }
-
-  showCustomDaysdata() {
-  const date = this.results.map(result => {
-    return result.date;
-  });
-  const lastMonthStartIndex = date.indexOf('3/12/2019');
-  const lastMonthEndIndex = date.indexOf('3/19/2019');
-  this.changedRows = date.slice(lastMonthStartIndex, (lastMonthEndIndex + 1));
-  this.showMetricsData();
-  }
-
-
   showMetricsData() {
+    Chart.defaults.global.elements.line.fill = false;
+    const primary_date = this.results.date.map(function(date) {
+      const new_date = new Date(date);
+      const options = { year: 'numeric', month: 'short', day: 'numeric' };
+      return new_date.toLocaleDateString('en-US', options);
+    });
+    const color_metric1 = '#0000ff';
+    const ts = primary_date[0];
+    const te = primary_date[primary_date.length - 1];
+    const data1 = {
+      datasets: [
+        {
+          type: 'line',
+          fillOpacity: 100,
+          label: 'Footfall',
+          yAxisID: 'y-axis-0',
+          xAxisID: 'x-axis-0',
+          backgroundColor: color_metric1,
+          borderColor: color_metric1,
+          borderWidth: 1.5,
+          data: this.results.footfall,
+          lineTension: 0
+        }
+      ]
+    };
     this.LineChart = new Chart('lineChart', {
       type: 'line',
-      data: {
-          labels: this.results.date,
-          datasets: [{
-              label: '',
-              data: this.results.footfall,
-              fill: false,
-              lineTension: 0.2,
-              borderColor: '#cc181f',
-              borderWidth: 1,
-          }]
-        },
+      data: data1,
       options: {
-          scales: {
-              yAxes: [{
-                  ticks: {
-                      beginAtZero: true
-                  }
-              }]
-          }
-      }
-  });
+        over: {
+          mode: 'index',
+          intersect: false
+        },
+        tooltips: {
+          mode: 'label',
+          intersect: false,
+          callbacks: {
+            label: function(tooltipItem, data) {
+              const options1 = {
+                weekday: 'short',
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+              };
+              return (
+                new Date(tooltipItem.xLabel).toLocaleDateString('en-US', options1) +
+                ' | ' +
+                data.datasets[tooltipItem.datasetIndex].label +
+                ' : ' +
+                tooltipItem.yLabel
+              );
+            }
+          },
+          backgroundColor: '#fff',
+          borderColor: '#DCDCDC',
+          bodyFontColor: '#000000',
+          borderWidth: 1,
+          caretSize: 12,
+          caretPadding: 12,
+          cornerRadius: 12,
+          bodyFontFamily: 'Roboto',
+          bodySpacing: 12,
+          xPadding: 12,
+          yPadding: 12
+        },
+        legend: { display: false },
+        legendCallback: function(ch) {
+          return (
+            `<head> <link href='https://fonts.googleapis.com/css?family=Roboto' rel ='stylesheet' >
+            <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
+            <p style='text-align: left;'>` +
+            ts +
+            '&nbsp;-&nbsp;' +
+            te +
+            `:&emsp;<span style= 'color:`  +
+            color_metric1 +
+            `;'> &#x25CF;&emsp;</span>` +
+            'Footfall'
+          );
+        },
+        title: {
+          display: false
+        },
+        responsive: true,
+        scales: {
+          xAxes: [
+            {
+              stacked: false,
+              labels: primary_date,
+              scaleLabel: {
+                display: true,
+                labelString: 'Date',
+                fontColor: 'black',
+                fontFamily: 'Roboto'
+              },
+              xAxisID: 'x-axis-0',
+              gridLines: {
+                display: false
+              }
+            }
+          ],
+          yAxes: [
+            {
+              stacked: false,
+              position: 'left',
+              scaleLabel: {
+                display: true,
+                labelString: 'Footfall',
+                fontColor: 'black',
+                fontFamily: 'Roboto'
+              },
+              gridLines: {
+                display: false
+              }
+            }
+          ]
+        }
+      } }
+      );
   }
 
  ngOnInit() {
@@ -1110,25 +692,6 @@ showWeeklyData(results) {
         this.router.navigate(['/']);
       }
     );
-
-  // this.http.get('../assets/store_hierarchy_modified.json')
-  //     .pipe(
-  //        takeWhile(() => this.alive),
-  //     )
-  //     .subscribe(
-  //       (results: any) => {
-  //         console.log(results, this.nodes);
-  //          this.nodes = results;
-  //       },
-  //       res => {
-  //         console.log(res);        }
-  //     );
-  //  this.monthlyData =  await this.http.get('../assets/monthly.json').toPromise();
-  //  this.weeklyData =  await this.http.get('../assets/weekly.json').toPromise();
-  //  this.hourlyData =  await this.http.get('../assets/hourly.json').toPromise();
-  //  this.showMonthlyData();
-  //  this.showWeeklyData();
-  //  this.showhHourlyData();
   }
 
   ngOnDestroy() {

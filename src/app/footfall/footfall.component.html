@@ -11,7 +11,7 @@
         </div>
         <div class="range-container">
             <label>Select range</label>
-              <select class="browser-default custom-select" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+              <select class="browser-default custom-select compare-to-container" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
                 <option disabled value="range">Select range</option>
                 <option value="last7Days">Last 7 days</option>
                 <option value="last30Days">Last 30 days</option>
@@ -35,7 +35,7 @@
                     <input type="checkbox" class="custom-control-input" [(ngModel)]="vsMetric" id="vsMetric">
                     <label class="custom-control-label" for="vsMetric">vs Metric</label>
                 </div>
-                <select [disabled]="!vsMetric" [(ngModel)]="secondaryMetrics" class="browser-default custom-select select-container" (change)="changeVsMetrics($event)">
+                <select [disabled]="!vsMetric" [(ngModel)]="secondaryMetrics" class="browser-default custom-select select-container" (change)="applyDateRange($event)">
                   <option disabled value="">Select metrics</option>
                   <option value="footfall">Footfall</option>
                   <option value="returning_customers">Returning customers</option>
@@ -49,7 +49,7 @@
                     <input type="checkbox" class="custom-control-input" [(ngModel)]="compareTo" id="compareToInput">
                     <label class="custom-control-label" for="compareToInput">Compare to</label>
                 </div>
-              <select [disabled]="!compareTo" [(ngModel)]="compareToSelect" class="browser-default custom-select" (change)="changeCompareTo($event)">
+              <select [disabled]="!compareTo" [(ngModel)]="compareToSelect" class="browser-default custom-select compare-to-container" (change)="changeCompareTo($event)">
                 <option disabled value="range">Select compare to range</option>
                 <option value="previousPeriod">Previous period</option>
                 <option value="custom">Custom</option>
@@ -63,7 +63,7 @@
           </div>
         </div>
 
-        <ul class="nav nav-pills" role="tablist">
+        <ul class="nav nav-pills nav-link-style" role="tablist">
           <li class="nav-item" (click)="toggleTab('Daily')">
             <a class="nav-link active" data-toggle="pill" href="#daily">Daily</a>
           </li>
@@ -76,12 +76,12 @@
         </ul>
       <div class="col-xs-12 container-padding" [class.loading]="isLoading">
           <div class="tab-content">
-              <div id="daily" class="container tab-pane active"><br>
+              <div id="daily" class="container tab-pane active container-margin-top"><br>
                 <h3>Daily</h3>
                 <div class="row">
                     <table>
                       <tr>
-                        <td style="width: 10000px; height: 20%"><canvas id="lineChart"></canvas></td>
+                        <td style="width: 10000px; height: 10%"><canvas id="lineChart"></canvas></td>
                         <td></td>
                       </tr>
                     </table>
