@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
 import { TreeModel, TreeNode } from 'angular-tree-component';
 import * as moment from 'moment';
 import { ToastrService } from 'ngx-toastr';
+import { transpose } from 'mathjs';
+import { saveAs } from 'file-saver';
+
+
 
 
 @Component({
@@ -19,12 +23,11 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class FootfallComponent implements OnInit, OnDestroy {
 
-  LineChart: any;
+  DailyChart: any;
   data: any[] = [];
   MonthlyChart: any;
   WeeklyChart: any;
   period: any;
-  HourlyChart: any;
   compareTo = false;
   showCompareToGraph = false;
   results: any;
@@ -44,6 +47,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
   primaryMetrics = 'footfall';
   secondaryMetrics = '';
   showHiearchy: false;
+  buttonDiasbled = true;
   nodes: any;
   isPreviousPeriodSelected: boolean;
   options = {
@@ -65,6 +69,13 @@ export class FootfallComponent implements OnInit, OnDestroy {
     if (event.startDate && event.endDate) {
       this.selected.startDate = event.startDate.format('YYYY-MM-DD');
       this.selected.endDate = event.endDate.format('YYYY-MM-DD');
+    }
+  }
+
+  compareToDateRange(event: any) {
+    if (event.startDate && event.endDate) {
+      this.compareToCustomDate.startDate = event.startDate.format('YYYY-MM-DD');
+      this.compareToCustomDate.endDate = event.endDate.format('YYYY-MM-DD');
     }
   }
 
@@ -127,7 +138,10 @@ applyDateRange(e?) {
  .subscribe(
     (results: any) => {
       this.isLoading = false;
-            this.showChart(results.data.metric.primary_date.date, results.data.metric.compare_date.date, this.primaryMetrics,
+      this.buttonDiasbled = false;
+      this.results = results;
+            this.showChart(this.DailyChart, 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+            results.data.metric.compare_date.date, this.primaryMetrics,
               results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
               results.data.vs_metric.primary_date[results.metrics[1]],
               results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
@@ -142,15 +156,15 @@ applyDateRange(e?) {
 toggleTab(period) {
   this.period = period;
   const postData = {
-    'from':  this.selected.startDate,
-    'to': this.selected.endDate,
+    'from': moment().startOf('month').format('YYYY-MM-DD'),
+    'to': moment().format('YYYY-MM-DD'),
     'metric': this.primaryMetrics,
     'compare_flag': `${this.compareTo}`,
     'compare_from': this.compareToCustomDate.startDate,
     'compare_to': this.compareToCustomDate.endDate,
     'vs_metric_flag': `${this.vsMetric}`,
     'vs_metric': this.secondaryMetrics,
-    'period': this.period
+    'period': period
   };
 
 this.isLoading = true;
@@ -162,12 +176,31 @@ this.auth
 .subscribe(
    (results: any) => {
     console.log(results);
+    this.results = results;
+    this.buttonDiasbled = false;
     this.isLoading = false;
-    this.showChart(results.data.metric.primary_date.date, results.data.metric.compare_date.date, this.primaryMetrics,
+    switch (period) {
+      case 'Daily':  this.showChart(this.DailyChart, 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+      results.data.metric.compare_date.date, this.primaryMetrics,
+        results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
+        results.data.vs_metric.primary_date[results.metrics[1]],
+        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+        break;
+      case 'Weekly': this.showChart(this.WeeklyChart, 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
+      results.data.metric.compare_date.date, this.primaryMetrics,
+        results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
+        results.data.vs_metric.primary_date[results.metrics[1]],
+        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+        break;
+    case 'Monthly': this.showChart(this.MonthlyChart, 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
+    results.data.metric.compare_date.date, this.primaryMetrics,
       results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
       results.data.vs_metric.primary_date[results.metrics[1]],
       results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
-   },
+      break;
+    default: return this.toastr.error('Select tab');
+    }
+    },
    res => {
      console.log(res);
      this.router.navigate(['/']);
@@ -176,7 +209,8 @@ this.auth
 }
 
 
-showChart(primary_date, compare_to, metric1, metric, metric2, vs_metric, metric_date_compare, vs_metric_date_compare) {
+showChart(type, name, legendId, primary_date, compare_to, metric1, metric,
+   metric2, vs_metric, metric_date_compare, vs_metric_date_compare) {
   Chart.defaults.global.elements.line.fill = false;
 if (primary_date.length > 0) {
   primary_date = primary_date.map(function(date) {
@@ -376,14 +410,8 @@ const config = {
       return (
         `<head> <link href='https://fonts.googleapis.com/css?family=Roboto' rel ='stylesheet' >
         <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
-        <p style='text-align: left;'>` +
-        ts +
-        '&nbsp;-&nbsp;' +
-        te +
-        `:&emsp;<span style= 'color:`  +
-        color_metric1 +
-        `;'> &#x25CF;&emsp;</span>` +
-        metric1
+        <p style='text-align: left;'> ${ts} &nbsp;-&nbsp; ${te} :&emsp;<span style= 'color: ${color_metric1};'> &#x25CF;&emsp;</span>
+        ${metric1}`
       );
     },
     title: {
@@ -392,7 +420,7 @@ const config = {
 
     responsive: true,
     scales: {
-      xAxes: [
+        xAxes: [
         {
           stacked: false,
           labels: primary_date,
@@ -482,7 +510,7 @@ if (compare_to.length > 0 && vs_metric.length === 0) {
       ts_c +
       '&nbsp;-&nbsp;' +
       te_c +
-      `:&emsp;<span style='color: ` +
+      `:&emsp;<span style='color:` +
       color_metric1_compare +
       `;'>&#x25CF;</span>` +
       metric1 +
@@ -513,8 +541,8 @@ if (compare_to.length === 0 && vs_metric.length > 0) {
   };
 }
 // allocate and initialize a chart
-this.LineChart = new Chart('lineChart', config);
-this.LineChart.generateLegend();
+type = new Chart(name, config);
+document.getElementById(legendId).innerHTML = type.generateLegend();
 }
 
   changeDateRange(ev: any) {
@@ -578,7 +606,7 @@ this.LineChart.generateLegend();
         }
       ]
     };
-    this.LineChart = new Chart('lineChart', {
+    this.DailyChart = new Chart('dailyChart', {
       type: 'line',
       data: data1,
       options: {
@@ -660,7 +688,7 @@ this.LineChart.generateLegend();
               position: 'left',
               scaleLabel: {
                 display: true,
-                labelString: 'Footfall',
+                labelString: this.primaryMetrics,
                 fontColor: 'black',
                 fontFamily: 'Roboto'
               },
@@ -672,6 +700,121 @@ this.LineChart.generateLegend();
         }
       } }
       );
+    document.getElementById('daily-legend').innerHTML = this.DailyChart.generateLegend();
+  }
+
+  download() {
+    const metric = this.results.metrics[0];
+    const vs_metric = this.results.metrics[1];
+
+    const primary_date = this.results.data.metric.primary_date.date;
+    const metric_data = this.results.data.metric.primary_date[metric];
+    const vs_metric_data = this.results.data.vs_metric.primary_date[vs_metric];
+
+    const compare_date = this.results.data.metric.compare_date.date;
+    const c_metric_data = this.results.data.metric.compare_date[metric];
+    const c_vs_metric_data = this.results.data.vs_metric.compare_date[vs_metric];
+    let headers, y;
+    if (this.results.flag.compare_data_flag === 'true' && this.results.flag.vs_metric_flag === 'true') {
+
+      if (primary_date.length > compare_date.length) {
+
+          const len = primary_date.length - compare_date.length;
+
+          for (let i = 0; i < len; i++) {
+
+              compare_date.push('');
+              c_metric_data.push('');
+              c_vs_metric_data.push('');
+
+          }
+      }
+
+      if (primary_date.length < compare_date.length) {
+
+          const len = primary_date.length - compare_date.length;
+
+          compare_date.slice(0, len);
+          c_metric_data.slice(0, len);
+          c_vs_metric_data.slice(0, len);
+
+
+      }
+
+
+      let data: any = [primary_date, metric_data, vs_metric_data, compare_date, c_metric_data, c_vs_metric_data];
+      data = transpose(data);
+      y = '';
+      for (let i = 0; i < data.length; i++) {
+         y = y + data[i].toString() + `\r\n`;
+        }
+
+      headers = 'Primary Date Range,,,Comparison Date Range,,\r\n\r\nDate,'
+      + metric + ',' + vs_metric + ',Date,' + metric + ',' + vs_metric + '\r\n';
+
+
+  }
+
+  if (this.results.flag.compare_data_flag === 'true' && this.results.flag.vs_metric_flag === 'false') {
+
+      if (primary_date.length > compare_date.length) {
+
+          const len = primary_date.length - compare_date.length;
+
+          for (let i = 0; i < len; i++) {
+
+              compare_date.push('');
+              c_metric_data.push('');
+
+
+          }
+      }
+
+      if (primary_date.length < compare_date.length) {
+
+          const len = primary_date.length - compare_date.length;
+
+          compare_date.slice(0, len);
+          c_metric_data.slice(0, len);
+
+      }
+
+      let data: any = [primary_date, metric_data, compare_date, c_metric_data];
+      data = transpose(data);
+      y = '';
+      for (let i = 0; i < data.length; i++) {
+         y = y + data[i].toString() + '\r\n';
+    }
+
+      headers = 'Primary Date Range,,Comparison Date Range,\r\n\r\nDate,' + metric + ',Date,' + metric + '\r\n';
+  }
+
+
+  if (this.results.flag.compare_data_flag === 'false' && this.results.flag.vs_metric_flag === 'true') {
+
+      let data: any = [primary_date, metric_data, vs_metric_data];
+      data = transpose(data);
+      y = '';
+      for (let i = 0; i < data.length; i++) {
+        y = y + data[i].toString() + '\r\n';
+    }
+
+      headers = 'Primary Date Range,,\r\n\r\nDate,' + metric + ',' + vs_metric + '\r\n';
+  }
+
+  if (this.results.flag.compare_data_flag === 'false' && this.results.flag.vs_metric_flag === 'false') {
+
+      let data: any = [primary_date, metric_data];
+      data = transpose(data);
+      y = '';
+      for (let i = 0; i < data.length; i++) {
+        y = y + data[i].toString() + '\r\n';
+      }
+      headers = 'Primary Date Range,\r\n\r\nDate,' + metric + '\r\n';
+
+  }
+  const blob = new Blob([headers + y], { type: 'text/plain;charset=utf-8' });
+  return saveAs(blob, 'result.csv');
   }
 
  ngOnInit() {
