@@ -96,6 +96,11 @@ export class AuthService implements OnDestroy {
     return this.httpClient.get(`${ENV.API_URL}/analytics/`, { headers });
   }
 
+  getDeviceStatus() {
+    const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
+    return this.httpClient.get(`${ENV.API_URL}/cloudtrax/`, { headers });
+  }
+
   postDailyFootFall(dailyfootfall) {
     const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
     return this.httpClient.post(`${ENV.API_URL}/analytics/`, dailyfootfall, { headers });

@@ -31,6 +31,10 @@ const routes: Routes = [
         path: 'heatmap-summary',
         loadChildren: '../heatmap-summary/heatmap-summary.module#HeatmapSummaryModule'
       },
+      {
+        path: 'device-status',
+        loadChildren: '../device-status/device-status.module#DeviceStatusModule'
+      },
     ]
   },
 ];

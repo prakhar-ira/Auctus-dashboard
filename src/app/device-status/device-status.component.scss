@@ -1,0 +1,21 @@
+div.container-margin {
+  margin-top: 2rem;
+}
+
+button.button-margin-left {
+  margin-left: 1rem;
+}
+
+.loading {
+  position: relative;
+  min-height: 50vh;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fafafa url(../../assets/img/loader.gif) no-repeat center 200px / 50px auto;
+  }
+}
