@@ -41,6 +41,43 @@ div.sign-in {
 }
 
 
+div.top-margin {
+  margin-top: 8rem;
+}
+
+div.center-content {
+  align-items: center;
+}
+
+div.vertLine {
+  border-right: 1px solid #dfdfdf;
+  width: 100%;
+  height: 400px;
+  margin-top: 6rem;
+}
+
+img.image {
+  margin-top: 15rem;
+  margin-right: 2rem;
+}
+.text-center {
+  text-align: center;
+}
+a.link {
+  color: #dc3545;
+  cursor: pointer;
+}
+
+small.warning-color {
+  color: #dc3545;
+}
+
+h6.bottom-margin {
+  margin-bottom: 2rem;
+}
+
+
+
 /* Some media queries for responsiveness */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

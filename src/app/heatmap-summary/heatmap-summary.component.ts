@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import * as moment from 'moment';
+
 
 
 @Component({
@@ -9,7 +11,28 @@ import * as $ from 'jquery';
 })
 export class HeatmapSummaryComponent implements OnInit {
 
+  primaryMetrics = 'footfall';
+  dateRange: any = 'range';
+  selected = {startDate: moment, endDate: moment};
+  floors = '';
+  compareToSelect: any = 'range';
+  compareToCustomDate = {startDate: moment, endDate: moment};
+  isLoading: boolean;
+
+
+
   constructor() { }
+
+  changeMetrics(ev) {
+  }
+  selectFloors(ev) {
+  }
+  changeCompareTo(ev) {
+  }
+  compareToDateRange(ev) {
+  }
+  changeSelection(ev) {
+  }
 
   ngOnInit() {
     const data = {
