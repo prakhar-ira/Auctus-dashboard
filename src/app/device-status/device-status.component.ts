@@ -55,6 +55,8 @@ export class DeviceStatusComponent implements OnInit {
   }
 
   ngOnInit() {
+    const token = localStorage.getItem('userInfo');
+    this.auth.refreshToken(token);
     this.fetchResults();
     interval(8000 * 60).subscribe(x => {
       this.fetchResults();

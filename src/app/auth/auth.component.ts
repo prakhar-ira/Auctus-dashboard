@@ -20,15 +20,16 @@ loginForm: FormGroup = this.fb.group({
     private fb: FormBuilder) { }
 
   ngOnInit() {
+  //   const token = localStorage.getItem('userInfo');
+  //   console.log(token);
+  //  if (token) {
+  //   this.router.navigate(['/dashboard']);
+  //  }
   }
 
   login(value, valid) {
     console.log(value);
     this._userService.login(value);
-  }
-
-  refreshToken() {
-    this._userService.refreshToken();
   }
 
   logout() {

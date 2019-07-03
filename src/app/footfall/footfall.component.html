@@ -1,7 +1,7 @@
 <div class="container container-box">
   <div class="flex-container">
     <div class="flex-elements">
-      <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="changeMetrics($event)">
+      <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="applyDateRange()">
         <option value="footfall">Footfall</option>
         <option value="returning_customers">Returning customers</option>
         <option value="new_customers">New customers</option>
@@ -46,7 +46,7 @@
           </div>
         <div class="compare-to-range-container">
             <div class="custom-control custom-checkbox custom-checkbox-input">
-                <input type="checkbox" class="custom-control-input" [(ngModel)]="compareTo" id="compareToInput">
+                <input type="checkbox" [disabled]="dateRange === 'range'" class="custom-control-input" [(ngModel)]="compareTo" id="compareToInput">
                 <label class="custom-control-label" for="compareToInput">Compare to</label>
             </div>
           <select [disabled]="!compareTo" [(ngModel)]="compareToSelect" class="browser-default custom-select compare-to-container" (change)="changeCompareTo($event)">

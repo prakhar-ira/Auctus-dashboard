@@ -62,6 +62,7 @@ export class AuthService implements OnDestroy {
      ).subscribe(
       data => {
         this.updateData(data['token']);
+        localStorage.setItem('userInfo', data['token']);
         this.router.navigate(['/dashboard']);
       },
       err => {
@@ -71,8 +72,8 @@ export class AuthService implements OnDestroy {
   }
 
   // Refreshes the JWT token, to extend the time the user is logged in
-   refreshToken() {
-    this.httpClient.post(`${ENV.API_URL}/api-token-refresh/`, JSON.stringify({token: this.token}), this.httpOptions)
+   refreshToken(token) {
+    this.httpClient.post(`${ENV.API_URL}/api-token-refresh/`, JSON.stringify({token}), this.httpOptions)
     .pipe(
       takeWhile(() => this.alive)
      ).subscribe(
@@ -81,6 +82,7 @@ export class AuthService implements OnDestroy {
       },
       err => {
         this.errors = err['error'];
+        this.router.navigate(['/']);
       }
     );
   }
@@ -106,7 +108,7 @@ export class AuthService implements OnDestroy {
     return this.httpClient.post(`${ENV.API_URL}/analytics/`, dailyfootfall, { headers });
   }
 
-  private updateData(token: string) {
+  updateData(token: string) {
     this.token = token;
     this.errors = [];
 

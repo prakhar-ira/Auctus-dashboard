@@ -12,6 +12,7 @@ import * as moment from 'moment';
 import { ToastrService } from 'ngx-toastr';
 import { transpose } from 'mathjs';
 import { saveAs } from 'file-saver';
+import { TouchSequence } from 'selenium-webdriver';
 
 
 
@@ -38,7 +39,7 @@ export class FootfallComponent implements OnInit, OnDestroy {
   hourlyData: any;
   changedRows: any;
   typeMetrics: string;
-  selected = {startDate: moment, endDate: moment};
+  selected = {startDate: moment, endDate: moment };
   dateRange: any = 'range';
   compareto = false;
   compareToCustomDate = {startDate: moment, endDate: moment};
@@ -112,15 +113,10 @@ export class FootfallComponent implements OnInit, OnDestroy {
     }
 }
 
-changeTab(e) {
-  console.log('hi', e, e.target.value, this.period);
-}
 
 
 applyDateRange(e?) {
   const postData = {
-    'from':  this.selected.startDate,
-    'to': this.selected.endDate,
     'metric': this.primaryMetrics,
     'compare_flag': `${this.compareTo}`,
     'compare_from': this.compareToCustomDate.startDate,
@@ -129,6 +125,13 @@ applyDateRange(e?) {
     'vs_metric': this.secondaryMetrics,
     'period': 'Daily'
   };
+    if (typeof this.selected.startDate === 'function' && typeof this.selected.endDate === 'function') {
+      postData['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
+      postData['to'] = moment().format('YYYY-MM-DD');
+    } else {
+      postData['from'] = this.selected.startDate;
+      postData['to'] = this.selected.endDate;
+    }
   this.isLoading = true;
   this.auth
  .postDailyFootFall(postData)
@@ -140,11 +143,12 @@ applyDateRange(e?) {
       this.isLoading = false;
       this.buttonDiasbled = false;
       this.results = results;
-            this.showChart(this.DailyChart, 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+            this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
             results.data.metric.compare_date.date, this.primaryMetrics,
               results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
               results.data.vs_metric.primary_date[results.metrics[1]],
-              results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+              results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
+              results.ticks);
     },
     res => {
       console.log(res);
@@ -156,8 +160,6 @@ applyDateRange(e?) {
 toggleTab(period) {
   this.period = period;
   const postData = {
-    'from': moment().startOf('month').format('YYYY-MM-DD'),
-    'to': moment().format('YYYY-MM-DD'),
     'metric': this.primaryMetrics,
     'compare_flag': `${this.compareTo}`,
     'compare_from': this.compareToCustomDate.startDate,
@@ -166,6 +168,14 @@ toggleTab(period) {
     'vs_metric': this.secondaryMetrics,
     'period': period
   };
+  console.log(this.selected.startDate);
+  if (typeof this.selected.startDate === 'function' && typeof this.selected.endDate === 'function') {
+    postData['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
+    postData['to'] = moment().format('YYYY-MM-DD');
+  } else {
+    postData['from'] = this.selected.startDate;
+    postData['to'] = this.selected.endDate;
+  }
 
 this.isLoading = true;
 this.auth
@@ -180,23 +190,26 @@ this.auth
     this.buttonDiasbled = false;
     this.isLoading = false;
     switch (period) {
-      case 'Daily':  this.showChart(this.DailyChart, 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+      case 'Daily':  this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
-        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
+        results.ticks);
         break;
-      case 'Weekly': this.showChart(this.WeeklyChart, 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
+      case 'Weekly': this.showChart(this.WeeklyChart, 'bar', 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
-        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+        results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
+        results.ticks);
         break;
-    case 'Monthly': this.showChart(this.MonthlyChart, 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
+    case 'Monthly': this.showChart(this.MonthlyChart, 'bar', 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
     results.data.metric.compare_date.date, this.primaryMetrics,
       results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
       results.data.vs_metric.primary_date[results.metrics[1]],
-      results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]]);
+      results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
+      results.ticks);
       break;
     default: return this.toastr.error('Select tab');
     }
@@ -209,10 +222,18 @@ this.auth
 }
 
 
-showChart(type, name, legendId, primary_date, compare_to, metric1, metric,
-   metric2, vs_metric, metric_date_compare, vs_metric_date_compare) {
+showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, metric,
+   metric2, vs_metric, metric_date_compare, vs_metric_date_compare, ticks) {
   Chart.defaults.global.elements.line.fill = false;
-if (primary_date.length > 0) {
+  const y0_min = ticks.y0[0];
+  const y0_max = ticks.y0[1];
+  const y1_min = ticks.y1[0];
+  const y1_max = ticks.y1[1];
+  const color_metric1 = '#004f73';
+  const color_metric1_compare = '#008ccc';
+  const color_metric2 = '#255c13';
+  const color_metric2_compare = '#ffa600';
+  if (primary_date.length > 0) {
   primary_date = primary_date.map(function(date) {
     const new_date = new Date(date);
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
@@ -257,22 +278,17 @@ if (compare_to.length > 0) {
   }
 }
 
-const color_metric1 = '#0000ff';
-const color_metric1_compare = '#b2b2ff';
-const color_metric2 = '#7f0019';
-const color_metric2_compare = '#ff99ad';
-
 const data1 = {
   datasets: [
     {
-      type: 'line',
+      type: chartType,
       fillOpacity: 100,
       label: metric1,
       yAxisID: 'y-axis-0',
       xAxisID: 'x-axis-0',
       backgroundColor: color_metric1,
       borderColor: color_metric1,
-      borderWidth: 1.5,
+      borderWidth: 2.5,
       data: metric,
       lineTension: 0
     }
@@ -287,20 +303,20 @@ const dataset2 = {
   xAxisID: 'x-axis-1',
   backgroundColor: color_metric1_compare,
   borderColor: color_metric1_compare,
-  borderWidth: 1.5,
+  borderWidth: 2.5,
   data: metric_date_compare,
   lineTension: 0
 };
 
 const dataset3 = {
-  type: 'line',
+  type: chartType,
   label: metric2,
   fillOpacity: 100,
   yAxisID: 'y-axis-1',
   xAxisID: 'x-axis-0',
   backgroundColor: color_metric2,
   borderColor: color_metric2,
-  borderWidth: 1.5,
+  borderWidth: 2.5,
   data: vs_metric,
   lineTension: 0
 };
@@ -312,7 +328,7 @@ const dataset4 = {
   xAxisID: 'x-axis-1',
   backgroundColor: color_metric2_compare,
   borderColor: color_metric2_compare,
-  borderWidth: 1.5,
+  borderWidth: 2.5,
   data: vs_metric_date_compare,
   lineTension: 0
 };
@@ -329,6 +345,7 @@ if (compare_to.length === 0 && vs_metric.length > 0) {
   data1.datasets.push(dataset3);
 }
 const xaxis2 = {
+  offset: true,
   stacked: false,
   labels: compare_to,
   labelString: 'Comparison Date',
@@ -341,6 +358,13 @@ const xaxis2 = {
   },
   gridLines: {
     display: false
+  },
+  ticks: {
+    autoSkip: true,
+    maxTicksLimit: 5,
+    fontSize: 10,
+    maxRotation: 0,
+    minRotation: 0
   },
   position: 'top'
 };
@@ -357,10 +381,16 @@ const yaxis2 = {
   },
   gridLines: {
     display: false
+  },
+  ticks: {
+    autoSkip: true,
+    maxTicksLimit: 2,
+    min: y1_min,
+    max: y1_max
   }
 };
 const config = {
-  type: 'line',
+  type: chartType,
   data: data1,
   options: {
     over: {
@@ -422,6 +452,7 @@ const config = {
     scales: {
         xAxes: [
         {
+          offset: true,
           stacked: false,
           labels: primary_date,
           scaleLabel: {
@@ -433,6 +464,13 @@ const config = {
           xAxisID: 'x-axis-0',
           gridLines: {
             display: false
+          },
+          ticks: {
+            autoSkip: true,
+            maxTicksLimit: 5,
+            fontSize: 10,
+            maxRotation: 0,
+            minRotation: 0
           }
         }
       ],
@@ -449,6 +487,12 @@ const config = {
           },
           gridLines: {
             display: false
+          },
+          ticks: {
+            autoSkip: true,
+            maxTicksLimit: 2,
+            min: y0_min,
+            max: y0_max
           }
         }
       ]
@@ -818,6 +862,8 @@ document.getElementById(legendId).innerHTML = type.generateLegend();
   }
 
  ngOnInit() {
+   const token = localStorage.getItem('userInfo');
+   this.auth.refreshToken(token);
   this.isLoading = true;
    this.auth
    .getDailyFootFall()
@@ -828,7 +874,7 @@ document.getElementById(legendId).innerHTML = type.generateLegend();
       (results: any) => {
         this.isLoading = false;
         this.results = results;
-        this.showMetricsData();
+        this.applyDateRange();
       },
       res => {
         console.log(res);
