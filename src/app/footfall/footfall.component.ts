@@ -225,6 +225,7 @@ this.auth
 showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, metric,
    metric2, vs_metric, metric_date_compare, vs_metric_date_compare, ticks) {
   Chart.defaults.global.elements.line.fill = false;
+  Chart.defaults.platform.disableCSSInjection = true;
   const y0_min = ticks.y0[0];
   const y0_max = ticks.y0[1];
   const y1_min = ticks.y1[0];
@@ -624,128 +625,6 @@ document.getElementById(legendId).innerHTML = type.generateLegend();
     }
   }
 
-  showMetricsData() {
-    Chart.defaults.global.elements.line.fill = false;
-    const primary_date = this.results.date.map(function(date) {
-      const new_date = new Date(date);
-      const options = { year: 'numeric', month: 'short', day: 'numeric' };
-      return new_date.toLocaleDateString('en-US', options);
-    });
-    const color_metric1 = '#0000ff';
-    const ts = primary_date[0];
-    const te = primary_date[primary_date.length - 1];
-    const data1 = {
-      datasets: [
-        {
-          type: 'line',
-          fillOpacity: 100,
-          label: 'Footfall',
-          yAxisID: 'y-axis-0',
-          xAxisID: 'x-axis-0',
-          backgroundColor: color_metric1,
-          borderColor: color_metric1,
-          borderWidth: 1.5,
-          data: this.results.footfall,
-          lineTension: 0
-        }
-      ]
-    };
-    this.DailyChart = new Chart('dailyChart', {
-      type: 'line',
-      data: data1,
-      options: {
-        over: {
-          mode: 'index',
-          intersect: false
-        },
-        tooltips: {
-          mode: 'label',
-          intersect: false,
-          callbacks: {
-            label: function(tooltipItem, data) {
-              const options1 = {
-                weekday: 'short',
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-              };
-              return (
-                new Date(tooltipItem.xLabel).toLocaleDateString('en-US', options1) +
-                ' | ' +
-                data.datasets[tooltipItem.datasetIndex].label +
-                ' : ' +
-                tooltipItem.yLabel
-              );
-            }
-          },
-          backgroundColor: '#fff',
-          borderColor: '#DCDCDC',
-          bodyFontColor: '#000000',
-          borderWidth: 1,
-          caretSize: 12,
-          caretPadding: 12,
-          cornerRadius: 12,
-          bodyFontFamily: 'Roboto',
-          bodySpacing: 12,
-          xPadding: 12,
-          yPadding: 12
-        },
-        legend: { display: false },
-        legendCallback: function(ch) {
-          return (
-            `<head> <link href='https://fonts.googleapis.com/css?family=Roboto' rel ='stylesheet' >
-            <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
-            <p style='text-align: left;'>` +
-            ts +
-            '&nbsp;-&nbsp;' +
-            te +
-            `:&emsp;<span style= 'color:`  +
-            color_metric1 +
-            `;'> &#x25CF;&emsp;</span>` +
-            'Footfall'
-          );
-        },
-        title: {
-          display: false
-        },
-        responsive: true,
-        scales: {
-          xAxes: [
-            {
-              stacked: false,
-              labels: primary_date,
-              scaleLabel: {
-                display: true,
-                labelString: 'Date',
-                fontColor: 'black',
-                fontFamily: 'Roboto'
-              },
-              xAxisID: 'x-axis-0',
-              gridLines: {
-                display: false
-              }
-            }
-          ],
-          yAxes: [
-            {
-              stacked: false,
-              position: 'left',
-              scaleLabel: {
-                display: true,
-                labelString: this.primaryMetrics,
-                fontColor: 'black',
-                fontFamily: 'Roboto'
-              },
-              gridLines: {
-                display: false
-              }
-            }
-          ]
-        }
-      } }
-      );
-    document.getElementById('daily-legend').innerHTML = this.DailyChart.generateLegend();
-  }
 
   download() {
     const metric = this.results.metrics[0];
