@@ -1,0 +1,68 @@
+<div class="flex-container">
+    <div class="flex-elements">
+      <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="changeMetrics($event)">
+        <option value="footfall">Footfall</option>
+        <option value="returning_customers">Returning customers</option>
+        <option value="new_customers">New customers</option>
+        <option value="avg_dwell_time_mins">Avg. Dwell Time (mins)</option>
+        <option value="camera_count">Camera count</option>
+      </select>
+    </div>
+    <div class="range-container">
+        <label>Select range</label>
+          <select class="browser-default custom-select compare-to-container" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+            <option disabled value="range">Select range</option>
+            <option value="last7Days">Last 7 days</option>
+            <option value="last30Days">Last 30 days</option>
+            <option value="thisWeek">This week</option>
+            <option value="lastWeek">Last week</option>
+            <option value="thisMonth">This month</option>
+            <option value="lastMonth">Last month</option>
+            <option value="yearToDate">Year to date</option>
+            <option value="Custom">Custom</option>
+      </select>
+      <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
+          <input type="text" class="custom-input"
+          [showDropdowns]="true"
+          ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose custom date" (change)="changeSelection($event)"/> 
+      </div>
+    </div>
+ </div>
+    <div class="flexbox-container">
+        <div class="flex-elements flex-margin-left">
+          <select [(ngModel)]="floors" class="browser-default custom-select select-container" (change)="selectFloors($event)">
+            <option disabled value="">Select floors</option>
+            <option value="lowerGroundFloor">Lower ground floor</option>
+            <option value="upperGroundFloor">Upper ground floor</option>
+            <option value="firstFloor">First floor</option>
+            <option value="secondFloor">Second floor</option>
+          </select>
+        </div>
+      <div class="compare-to-range-container">
+      <label>Select compare to</label>
+        <select [(ngModel)]="compareToSelect" class="browser-default custom-select compare-to-container" (change)="changeCompareTo($event)">
+          <option disabled value="range">Select compare to range</option>
+          <option value="previousPeriod">Previous period</option>
+          <option value="custom">Custom</option>
+        </select>
+        <div class="compare-range-container">
+          <input type="text" class="date-container" 
+          [showDropdowns]="true"
+          ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (change)="compareToDateRange($event)"/>  
+      </div>
+      <button type="button" (click)="applyDateRange()" class="btn btn-primary button-margin">Apply </button>
+    </div>
+  </div>
+<div [class.isLoading]>
+  <div id="tooltip" display="none" style="position: absolute; display: none;"></div>
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1300px" height="710px" viewBox="0 0 1300 710" preserveAspectRatio="xMidYMid meet" >
+    <rect id="svgEditorBackground" x="0" y="0" width="1300" height="710" style="fill: none; stroke: none;"/>
+    <rect x="87" y="120" style="fill:khaki;stroke:black;stroke-width:1px;" id="splash" width="240" height="130"/>
+    <rect x="419" y="121" style="fill:khaki;stroke:black;stroke-width:1px;" id="pantaloons" width="240" height="130"/>
+    <rect x="124" y="332" style="fill:khaki;stroke:black;stroke-width:1px;" id="lifestyle" width="240" height="130"/><rect x="437" y="330" style="fill:khaki;stroke:black;stroke-width:1px;" id="lenskart" width="240" height="130"/>
+    <rect x="758" y="181" style="fill:khaki;stroke:black;stroke-width:1px;" id="madame" width="240" height="130"/><text id="black" style="fill:black;font-family:Roboto;font-size:20px;" x="161" y="174" >Splash</text><text style="fill:black;font-family:Roboto;font-size:20px;" x="843" y="253" id="e3_texte">Madame</text><text style="fill:black;font-family:Arial;font-size:20px;" x="479" y="398" id="e1_texte">lenskart</text><text style="fill:black;font-family:Roboto;font-size:20px;" x="205" y="393" id="e4_texte">Lifestyle</text><text style="fill:black;font-family:Roboto;font-size:20px;" x="493" y="191" id="e5_texte">Pantaloons</text>
+  </svg>
+</div>
+
+
+

@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~angular-tree-component/dist/angular-tree-component.css';
+@import '~ngx-toastr/toastr';
+ 
 
+.loading {
+  position: relative;
+  min-height: 50vh;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fafafa url(./assets/img/loader.gif) no-repeat center 200px / 50px auto;
+  }
+}
+
+span.toggle-children {
+  margin-top: 0.6rem;
+}

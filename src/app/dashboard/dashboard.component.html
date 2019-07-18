@@ -1,0 +1,29 @@
+<nav class="side-navbar">
+  <div class="side-navbar-wrapper">
+    <!-- Sidebar Header    -->
+    <div class="sidenav-header d-flex align-items-center justify-content-center">
+     
+    </div>
+    <!-- Sidebar Navigation Menus-->
+    <div class="main-menu">
+      <ul id="side-main-menu" class="side-menu list-unstyled">                  
+        <li><a [routerLink]="['home']" routerLinkActive="active"> <i class="fa fa-home"></i>Home </a></li>
+        <li><a [routerLink]="['profile']" routerLinkActive="active"> <i class="fa fa-user"></i>Profile</a></li>
+        <li><a href="#overViewDropdown" class="dropdownList" aria-expanded="false" data-toggle="collapse"> <i class="fa fa-file"></i>Overview </a>
+          <ul id="overViewDropdown" class="collapse list-unstyled ">
+            <li><a [routerLink]="['overview']" routerLinkActive="active">Mall</a></li>
+            <li><a [routerLink]="['overview']" routerLinkActive="active">Store</a></li>
+            <li><a [routerLink]="['overview']" routerLinkActive="active">Category</a></li>
+          </ul>
+        </li>
+        <li><a [routerLink]="['footfall']" routerLinkActive="active"> <i class="fa fa-bar-chart"></i>Analytics</a></li>
+        <li><a [routerLink]="['heatmap-summary']" routerLinkActive="active"> <i class="fa fa-map-marker"></i>Heatmap</a></li>
+        <li><a [routerLink]="['device-status']" routerLinkActive="active"> <i class="fa fa-tablet"></i>Device status</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="page">
+  <img src="../../assets/img/Auctus logo.jpeg" alt="Auctus logo">
+  <router-outlet></router-outlet>
+</div>

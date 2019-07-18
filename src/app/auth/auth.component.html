@@ -1,0 +1,74 @@
+<!-- <div class="row" *ngIf="!_userService.token">
+    <div class="wrapper">
+      <div class="sign-in">
+        <img src="./assets/main.png" alt="logo">
+        <p style='font-size:17px;font-weight:bold;font-family:verdana'>Please Sign in to SGC Dashboard</p>
+        <hr style='width:50%;'>
+        <div class="col-lg-4">
+          <br>
+          <input type="text" name="login-username" [(ngModel)]="user.username" placeholder="Username" required autofocus>
+        </div>
+        <div class="col-lg-4">
+          <input type="password" name="login-password" [(ngModel)]="user.password" placeholder="Password" required>
+        </div>
+        <br>
+        <div class="col-lg-4">
+          <button (click)="login()" class="btn btn-primary">Log In</button>
+        </div>
+        <div class="col-lg-12">
+          <span *ngFor="let error of _userService.errors.non_field_errors">{{ error }}<br /></span>
+        </div>
+        <br>
+        <br>
+        <hr style='width:100px;'>
+        <p style='font-size:11px;font-weight:lighter;'>&copy;2019 Auctus Advisors</p>
+      </div>
+   </div>
+  </div>   -->
+
+  <div class="row center-content">
+    <div class="col-lg-6">
+        <img class="image" src="../../assets/img/Auctus logo.jpeg" align="right" alt="logo">
+        <div class="vertLine"><br></div>
+      </div>
+      <div class="col-lg-6 top-margin">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">       
+                  <div class="col-sm-10">
+                    <h6 class="text-center bottom-margin">Sign into SGC dashboard.</h6>
+                  </div>
+              </div>
+              <form [formGroup]="loginForm" autocomplete="on" (submit)="login(loginForm?.value, loginForm?.valid)" class="form-horizontal">
+                <div class="form-group row">
+                <div class="col-sm-10">
+                  <input type="text" formControlName="username" name="username" autofocus type="email" placeholder="Email Address" class="form-control form-control-success">
+                  <small *ngIf="loginForm?.controls?.username?.invalid" class="form-text warning-color">Please enter valid username.</small>
+                </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <input type="password" name="password" formControlName="password"  autofocus type="password" placeholder="Pasword" class="form-control form-control-warning">
+                    <small *ngIf="loginForm?.controls?.password?.invalid" class="form-text warning-color">Please enter valid password.</small>
+                  </div>
+                </div>
+                <div class="form-group row">       
+                  <div class="col-sm-10 offset-sm-4">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                  </div>
+                </div>
+                <div class="form-group row">       
+                  <div class="col-sm-10">
+                    <h6 class="text-center">Did you. <a class="link">forgot your password?</a></h6>
+                  </div>
+                </div>
+                <div class="form-group row">       
+                  <div class="col-sm-10">
+                    <p class="text-center">©2019 Auctus Advisors</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+    </div>
+  </div>

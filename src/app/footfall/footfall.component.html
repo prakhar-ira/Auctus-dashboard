@@ -1,0 +1,122 @@
+<div class="container container-box">
+  <div class="flex-container">
+    <div class="flex-elements">
+      <select class="browser-default custom-select select-container" [(ngModel)]="primaryMetrics" (change)="applyDateRange()">
+        <option value="footfall">Footfall</option>
+        <option value="returning_customers">Returning customers</option>
+        <option value="new_customers">New customers</option>
+        <option value="avg_dwell_time_mins">Avg. Dwell Time (mins)</option>
+        <option value="camera_count">Camera count</option>
+      </select>
+    </div>
+    <div class="range-container">
+        <label>Select range</label>
+          <select class="browser-default custom-select compare-to-container" [(ngModel)]="dateRange" (change)="changeDateRange($event)">
+            <option disabled value="range">Select range</option>
+            <option value="last7Days">Last 7 days</option>
+            <option value="last30Days">Last 30 days</option>
+            <option value="thisWeek">This week</option>
+            <option value="lastWeek">Last week</option>
+            <option value="thisMonth">This month</option>
+            <option value="lastMonth">Last month</option>
+            <option value="yearToDate">Year to date</option>
+            <option value="Custom">Custom</option>
+      </select>
+      <div class="custom-range-container" *ngIf="dateRange === 'Custom'">
+          <input type="text" class="custom-input"
+          [showDropdowns]="true"
+          ngxDaterangepickerMd [(ngModel)]="selected" placeholder="Choose custom date" (change)="changeSelection($event)"/> 
+      </div>
+    </div>
+ </div>
+      <div class="flexbox-container">
+          <div class="flex-elements flex-margin-left">
+            <div class="custom-control custom-checkbox custom-checkbox-input">
+                <input type="checkbox" class="custom-control-input" [(ngModel)]="vsMetric" id="vsMetric">
+                <label class="custom-control-label" for="vsMetric">vs Metric</label>
+            </div>
+            <select [disabled]="!vsMetric" [(ngModel)]="secondaryMetrics" class="browser-default custom-select select-container" (change)="applyDateRange($event)">
+              <option disabled value="">Select metrics</option>
+              <option value="footfall">Footfall</option>
+              <option value="returning_customers">Returning customers</option>
+              <option value="new_customers">New customers</option>
+              <option value="avg_dwell_time_mins">Avg. Dwell Time (mins)</option>
+              <option value="camera_count">Camera count</option>
+            </select>
+          </div>
+        <div class="compare-to-range-container">
+            <div class="custom-control custom-checkbox custom-checkbox-input">
+                <input type="checkbox" [disabled]="dateRange === 'range'" class="custom-control-input" [(ngModel)]="compareTo" id="compareToInput">
+                <label class="custom-control-label" for="compareToInput">Compare to</label>
+            </div>
+          <select [disabled]="!compareTo" [(ngModel)]="compareToSelect" class="browser-default custom-select compare-to-container" (change)="changeCompareTo($event)">
+            <option disabled value="range">Select compare to range</option>
+            <option value="previousPeriod">Previous period</option>
+            <option value="custom">Custom</option>
+          </select>
+          <div class="compare-range-container">
+            <input type="text" class="date-container" 
+            [showDropdowns]="true"
+            ngxDaterangepickerMd *ngIf="compareToSelect === 'custom'" [(ngModel)]="compareToCustomDate" placeholder="Choose date" (change)="compareToDateRange($event)"/>  
+        </div>
+        <button type="button" (click)="applyDateRange()" class="btn btn-primary button-margin">Apply </button>
+      </div>
+    </div>
+
+    <ul class="nav nav-pills nav-link-style" role="tablist">
+      <li class="nav-item" (click)="toggleTab('Daily')">
+        <a class="nav-link active" data-toggle="pill" href="#daily">Daily</a>
+      </li>
+      <li class="nav-item" (click)="toggleTab('Weekly')">
+        <a class="nav-link" data-toggle="pill" href="#weekly">Weekly</a>
+      </li>
+      <li class="nav-item" (click)="toggleTab('Monthly')">
+        <a class="nav-link" data-toggle="pill" href="#monthly">Monthly</a>
+      </li>
+      <button type="button" [disabled]="buttonDiasbled" (click)="download()" class="btn btn-info btn-sm margin-left">Download</button>
+    </ul>
+  <div class="col-xs-12 container-padding" [class.loading]="isLoading">
+      <div class="tab-content">
+          <div id="daily" class="container tab-pane active container-margin-top"><br>
+            <h3>Daily</h3>
+            <div class="row">
+                <table>
+                  <tr>
+                    <td style="width: 10000px; height: 10%">
+                        <div id="daily-legend"></div><br><br>
+                      <canvas id="dailyChart"></canvas></td>
+                    <td></td>
+                  </tr>
+                </table>
+            </div>              
+          </div>
+          <div id="weekly" class="container tab-pane fade"><br>
+            <h3>Weekly</h3>
+            <div class="row">
+                <table>
+                  <tr>
+                    <td style="width: 10000px; height: 20%">
+                        <div id="weekly-legend"></div><br><br>
+                      <canvas id="weeklyChart"></canvas></td>
+                    <td></td>
+                  </tr>
+                </table>
+            </div>              
+          </div>
+          <div id="monthly" class="container tab-pane fade"><br>
+            <h3>Monthly</h3>
+              <div class="row">
+                  <table>
+                    <tr>
+                      <td style="width: 10000px; height: 50%">
+                          <div id="monthly-legend"></div><br><br>
+                        <canvas id="monthlyChart"></canvas></td>
+                      <td></td>
+                    </tr>
+                  </table>
+              </div>
+          </div>
+        </div>
+    </div>
+</div>
+
