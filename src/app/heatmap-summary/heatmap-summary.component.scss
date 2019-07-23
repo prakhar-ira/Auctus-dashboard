@@ -1,9 +1,38 @@
+.align-right {
+  float: right;
+
+}
+
+
+div.body {
+  font-family: "Roboto";
+  color: #666;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  width: 1100px;
+}
+
 #tooltip {
-  background: white;
-  border: 1px solid black;
-  display: inline;
-  border-radius: 5px;
+  border-radius: 4px;
+  position: absolute;
+  margin: 0rem;
+  transform: scale(0.7);
   padding: 10px;
+  z-index: 9999;
+}
+
+
+#left_col {     
+  float: left;
+  width: 200px;
+}
+
+#right_col {
+  float: right;
+  width: 200px;
+
 }
 
 a.button-background {

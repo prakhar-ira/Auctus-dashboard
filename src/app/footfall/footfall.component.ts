@@ -149,7 +149,7 @@ applyDateRange(e?) {
               results.data.vs_metric.primary_date[results.metrics[1]],
               results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
               results.ticks);
-    },
+        },
     res => {
       console.log(res);
       this.router.navigate(['/']);
@@ -190,21 +190,27 @@ this.auth
     this.buttonDiasbled = false;
     this.isLoading = false;
     switch (period) {
-      case 'Daily':  this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+      case 'Daily':
+      this.DailyChart.destroy();
+      this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
         results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
         results.ticks);
         break;
-      case 'Weekly': this.showChart(this.WeeklyChart, 'bar', 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
+      case 'Weekly':
+      this.WeeklyChart.destroy();
+      this.showChart(this.WeeklyChart, 'bar', 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
         results.data.metric.compare_date[results.metrics[0]], results.data.vs_metric.compare_date[results.metrics[1]],
         results.ticks);
         break;
-    case 'Monthly': this.showChart(this.MonthlyChart, 'bar', 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
+    case 'Monthly':
+    this.MonthlyChart.destroy();
+    this.showChart(this.MonthlyChart, 'bar', 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
     results.data.metric.compare_date.date, this.primaryMetrics,
       results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
       results.data.vs_metric.primary_date[results.metrics[1]],
@@ -225,7 +231,7 @@ this.auth
 showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, metric,
    metric2, vs_metric, metric_date_compare, vs_metric_date_compare, ticks) {
   Chart.defaults.global.elements.line.fill = false;
-  Chart.defaults.platform.disableCSSInjection = true;
+  // Chart.defaults.platform.disableCSSInjection = true;
   const y0_min = ticks.y0[0];
   const y0_max = ticks.y0[1];
   const y1_min = ticks.y1[0];
@@ -235,7 +241,7 @@ showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, me
   const color_metric2 = '#255c13';
   const color_metric2_compare = '#ffa600';
   if (primary_date.length > 0) {
-  primary_date = primary_date.map(function(date) {
+    primary_date = primary_date.map(function(date) {
     const new_date = new Date(date);
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     return new_date.toLocaleDateString('en-US', options);
@@ -415,14 +421,14 @@ const config = {
             data.datasets[tooltipItem.datasetIndex].label +
             ' : ' +
             tooltipItem.yLabel
-          );
+            );
+          },
+          // remove title
+          title: function(tooltipItem, data) {
+            return;
+          }
         },
-        // remove title
-        title: function(tooltipItem, data) {
-          return;
-        }
-      },
-      backgroundColor: '#fff',
+        backgroundColor: '#fff',
       borderColor: '#DCDCDC',
       bodyFontColor: '#000000',
       borderWidth: 1,
@@ -443,7 +449,7 @@ const config = {
         <style> body {font-family: 'Roboto';font-size: 14px;color:'#C8C2C2'}</style </head>
         <p style='text-align: left;'> ${ts} &nbsp;-&nbsp; ${te} :&emsp;<span style= 'color: ${color_metric1};'> &#x25CF;&emsp;</span>
         ${metric1}`
-      );
+        );
     },
     title: {
       display: false
@@ -451,7 +457,7 @@ const config = {
 
     responsive: true,
     scales: {
-        xAxes: [
+      xAxes: [
         {
           offset: true,
           stacked: false,
@@ -544,7 +550,7 @@ if (compare_to.length > 0 && vs_metric.length === 0) {
       `<head> <link href='https://fonts.googleapis.com/css?family=Roboto'
        rel ='stylesheet' > <style> body {font-family: 'Roboto';font-size: 14px;
        color: '#666'}</style </head><p style='text-align: left;'>` +
-     ts +
+       ts +
       '&nbsp;-&nbsp;' +
       te +
       `:&emsp;<span style='color: ` +
@@ -560,8 +566,8 @@ if (compare_to.length > 0 && vs_metric.length === 0) {
       `;'>&#x25CF;</span>` +
       metric1 +
       '</p>'
-    );
-  };
+      );
+    };
 }
 
 if (compare_to.length === 0 && vs_metric.length > 0) {
@@ -587,6 +593,11 @@ if (compare_to.length === 0 && vs_metric.length > 0) {
 }
 // allocate and initialize a chart
 type = new Chart(name, config);
+console.log(type);
+if (type && type.id === 1) {
+  type.destroy();
+  console.log(type);
+}
 document.getElementById(legendId).innerHTML = type.generateLegend();
 }
 
@@ -594,14 +605,14 @@ document.getElementById(legendId).innerHTML = type.generateLegend();
     if (this.compareToSelect === 'previousPeriod') {
       return this.changeCompareTo(ev);
     } else {
-    const footfall = {};
-    switch (ev.target.value) {
+      const footfall = {};
+      switch (ev.target.value) {
       case 'last7Days': footfall['to'] = moment().format('YYYY-MM-DD');
-                        footfall['from'] = moment().subtract(7, 'days').format('YYYY-MM-DD');
+      footfall['from'] = moment().subtract(7, 'days').format('YYYY-MM-DD');
                         break;
-      case 'last30Days' : footfall['to'] = moment().format('YYYY-MM-DD');
+                        case 'last30Days' : footfall['to'] = moment().format('YYYY-MM-DD');
                           footfall['from'] = moment().subtract(1, 'months').format('YYYY-MM-DD');
-                        break;
+                          break;
       case 'thisWeek' : footfall['from'] = moment().startOf('week').format('YYYY-MM-DD');
                         footfall['to'] = moment().format('YYYY-MM-DD');
                         break;
@@ -609,7 +620,7 @@ document.getElementById(legendId).innerHTML = type.generateLegend();
                         footfall['to'] = moment().startOf('week').format('YYYY-MM-DD');
                         break;
       case 'thisMonth' : footfall['from'] = moment().startOf('month').format('YYYY-MM-DD');
-                        footfall['to'] = moment().format('YYYY-MM-DD');
+      footfall['to'] = moment().format('YYYY-MM-DD');
                         break;
       case 'lastMonth' : footfall['to'] = moment().startOf('month').format('YYYY-MM-DD');
                         footfall['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');

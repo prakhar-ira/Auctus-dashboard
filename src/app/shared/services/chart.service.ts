@@ -16,4 +16,12 @@ export class ChartService {
   postDailyFootFall(dailyfootfall) {
     return this.http.post(`${environment.API_URL}/dailyfootfall`, dailyfootfall);
   }
+
+  getHeatMapData() {
+    return this.http.get(`${environment.API_URL}/heatmap_app`);
+  }
+
+  postHeatMapData(heatMapData) {
+    return this.http.post(`${environment.API_URL}/heatmap_app`, heatMapData);
+  }
 }

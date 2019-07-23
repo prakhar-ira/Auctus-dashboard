@@ -108,6 +108,16 @@ export class AuthService implements OnDestroy {
     return this.httpClient.post(`${ENV.API_URL}/analytics/`, dailyfootfall, { headers });
   }
 
+  getHeatMapData() {
+    const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
+    return this.httpClient.get(`${ENV.API_URL}/heatmap_app/`, { headers });
+  }
+
+  postHeatMapData(heatMapData) {
+    const headers = new HttpHeaders().set('Authorization', `JWT ${this.token}`);
+    return this.httpClient.post(`${ENV.API_URL}/heatmap_app/`, heatMapData, { headers });
+  }
+
   updateData(token: string) {
     this.token = token;
     this.errors = [];
