@@ -23,7 +23,6 @@ import { TouchSequence } from 'selenium-webdriver';
   styleUrls: ['./footfall.component.scss']
 })
 export class FootfallComponent implements OnInit, OnDestroy {
-
   DailyChart: any;
   data: any[] = [];
   MonthlyChart: any;
@@ -143,7 +142,7 @@ applyDateRange(e?) {
       this.isLoading = false;
       this.buttonDiasbled = false;
       this.results = results;
-            this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+            this.showChart('line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
             results.data.metric.compare_date.date, this.primaryMetrics,
               results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
               results.data.vs_metric.primary_date[results.metrics[1]],
@@ -191,8 +190,7 @@ this.auth
     this.isLoading = false;
     switch (period) {
       case 'Daily':
-      this.DailyChart.destroy();
-      this.showChart(this.DailyChart, 'line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
+      this.showChart('line', 'dailyChart', 'daily-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
@@ -200,8 +198,7 @@ this.auth
         results.ticks);
         break;
       case 'Weekly':
-      this.WeeklyChart.destroy();
-      this.showChart(this.WeeklyChart, 'bar', 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
+      this.showChart('bar', 'weeklyChart', 'weekly-legend', results.data.metric.primary_date.date,
       results.data.metric.compare_date.date, this.primaryMetrics,
         results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
         results.data.vs_metric.primary_date[results.metrics[1]],
@@ -209,8 +206,7 @@ this.auth
         results.ticks);
         break;
     case 'Monthly':
-    this.MonthlyChart.destroy();
-    this.showChart(this.MonthlyChart, 'bar', 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
+    this.showChart('bar', 'monthlyChart', 'monthly-legend', results.data.metric.primary_date.date,
     results.data.metric.compare_date.date, this.primaryMetrics,
       results.data.metric.primary_date[results.metrics[0]], this.secondaryMetrics,
       results.data.vs_metric.primary_date[results.metrics[1]],
@@ -228,10 +224,14 @@ this.auth
 }
 
 
-showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, metric,
+showChart(chartType, name, legendId, primary_date, compare_to, metric1, metric,
    metric2, vs_metric, metric_date_compare, vs_metric_date_compare, ticks) {
+     if (this.DailyChart) {
+       this.DailyChart.destroy();
+     }
   Chart.defaults.global.elements.line.fill = false;
-  // Chart.defaults.platform.disableCSSInjection = true;
+
+
   const y0_min = ticks.y0[0];
   const y0_max = ticks.y0[1];
   const y1_min = ticks.y1[0];
@@ -246,7 +246,7 @@ showChart(type, chartType, name, legendId, primary_date, compare_to, metric1, me
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     return new_date.toLocaleDateString('en-US', options);
   });
-}
+  }
 
 if (compare_to.length > 0) {
   compare_to = compare_to.map(function(date) {
@@ -405,8 +405,6 @@ const config = {
       intersect: false
     },
     tooltips: {
-      mode: 'label',
-      intersect: false,
       callbacks: {
         label: function(tooltipItem, data) {
           const options1 = {
@@ -423,12 +421,8 @@ const config = {
             tooltipItem.yLabel
             );
           },
-          // remove title
-          title: function(tooltipItem, data) {
-            return;
-          }
         },
-        backgroundColor: '#fff',
+      backgroundColor: '#fff',
       borderColor: '#DCDCDC',
       bodyFontColor: '#000000',
       borderWidth: 1,
@@ -592,13 +586,9 @@ if (compare_to.length === 0 && vs_metric.length > 0) {
   };
 }
 // allocate and initialize a chart
-type = new Chart(name, config);
-console.log(type);
-if (type && type.id === 1) {
-  type.destroy();
-  console.log(type);
-}
-document.getElementById(legendId).innerHTML = type.generateLegend();
+const chart = (<any>document.getElementById(name)).getContext('2d');
+this.DailyChart = new Chart(chart, config);
+document.getElementById(legendId).innerHTML = this.DailyChart.generateLegend();
 }
 
   changeDateRange(ev: any) {
