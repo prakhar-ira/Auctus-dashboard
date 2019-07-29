@@ -1,6 +1,5 @@
 .align-right {
-  float: right;
-
+  margin-left: 11rem;
 }
 
 
@@ -21,6 +20,25 @@ div.body {
   transform: scale(0.7);
   padding: 10px;
   z-index: 9999;
+  display: none;
+  width: 26rem;
+}
+
+div.margin-left {
+  margin-left: 1rem;
+}
+
+h2.inline-block-header{
+  display: inline;
+  margin-right: 0.5rem;
+  &.padding-left {
+    padding-left: 5rem;
+  }
+}
+div.flex-matrix {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
 }
 
 

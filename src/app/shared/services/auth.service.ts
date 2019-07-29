@@ -3,6 +3,7 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { environment as ENV } from '../../../environments/environment';
 import { takeWhile } from 'rxjs/operators';
 import {Router} from '@angular/router';
+import { Toast, ToastrService } from 'ngx-toastr';
 
 
 
@@ -18,7 +19,8 @@ export class AuthService implements OnDestroy {
   private httpOptions: any;
   private alive = true;
   constructor( private  httpClient:  HttpClient,
-    private router: Router
+    private router: Router,
+    private toast: ToastrService
     ) {
     this.httpOptions = {
       headers: new HttpHeaders({'Content-Type': 'application/json'})
@@ -67,6 +69,7 @@ export class AuthService implements OnDestroy {
       },
       err => {
         this.errors = err['error'];
+        this.toast.error(this.errors.non_field_errors[0]);
       }
     );
   }

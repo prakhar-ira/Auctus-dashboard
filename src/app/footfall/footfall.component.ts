@@ -168,13 +168,9 @@ toggleTab(period) {
     'period': period
   };
   console.log(this.selected.startDate);
-  if (typeof this.selected.startDate === 'function' && typeof this.selected.endDate === 'function') {
-    postData['from'] = moment().startOf('month').subtract(1, 'months').format('YYYY-MM-DD');
-    postData['to'] = moment().format('YYYY-MM-DD');
-  } else {
     postData['from'] = this.selected.startDate;
     postData['to'] = this.selected.endDate;
-  }
+  // }
 
 this.isLoading = true;
 this.auth
@@ -405,6 +401,7 @@ const config = {
       intersect: false
     },
     tooltips: {
+      intersect: false,
       callbacks: {
         label: function(tooltipItem, data) {
           const options1 = {
@@ -744,23 +741,7 @@ document.getElementById(legendId).innerHTML = this.DailyChart.generateLegend();
  ngOnInit() {
    const token = localStorage.getItem('userInfo');
    this.auth.refreshToken(token);
-  this.isLoading = true;
-   this.auth
-   .getDailyFootFall()
-   .pipe(
-    takeWhile(() => this.alive),
-  )
-   .subscribe(
-      (results: any) => {
-        this.isLoading = false;
-        this.results = results;
-        this.applyDateRange();
-      },
-      res => {
-        console.log(res);
-        this.router.navigate(['/']);
-      }
-    );
+   this.applyDateRange();
   }
 
   ngOnDestroy() {
