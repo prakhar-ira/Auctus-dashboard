@@ -28,7 +28,7 @@
     "chart.js": "^2.8.0",
     "core-js": "^2.5.4",
     "file-saver": "^2.0.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mathjs": "^6.0.2",
     "ng2-charts": "^2.2.3",
     "ngx-daterangepicker-material": "^2.1.1",
